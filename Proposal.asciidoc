@@ -17,20 +17,20 @@ This book does assume that the parent is a developer, and teaches the child Pyth
 Outline:
 
 * Introduction for kids
-  * What is coding?
-  * Why code?
-  * Why Python?
-  * What are we going to be doing?
+  - What is coding?
+  - Why code?
+  - Why Python?
+  - What are we going to be doing?
 * Introduction for parents
-  * Who is this book for?
+  - Who is this book for?
     * If you don't know Python...
-  * Hands on / Hands off
-  * Managing your expectations (yours and theirs!)
-  * The set-up
+  - Hands on / Hands off
+  - Managing your expectations (yours and theirs!)
+  - The set-up
 * Let's get started!
-  * Install Python
-  * Learn about IDLE
-  * Let's do some coding
+  - Install Python
+  - Learn about IDLE
+  - Let's do some coding
     * In the shell
     * In a file
 * Basics: numbers, strings, math
