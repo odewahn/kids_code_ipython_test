@@ -17,74 +17,75 @@ This book does assume that the parent is a developer, and teaches the child Pyth
 Outline:
 
 * Introduction for kids
-  - What is coding?
-  - Why code?
-  - Why Python?
-  - What are we going to be doing?
+** What is coding?
+** Why code?
+** Why Python?
+** What are we going to be doing?
 * Introduction for parents
-  - Who is this book for?
-    * If you don't know Python...
-  - Hands on / Hands off
-  - Managing your expectations (yours and theirs!)
-  - The set-up
+** Who is this book for?
+*** If you don't know Python...
+** Hands on / Hands off
+** Managing your expectations (yours and theirs!)
+** The set-up
 * Let's get started!
-  - Install Python
-  - Learn about IDLE
-  - Let's do some coding
-    * In the shell
-    * In a file
+** Install Python
+** Learn about IDLE
+** Let's do some coding
+*** In the shell
+*** In a file
 * Basics: numbers, strings, math
 * Input and output
 * If / else
 * Loops: For and while
 * Project - Number guessing game
-  - random.int
-  - if / elif / else
-  - Loops
+** random.int
+** if / elif / else
+** Loops
 * Dictionaries and lists
 * Project - To-Do list
-  - Lists
-  - Input
-  - Saving to a file
+** Lists
+** Input
+** Saving to a file
 * Importing modules
 * Project - Haiku generator
-  - Lists
-  - Reading from a file
-  - random.choice
+** Lists
+** Reading from a file
+** random.choice
 * Functions
 * Project - Let's write [some dice game]
-  - random.int
-  - Loops
-  - Functions
+** random.int
+** Loops
+** Functions
 * Project - Game: Guess that lyric
-  - Dictionary
-  - random.choice
-  - random.shuffle
+** Dictionary
+** random.choice
+** random.shuffle
 * OOP
 * Project - Game: Virtual pet!
-  - Time?
-  - functions
-  - OOP
+** Time?
+** functions
+** OOP
 * Using PyGame
 * Project - Beatbox
-  - pygame.mixer
+** pygame.mixer
 * Project - Game: Virtual pet revisited: Let's make it GUI
-  - PyGame
+** PyGame
 * Moving to the Internet
 * Project - Make a website
-  - Flask
-  - functions
+** Flask
+** functions
 * Project - Let's mess around with Minecraft!
-  - Minecraft
-  - mcpipy
+** Minecraft
+** mcpipy
 * Project - Homework helper
-  - Google API
+** Google API
 * Project - Game: Virtual pet revisited: Let's make it GUI
-  - PyGame
+** PyGame
 * What now? (For kids)
 * What now? (For parents)
 
 Concepts being taught:
+
 * Basics: numbers, strings, math
 * Input and output
 * If / else
@@ -100,6 +101,7 @@ Concepts being taught:
 
 
 Project ideas:
+
 * Haiku generator
   - Lists
   - Reading from a file
