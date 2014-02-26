@@ -1,10 +1,8 @@
-Coding with your Kid
-====================
+= Import future: Practical projects for parents and children to do together
 
-Practical projects for parents and children to do together
-----------------------------------------------------------
+== Proposal
 
-Summary:
+=== Summary
 
 I spend a good amount of time travelling around the country, teaching kids to code in Python. Parents will often contact me, asking me how they can help their kids learn to code at their side. They want to share something that gives them so much joy and opens so many doors, but many are uncertain where to start. 
 
@@ -14,7 +12,7 @@ This book not only teaches the child to code in Python, but it also teaches the 
 
 This book does assume that the parent is a developer, and teaches the child Python. There will be a brief introduction to Python for the parent coder who is more familiar with another language.
 
-Outline:
+=== Outline:
 
 * Introduction for kids
 ** What is coding?
@@ -84,7 +82,7 @@ Outline:
 * What now? (For kids)
 * What now? (For parents)
 
-Concepts being taught:
+==== Concepts being taught
 
 * Basics: numbers, strings, math
 * Input and output
@@ -98,9 +96,7 @@ Concepts being taught:
 * Talking to the Internet
 * HTML basics
 
-
-
-Project ideas:
+==== Project ideas
 
 * Haiku generator
   - Lists
@@ -137,4 +133,5 @@ Project ideas:
   - mcpipy
 * Homework helper?
   - Google API
+  
   
