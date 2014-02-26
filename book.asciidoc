@@ -1,0 +1,5 @@
+:bookseries: basic
+
+= Kids Code
+
+include::Proposal.asciidoc[]
