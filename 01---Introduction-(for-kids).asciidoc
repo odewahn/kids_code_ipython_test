@@ -1,0 +1,13 @@
+= Introduction (for kids)
+
+== What is coding?
+
+== Why code?
+
+== Why Python?
+
+== What are we going to be doing?
+
+== What do I need?
+
+== Where do I go if I need help?

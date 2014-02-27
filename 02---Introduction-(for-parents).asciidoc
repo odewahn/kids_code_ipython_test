@@ -1,0 +1,19 @@
+= Introduction (for parents)
+
+== Who is this book for?
+
+=== If you don't know Python...
+
+=== If you don't know how to code...
+
+== How to use this book
+
+== Learning about teaching
+
+=== Scaffolding
+
+=== Hands on / Hands off
+
+=== Managing your expectations (and theirs!)
+
+== The set-up
