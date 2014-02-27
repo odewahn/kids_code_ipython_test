@@ -1,0 +1,4 @@
+== Storing stuff
+
+If there's one thing computers are good at, it's storing information. 
+
