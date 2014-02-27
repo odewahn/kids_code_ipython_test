@@ -1,19 +1,19 @@
-= Introduction (for parents)
+== Introduction (for parents)
 
-== Who is this book for?
+=== Who is this book for?
 
-=== If you don't know Python...
+==== If you don't know Python...
 
-=== If you don't know how to code...
+==== If you don't know how to code...
 
-== How to use this book
+=== How to use this book
 
-== Learning about teaching
+=== Learning about teaching
 
-=== Scaffolding
+==== Scaffolding
 
-=== Hands on / Hands off
+==== Hands on / Hands off
 
-=== Managing your expectations (and theirs!)
+==== Managing your expectations (and theirs!)
 
-== The set-up
+=== The set-up
