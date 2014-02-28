@@ -1,5 +1,7 @@
 == Introduction (for kids)
 
+=== Who is this book for?
+
 === What is coding?
 
 === Why code?
@@ -11,3 +13,5 @@
 === What do I need?
 
 === Where do I go if I need help?
+
+=== What is my adult supposed to be doing?
