@@ -69,6 +69,8 @@ This book does assume that the parent is a developer, and teaches the child Pyth
 * Project - Game: Virtual pet revisited: Let's make it GUI
 ** PyGame
 * Moving to the Internet
+** HTML
+** CSS
 * Project - Make a website
 ** Flask
 ** functions
