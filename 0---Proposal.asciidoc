@@ -71,6 +71,9 @@ This book does assume that the parent is a developer, and teaches the child Pyth
 * Moving to the Internet
 ** HTML
 ** CSS
+** Flask
+*** Install
+*** Quick test
 * Project - Make a website
 ** Flask
 ** functions
