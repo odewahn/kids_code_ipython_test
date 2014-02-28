@@ -1,0 +1,23 @@
+== Let's get started!
+
+=== What you're going to need
+
+=== Python 2 vs Python 3
+
+=== Installing Python
+
+==== Windows
+
+==== Mac OS
+
+=== IDLE
+
+==== Working in the Interpreter
+
+==== Working in a file
+
+=== Working in the book!
+
+==== From the book to your computer
+
+=== Notes for the adult
