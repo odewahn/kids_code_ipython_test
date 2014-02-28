@@ -1,0 +1,21 @@
+== First, some basics
+
+=== What you need for this chapter
+
+=== Let's do some math
+
+==== The rest of the operators
+
+==== Types of numbers
+
+=== Storing information
+
+==== Rules about naming variables
+
+=== Storing text
+
+==== Printing text
+
+==== Doing math?
+
+=== Try this!
