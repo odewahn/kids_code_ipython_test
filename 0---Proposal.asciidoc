@@ -84,6 +84,8 @@ This book does assume that the parent is a developer, and teaches the child Pyth
 ** Google API
 * Project - Game: Virtual pet revisited: Let's make it GUI
 ** PyGame
+* Going mobile (possible)
+* Project: Kivy game!
 * What now? (For kids)
 * What now? (For parents)
 
@@ -91,4 +93,4 @@ This book does assume that the parent is a developer, and teaches the child Pyth
 
 While this book would work just fine as a print book, I believe that presenting it at a mixed-media package would work better for the current generation of students and teachers. A video might be used to reinforce a concept. An embedded coding environment would give a chance for students to play with code, without having to type it in by hand. It would also enable a parent to read one of the sections meant just for them without waiting for the student to reliquish the book.
   
-  
+This would also enable us to give the student the assets required for the various projects without sending them to another website. They could click the link, download the files, and get started. 

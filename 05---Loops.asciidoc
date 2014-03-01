@@ -1,0 +1,25 @@
+== Loops
+
+=== What you need for this chapter
+
+=== Why use a loop?
+
+==== Types of loops
+
+=== Counting loops (for)
+
+==== Range
+
+==== With lists
+
+==== Skipping to the next item
+
+==== Ending the loop early
+
+=== Conditional loops (while)
+
+==== Infinite loops!
+
+==== Skipping to the next iteration
+
+==== Getting out of a loop early

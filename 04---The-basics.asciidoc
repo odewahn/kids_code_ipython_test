@@ -18,4 +18,6 @@
 
 ==== Doing math?
 
+=== Comparing values
+
 === Try this!

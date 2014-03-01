@@ -1,0 +1,23 @@
+== Getting and showing information
+
+=== What you need for this chapter
+
+=== Showing information
+
+==== The print statement
+
+==== Formatting and non-printing characters
+
+==== Inserting values
+
+==== Not moving to a new line
+
+=== Getting information
+
+==== Getting numbers
+
+==== Getting text
+
+==== Converting text to numbers
+
+==== Clean up that text!
