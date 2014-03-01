@@ -1,0 +1,35 @@
+== Using modules
+
+=== What's a module?
+
+=== Why use them?
+
+=== Random
+
+==== Getting random numbers
+
+==== Getting random items
+
+=== Datetime
+
+==== Getting the current time
+
+==== Creating a date
+
+==== Time math
+
+=== os
+
+==== Moving around your computer
+
+==== Getting a list of files in a directory
+
+==== Make a new directory
+
+=== Making your own module
+
+==== Organizing your module
+
+==== Installing your module!
+
+=== Try this!
