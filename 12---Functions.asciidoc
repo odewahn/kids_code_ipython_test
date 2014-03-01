@@ -1,0 +1,15 @@
+== Functions
+
+=== What's a function?
+
+=== Why use them?
+
+=== The most basic function
+
+=== Sending values to a function
+
+=== Setting defaults
+
+=== Returning values
+
+=== Try this!

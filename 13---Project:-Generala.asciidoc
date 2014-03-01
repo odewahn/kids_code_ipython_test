@@ -1,0 +1,15 @@
+== Project: Generala
+
+=== You'll need to understand...
+
+=== What is generala?
+
+==== The rules
+
+=== The plan
+
+=== The basic script
+
+=== Try adding...
+
+=== The final script

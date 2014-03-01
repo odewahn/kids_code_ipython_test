@@ -1,0 +1,13 @@
+== Project: Haiku generator
+
+=== What you'll need...
+
+=== What's a haiku?
+
+=== The plan!
+
+=== The basic script
+
+=== Try adding...
+
+=== The final script
