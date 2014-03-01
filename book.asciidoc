@@ -2,4 +2,22 @@
 
 = Kids Code
 
-include::Proposal.asciidoc[]
+include::0---Proposal.asciidoc[]
+
+include::01---Introduction-(for-kids).asciidoc[]
+
+include::02---Introduction-(for-parents).asciidoc[]
+
+include::03---Let's-get-started!.asciidoc[]
+
+include::04---The-basics.asciidoc[]
+
+include::05---Loops.asciidoc[]
+
+include::06---Input-and-output.asciidoc[]
+
+include::07---Project:-Number-guessing-game.asciidoc[]
+
+include::08.0---Dictionaries-and-lists.asciidoc[]
+
+include::08.1---Files.asciidoc[]
