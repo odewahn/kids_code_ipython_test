@@ -1,0 +1,22 @@
+== Making games with PyGame
+
+=== What you'll need to understand...
+
+=== What is PyGame?
+
+=== Installing PyGame
+
+=== Creating a screen
+
+=== Putting an object on the screen
+
+=== Moving the object around
+
+=== Playing with colors
+
+=== Adding text to the screen
+
+=== Getting input from the user
+
+=== Try this!
+

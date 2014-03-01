@@ -1,0 +1,15 @@
+== Project: Beatbox
+
+=== What you'll need to know
+
+=== What is a beatbox?
+
+=== The plan
+
+=== The files
+
+=== The basic script
+
+=== Try adding...
+
+=== The final script
