@@ -1,0 +1,23 @@
+== Talking to the Internet
+
+=== What you need to know...
+
+=== Why talk to the Internet?
+
+=== How do we talk to the Internet?
+
+=== What do APIs look like?
+
+=== What is JSON?
+
+==== Getting JSON from a URL (urllib)
+
+==== Working with JSON
+
+==== Using JSON
+
+==== Finding APIs!
+
+=== One last warning...
+
+=== Try this!
