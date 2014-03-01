@@ -1,0 +1,15 @@
+== Project: Number guessing game
+
+=== What you need to know...
+
+=== The plan!
+
+=== The basic game
+
+==== Try adding...
+
+=== The finished game
+
+==== My code doesn't look like that!
+
+
