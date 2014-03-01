@@ -1,0 +1,13 @@
+== Project: Guess that lyric!
+
+=== You should know...
+
+=== The plan
+
+==== The files
+
+=== The basic script
+
+=== Try adding...
+
+=== The final script

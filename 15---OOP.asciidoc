@@ -1,0 +1,19 @@
+== Objects
+
+=== What's an object?
+
+=== Why use objects?
+
+=== Object vocabulary
+
+=== Planning your object
+
+=== Creating your object blueprint (classes)
+
+==== Adding attributes
+
+==== Adding methods
+
+==== Using __init__ to set up your object.
+
+=== Try this!

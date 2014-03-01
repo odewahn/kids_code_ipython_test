@@ -1,0 +1,11 @@
+== Project: Virtual pet
+
+=== What you'll need to know...
+
+=== The plan
+
+=== The base script
+
+=== Try to add...
+
+=== The final script
