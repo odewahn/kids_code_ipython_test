@@ -1,0 +1,13 @@
+== Project: Virtual pet, revisited
+
+=== What you need to know...
+
+=== The plan
+
+=== The files you'll need
+
+=== The basic code
+
+=== Try adding...
+
+=== The final code

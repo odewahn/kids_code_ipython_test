@@ -1,0 +1,21 @@
+== Project: Make a website
+
+=== What you'll need to know...
+
+=== The plan
+
+=== Create the templates
+
+==== The basic templates
+
+==== Try adding...
+
+==== The final templates
+
+=== Create the Flask files
+
+==== The basic code
+
+==== Try adding...
+
+==== The final code

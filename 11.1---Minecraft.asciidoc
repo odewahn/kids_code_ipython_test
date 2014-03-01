@@ -1,0 +1,19 @@
+== Minecraft and Python
+
+=== What you'll need to know...
+
+=== What is Minecraft?
+
+=== What is mcpipy?
+
+==== Installing mcpipy
+
+==== Connecting mcpipy and Minecraft
+
+==== Making items in your world
+
+==== Removing blocks in your world
+
+==== Spawning and playing around with mobs
+
+=== Try this!
