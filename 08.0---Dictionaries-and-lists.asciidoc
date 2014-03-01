@@ -1,0 +1,31 @@
+== Grouping values: Dictionaries and lists
+
+=== What you need to know...
+
+=== Lists
+
+==== What's an index?
+
+==== Addding values to a list
+
+==== Removing values from a list
+
+==== Changing a value
+
+==== Lists and loops!
+
+=== Dictionaries
+
+==== Keys and values
+
+==== Adding values to a dictionary
+
+==== Changing values in a dictionary
+
+==== Removing values from a list
+
+==== Getting all the keys (or values!)
+
+==== Dictionaries and loops!
+
+=== Try this...
