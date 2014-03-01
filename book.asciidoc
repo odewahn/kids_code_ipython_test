@@ -26,7 +26,9 @@ include::09---Project:-To-do-list.asciidoc[]
 
 include::10---Importing-modules.asciidoc[]
 
-include::11---Project:-Haiku-genertor.asciidoc[]
+include::11.0---Project:-Haiku-genertor.asciidoc[]
+
+include::11.1---Minecraft.asciidoc[]
 
 include::12---Functions.asciidoc[]
 
@@ -47,3 +49,15 @@ include::17---Using-PyGame.asciidoc[]
 include::18---Project:-Beatbox.asciidoc[]
 
 include::19---Project:-Virtual-pet-(revisited).asciidoc[]
+
+include::20---Moving-to-the-Internet.asciidoc[]
+
+include::21---Make-a-website.asciidoc[]
+
+include::22---Talking-to-the-Internet.asciidoc[]
+
+include::23---Project:-Lyrics.asciidoc[]
+
+include::24---What-now?-(for-kids).asciidoc[]
+
+include::25---What-now?-(for-parents).asciidoc[]
