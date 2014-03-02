@@ -16,25 +16,61 @@ So, what exactly is coding? To put it simply, coding is the act of telling a com
 
 Computers, as fast and amazing as they are, are really quite stupid. They don't do a single thing unless you've told them how to do it. Every program you have on your computer is made of lines and lines of code, and those lines cover everything from how to save a file to how to display an icon or what to do when you click on that icon. 
 
-There are many languages you can use to code. Some are decades old, while some are only a few years old. In fact, some would argue that programming languages are older than computers! In the 1800's, Ada Lovelace wrote the first 'program' for a theoretical machine designed by Charles Babbage.
+This can sound intimidating at first, but most modern programming languages have created shortcuts for developers. For example, many of them include easy ways to display images, deal with pointers and keyboards, and play sounds. People have written libraries (collections of code) that allow you to create 3D worlds with realistic physics and models. Others have written libraries that allow you to talk to the Internet, or even create your own websites.
 
-[[ada_lovelace]]
-.A figure
-[float="true"]
-image::images/ada.jpg["Ada Lovelace, our first programmer"]
-
-Today, there are dozens of languages that are in use. Even some of the first practical languages to be written are still in use, even though they were written in the 1940's and 50's!
+Coding goes by many names: programming, development, hacking, etc. Though there are some subtle differences, the end goal is the same: Get the computer to do what we want.
 
 === Why code?
 
+Many people think that the only people who need to know how to code are people who want to do it for a living. This couldn't be further from the truth! If you have to deal with computers, then there's probably some way that knowing to code can make your life easier.
+
+For example, you might write some code to check to see if your favorite site has updated recently, or you might write an app that helps you organize your books or t-shirts (Me, I have one that helps me keep track of my nail polish collection).
+
+Coding isn't just about making your life easier, though! It can be about making your life more fun! If you know how to code, you can create mods for your favorite game, or even create games of your own.
+
 === Why Python?
+
+There are many languages you can use to code. Some are decades old, while some are only a few years old. In fact, some would argue that programming languages are older than computers! In the 1800's, Ada Lovelace wrote the first 'program' for a theoretical machine designed by Charles Babbage.
+
+[[ada_lovelace]]
+.Ada Lovelace, our first programmer
+[float="true"]
+image::images/ada.jpg["Portrait of Ada Lovelace"]
+
+Today, there are dozens of languages that are in use. Even some of the first practical languages to be written are still in use, even though they were written in the 1940's and 50's!
+
+In this book, we're going to be using Python. Python is not only incredibly easy to learn, but it's also powerful and widely used. It can run on devices that can fit in your hand, and it helps power giants like YouTube, NASA, and Google. It's been used to create websites, applications, and games.
+
+And best of all? It's free. 
 
 === What are we going to be doing?
 
+In this book, we're going to start off with the basics: saving information, telling our computer to do something (or not do something!), and doing stuff more than once. 
+
+There will be a number of projects as we go which will use everything you've learned up to that point. Don't worry if you start to get lost: We'll have some sample code that shows you *one* way you could have written the program.
+
+By the end of the book, you'll be writing games, websites, taking to the Internet, and you'll have the tools to do an amazing number of things.
+
 === What do I need?
+
+First, you're going to need a computer. You need to be able to install things onto this computer. If you need someone else to enter a password before you can install something, make sure you talk to them about what you want to do.
+
+You'll also need an Internet connection for some of the chapters. For some, you'll need to download some files for a project or lesson. For others, you'll be talking to a site on the Internet.
+
+You should also have time and space to work on the lessons and projects. We'll ned a good chunk of your brain, and a messy desk and loud room are just going to take up space in your head. So make sure to have a clear space and some headphones when you want to code.
 
 === Where do I go if I need help?
 
+The first place you might want to go is your grown-up. They might have a different way of explaining a concept that can help you out. Don't forget, they've been in your position before! It's highly unlikely that they were born knowing how to code.
+
+For each chapter, I've also included some extra material you can check out. Some are videos or websites that have a different way of explaining parts of programming.
+
+If you're getting errors, try showing them to someone else. If no one else is close, try googling the error, leaving out the parts that are specific to your code. We'll go over what parts of the error message are important as we go along.
+
+Finally, if you're stumped, check out the code included at the end of each section. Read through each line and think about what each line is doing. Experiment with that code, changing parts until you're fairly confident about what each line is doing.
+
 === How do I use this "book"?
+
+
 
 === What is my adult supposed to be doing?
