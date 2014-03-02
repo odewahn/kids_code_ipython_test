@@ -41,6 +41,10 @@ Today, there are dozens of languages that are in use. Even some of the first pra
 
 In this book, we're going to be using Python. Python is not only incredibly easy to learn, but it's also powerful and widely used. It can run on devices that can fit in your hand, and it helps power giants like YouTube, NASA, and Google. It's been used to create websites, applications, and games.
 
+[[python_logo]]
+[float="true"]
+image::images/python.png["Python logo"]
+
 And best of all? It's free. 
 
 === What are we going to be doing?
@@ -71,6 +75,12 @@ Finally, if you're stumped, check out the code included at the end of each secti
 
 === How do I use this "book"?
 
+This probably isn't like most books you've learned from. It's highly interactive! There are places where you can play with the code and run Python right from the book, rather than starting it up on your computer! It also includes videos, interactive diagrams, and lots of stuff to download and try out on your own.
 
+Each section has a portion that's for your grown-up. Feel free to read that! We're not swapping secrets or anything. I'm just trying to help them learn how to help you. You can also skip those parts, if you want.
 
 === What is my adult supposed to be doing?
+
+You and your grown-up should probably talk about that. Some people who read this book are going to be fine doing most of the exercises on their own. Others may want their grown-up to do the projects right beside them. It's up to the two of you! Be honest about how much help you think you might need, and feel free to tell your grown up when you need more, or when you've got a section under control.
+
+Do make sure they read the introduction that's meant for them, though. It has a bunch of important information for them that benefits the both of you, and makes this book a whole bunch more fun to work through.
