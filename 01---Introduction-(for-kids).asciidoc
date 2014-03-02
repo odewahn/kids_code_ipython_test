@@ -1,8 +1,29 @@
 == Introduction (for kids)
 
+TODO: Pithy intro
+
 === Who is this book for?
 
+This book is for a wide range of people. If you've never written any code, don't worry! We're starting from the very beginning! We'll go over how to install everything you need, how to work in editors, and how to save your work and run your code. If you're more advanced, you can probably race through the first few chapters, but we'll be doing some cool stuff with the Internet and games in later chapters.
+
+Ideally, you should be working through this book with someone who already knows how to code. We'll cover as much as we can, but questions come up that even the best book might not cover. This person might be a parent, a teacher, a relative or friend of the family, or even a friend who already knows how to code. 
+
+If you don't have a person, don't fret! See if you can pair up with a friend while going through the projects. Two brains are better than one, and often, one of you will be able to sort out a problem that the other is stuck on. Even grown-up developers do this. It's called pair programming!
+
 === What is coding?
+
+So, what exactly is coding? To put it simply, coding is the act of telling a computer how to do something.
+
+Computers, as fast and amazing as they are, are really quite stupid. They don't do a single thing unless you've told them how to do it. Every program you have on your computer is made of lines and lines of code, and those lines cover everything from how to save a file to how to display an icon or what to do when you click on that icon. 
+
+There are many languages you can use to code. Some are decades old, while some are only a few years old. In fact, some would argue that programming languages are older than computers! In the 1800's, Ada Lovelace wrote the first 'program' for a theoretical machine designed by Charles Babbage.
+
+[[ada_lovelace]]
+.A figure
+[float="true"]
+image::images/ada.jpg["Ada Lovelace, our first programmer"]
+
+Today, there are dozens of languages that are in use. Even some of the first practical languages to be written are still in use, even though they were written in the 1940's and 50's!
 
 === Why code?
 
@@ -14,6 +35,6 @@
 
 === Where do I go if I need help?
 
-=== How do I use this 'book'?
+=== How do I use this "book"?
 
 === What is my adult supposed to be doing?
