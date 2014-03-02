@@ -1,6 +1,6 @@
 == First, some basics
 
-== Notes for the grown-up
+=== Notes for the grown-up
 
 === What you need for this chapter
 
