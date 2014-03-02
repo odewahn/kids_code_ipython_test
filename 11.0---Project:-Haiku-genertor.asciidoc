@@ -1,6 +1,8 @@
 == Project: Haiku generator
 
-=== What you'll need...
+=== What you'll need to know...
+
+=== A note for the grown-up
 
 === What's a haiku?
 

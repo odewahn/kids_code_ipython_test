@@ -1,6 +1,8 @@
 == Loops
 
-=== What you need for this chapter
+=== What you need to know...
+
+=== Notes for the grown-up
 
 === Why use a loop?
 

@@ -2,6 +2,8 @@
 
 === What you'll need to know
 
+=== A note to the grown-up
+
 === How does the Internet work?
 
 === What you need to make a website

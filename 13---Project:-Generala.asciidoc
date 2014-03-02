@@ -1,6 +1,8 @@
 == Project: Generala
 
-=== You'll need to understand...
+=== What you'll need to know...
+
+=== A note for the grown-up
 
 === What is generala?
 

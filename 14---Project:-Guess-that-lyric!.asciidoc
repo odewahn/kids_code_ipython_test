@@ -1,6 +1,8 @@
 == Project: Guess that lyric!
 
-=== You should know...
+=== What you'll need to know...
+
+=== A note to the grown-up
 
 === The plan
 

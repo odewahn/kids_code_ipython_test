@@ -1,5 +1,7 @@
 == First, some basics
 
+== Notes for the grown-up
+
 === What you need for this chapter
 
 === Let's do some math
@@ -19,5 +21,15 @@
 ==== Doing math?
 
 === Comparing values
+
+=== Let's play with turtles!
+
+==== How to get turtles started
+
+==== Moving the turtle
+
+==== Turning the turtle
+
+==== Stamping and pens
 
 === Try this!

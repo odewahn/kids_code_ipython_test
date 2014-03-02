@@ -2,6 +2,8 @@
 
 === What you need to know...
 
+=== A note for the grown-up
+
 === Lists
 
 ==== What's an index?
@@ -28,4 +30,4 @@
 
 ==== Dictionaries and loops!
 
-=== Try this...
+=== Try this!

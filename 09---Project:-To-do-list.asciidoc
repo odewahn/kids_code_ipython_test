@@ -1,6 +1,8 @@
 == Project: To-do list
 
-=== What you'll need...
+=== What you'll need to know...
+
+=== A note for the grown-up
 
 === The plan!
 

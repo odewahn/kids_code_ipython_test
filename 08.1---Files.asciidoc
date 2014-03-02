@@ -1,5 +1,9 @@
 == Using files
 
+=== What you need to know...
+
+=== A note for the grown-up
+
 === Opening a file
 
 === Reading from a file
@@ -9,3 +13,5 @@
 === Appending to a file
 
 === Close those files!
+
+=== Try this!

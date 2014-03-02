@@ -1,5 +1,9 @@
 == Objects
 
+=== What you'll need to know...
+
+=== A note to the grown-up
+
 === What's an object?
 
 === Why use objects?

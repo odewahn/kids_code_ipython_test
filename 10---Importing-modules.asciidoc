@@ -1,5 +1,9 @@
 == Using modules
 
+=== What you'll need to know...
+
+=== A note for the grown-up
+
 === What's a module?
 
 === Why use them?
