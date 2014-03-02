@@ -46,6 +46,10 @@ This is actually a popular concept in the psychology of learning. It's called sc
 
 Scaffolding was first described by Lev Vygotsky. He noticed that children in a Russian village were able to create complexly colored fabrics at a young age. He noticed that the elders had a particular way of teaching the youth of the village: they were given tasks that were only slightly out of their current level of ability.
 
+[[vygotsky]]
+.Good ol' Lev Vygotsky
+image::images/lev.jpg["A portrait of Vygotsky"]
+
 TODO: Verify story to make sure it was in Russia!
 
 So, they might first help a parent on a loom, threading a row or two, or helping with the spools. Later, they might be given a small loom with a work already in progress and allowed to continue it. Eventually, they would move up to helping with more complex projects, starting their own projects, and eventually doing complex works on their own. Each time, the child was moved only slightly outside of their comfort zone, and always under the eye of an expert.
