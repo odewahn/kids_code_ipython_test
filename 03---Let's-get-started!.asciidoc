@@ -1,14 +1,75 @@
 == Let's get started!
 
+What the first thing we're going to need to do in order to get coding? We're going to have to install Python! 
+
+Don't worry: Installing Python is super easy. It may even already be on your computer. We're also going to over different ways to edit and run our code.
+
 === What you're going to need
 
-=== Python 2 vs Python 3
+For this section, you're going to need:
+
+*A computer.* You'll need to be able to install things onto your computer. If someone else has to enter a password in order for you to install new things, make sure you have them on hand.
+
+*An Internet connection.* You're going to need to download Python in order to install it. 
+
+.Python 2 vs Python 3
+[NOTE]
+====
+There are two kinds of Python being used at the moment: Python 2 and Python 3. We're going to be using Python 2.
+
+Why? When learning a new language, you'll probably find yourself searching the Internet for problems you're having. Python 2 wins there simply because it's been around for longer. It's also very stable, meaning that there are relatively few changes being made to it today.
+
+Once you pick up Python 2, Python 3 is super easy to pick up. There are even scripts out there that help you move your code over from Python 2 to Python 3!
+====
 
 === Installing Python
 
+Now that you have your computer ready, let's go ahead and install Python! First, though, we need to figure out what operating system you're on.
+
+==== What's an operating system?
+
+An operating system is a collection of programs that works with the hardware of your computer (that's the stuff you can touch). So, your operating system knows helps images appear on your monitor, or knows that when you move your mouse or touch your touchpad that you want to move the cursor. It's a layer between the programs you want to run (like games, browsers, or word processing programs) and the physical part of the machine.
+
+More than likely, you're running one of the two major operating systems. 
+
 ==== Windows
 
+If you have a computer that has Start menu or Start screen, then you're running Windows. One of the screenshots in Figure X.X should look a bit familiar. 
+
+[[windows_shots]]
+.Screenshots of Windows XP, 7, and 8
+image::images/windows_shots.png["Default sceenshots of three Windows desktops"]
+
+If you are, in fact, running Windows, go ahead and download Python from http://www.python.org/download/[Python.org's download page]. 
+
+Python will run on nearly every version of Windows out there, but the download page has multiple versions available. You're going to need to search for the link that says something like "Python 2.7.6 Windows Installer".
+
+[NOTE]
+====
+The numbers in the link might change slightly. Just make sure that the first number is a two!
+====
+
+Installing it should be pretty easy. Once the file has downloaded, click on the installer and follow the instructions. If you get stuck or nervous, I've included a video here that goes through the process step-by-step and explains what each screen means.
+
+TODO: Video
+
+Once you're done installing Python, check out your installed applications. On XP and 7, you can click on the Start button. On Windows 8, you can hit your Windows key and type 'Python' to bring up your Python applications. 
+
+One of the applications is called IDLE. That's what we'll be working in for the rest of this book, so make sure you can start that up before you move on.
+
 ==== Mac OS
+
+If you have a computer that has a glowing apple on it or an Apple on the toolbar (check out Figure X.X), then you're on a Mac! And guess what? Python is already installed! You won't see it as an application in your Applications folder, but it's there, trust me.
+
+Before we move on, we want to make sure that Python is working. First, you'll need to bring up something called a Terminal. Search for Terminal in your Spotlight (the magnifying glass on your toolbar). When you click on it, a window should pop up that looks something like the screenshot in Figure X.X.
+
+[[mac_terminal]]
+.Mac Terminal
+image::images/terminal.png["Screen shot of my mac terminal window"]
+
+In the terminal window, type the word 'idle'. An applicaiton called IDLE should open up. Remember how to do this, because we're going to be working in IDLE for the rest of the book!
+
+If you're confused, here's a video, showing me getting a terminal window and opening up IDLE.
 
 === IDLE
 

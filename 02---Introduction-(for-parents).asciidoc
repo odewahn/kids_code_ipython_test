@@ -4,7 +4,7 @@ I spend a significant amount of time teaching kids to code at conferences or clu
 
 Why was this happening? I surveyed a few kids (my own son included), and found that the main problem wasn't the books. It was getting stuck.
 
-Kids aren't used to learning skills on their own. Sure, they can effortlessly pick up mounds of information, but when it comes to an actual skill, it seems that they need guidance. Tools stop working, a term doesn't make sense, or the project just seems too large to even think about. My eldest can tell you anything you ever wanted to know about practically any care built in the past fifty years, but that doesn't mean he can build an engine.
+Kids aren't used to learning skills on their own. Sure, they can effortlessly pick up mounds of information, but when it comes to an actual skill, it seems that they need guidance. Tools stop working, a term doesn't make sense, or the project just seems too large to even think about. My eldest can tell you anything you ever wanted to know about practically any car built in the past fifty years, but that doesn't mean he can build an engine.
 
 This book is meant to be a journey for both you and the student. In fact, I'm going to ask them to pester you now and then. That might be why you're reading this introduction right now: I told them to make sure you read this chapter. This won't be the last time I'll have them come to you, but I promise you, this is going to be a fun journey that the two of you are going to take.
 
@@ -28,7 +28,7 @@ Read the chapters along with the novice, and maybe even have Python set up on yo
 
 === How to use this book
 
-Each lessons and project has a section for you, the expert. The novice should read the rest of the chapter (or, if you're working with a very young child, you might read it together). 
+Each lesson and project has a section for you, the expert. The novice should read the rest of the chapter (or, if you're working with a very young child, you might read it together). 
 
 There are places in each chapter where you can run code in the book itself. Feel free to play with the code. You can't break the book, I promise you! There are also videos and interactive diagrams to help reinforce concepts.
 
