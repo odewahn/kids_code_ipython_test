@@ -8,9 +8,9 @@ I spend a good amount of time travelling around the country, teaching kids to co
 
 There are books that teach children to code, but not every child can learn this way. Some might need to be able to ask questions. Some stay on task better when an adult is involved. Some may simply enjoy the activity better when doing it with someone else. 
 
-This book not only teaches the child to code in Python, but it also teaches the parent *how* to help their child along. Each lesson includes pointers for the parent, a lesson for the child, a project for them both to complete, and code samples of how the code might be written.
+This book not only teaches the child to code in Python, but it also teaches the parent *how* to help their child along. The book includes both lessons and projects that are intended for a student and expert to go over together. Each chapter provides pointers to the expert on where a student might get stuck and how best to help them, as well as completed code samples for the student to play with. All projects also start with stub code, which tends to be much less intimidating for a young learner to work with.
 
-This book does assume that the parent is a developer, and teaches the child Python. There will be a brief introduction to Python for the parent coder who is more familiar with another language.
+This book does assume that the parent is a developer, and teaches the child Python. There will be a brief introduction to Python for the parent coder who is more familiar with another language. However, a non-coder parent can also work through the exercises, provided they read the chapter as well. Even adults who do not code have the skill of being able to troubleshoot more quickly than a child.
 
 === Media
 
