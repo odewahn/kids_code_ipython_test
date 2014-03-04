@@ -48,7 +48,7 @@ Scaffolding was first described by Lev Vygotsky. He noticed that children in a R
 
 [[vygotsky]]
 .Good ol' Lev Vygotsky
-image::images/lev.jpg["A portrait of Vygotsky"]
+image::images/lev.jpg["A portrait of Vygotsky", scale=25]
 
 TODO: Verify story to make sure it was in Russia!
 

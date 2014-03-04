@@ -65,7 +65,7 @@ Before we move on, we want to make sure that Python is working. First, you'll ne
 
 [[mac_terminal]]
 .Mac Terminal
-image::images/terminal.png["Screen shot of my mac terminal window"]
+image::images/terminal.png["Screen shot of my mac terminal window",scale=50]
 
 In the terminal window, type the word 'idle'. An applicaiton called IDLE should open up. Remember how to do this, because we're going to be working in IDLE for the rest of the book!
 
@@ -79,11 +79,11 @@ IDLE is an application that comes with Python that makes it easier for you to wr
 
 [idle_intepreter]
 .The IDLE interpreter
-image::images/idle-intepreter.png["A screenshot of the IDLE intepreter"]
+image::images/idle-intepreter.png["A screenshot of the IDLE intepreter",scale=50]
 
 [idle_editor]
 .The IDLE editor
-image::images/idle-editor.png["A screenshot of the IDLE editor"]
+image::images/idle-editor.png["A screenshot of the IDLE editor",scale=50]
 
 The interpreter is like a live wire. Python is sitting there, listening, waiting for you go give it a command. Once you give it a command, it will run it right away, then wait for the next command.
 
