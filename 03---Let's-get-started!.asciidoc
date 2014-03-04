@@ -79,7 +79,7 @@ IDLE is an application that comes with Python that makes it easier for you to wr
 
 [idle_intepreter]
 .The IDLE interpreter
-image::images/idle-interpreter.png["A screenshot of the IDLE intepreter"]
+image::images/idle-intepreter.png["A screenshot of the IDLE intepreter"]
 
 [idle_editor]
 .The IDLE editor
