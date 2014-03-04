@@ -77,6 +77,14 @@ By now, no matter what operating system you're on, you should have IDLE up. What
 
 IDLE is an application that comes with Python that makes it easier for you to write and run code. It has two parts: The interpreter, and the editor. Right now, you probably have the interpreter open (there should be a prompt that looks like this: ">>>"). To open the editor, go to File > New. A blank window should open.
 
+[idle_intepreter]
+.The IDLE interpreter
+image::images/idle-interpreter.png["A screenshot of the IDLE intepreter"]
+
+[idle_editor]
+.The IDLE editor
+image::images/idle-editor.png["A screenshot of the IDLE editor"]
+
 The interpreter is like a live wire. Python is sitting there, listening, waiting for you go give it a command. Once you give it a command, it will run it right away, then wait for the next command.
 
 The editor is used to create Python files, which allow you to write out a series of commands and save them. Once you've saved the Python file, you can run it,a nd the results will show up in the interpreter. 
