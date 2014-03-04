@@ -104,6 +104,8 @@ TODO: Active console here
 
 === Storing information
 
+Doing math is all well and good, but if we're going to make a useful program, we're going to have to store information so we can use it over and over, or so we can change a value as time goes on. To do that, we're going to need to create a variable.
+
 ==== Rules about naming variables
 
 === Storing text
