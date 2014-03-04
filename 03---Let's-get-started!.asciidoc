@@ -73,12 +73,98 @@ If you're confused, here's a video, showing me getting a terminal window and ope
 
 === IDLE
 
+By now, no matter what operating system you're on, you should have IDLE up. What is IDLE?
+
+IDLE is an application that comes with Python that makes it easier for you to write and run code. It has two parts: The interpreter, and the editor. Right now, you probably have the interpreter open (there should be a prompt that looks like this: ">>>"). To open the editor, go to File > New. A blank window should open.
+
+The interpreter is like a live wire. Python is sitting there, listening, waiting for you go give it a command. Once you give it a command, it will run it right away, then wait for the next command.
+
+The editor is used to create Python files, which allow you to write out a series of commands and save them. Once you've saved the Python file, you can run it,a nd the results will show up in the interpreter. 
+
 ==== Working in the Interpreter
+
+Let's play around in the interpreter for a bit. Try typing out the following:
+
+[source,python]
+----
+>>> print "Hello, world"
+----
+
+Hit enter. Python should have immediately printed out 'Hello, world' on the next line. Your interpreter should look something like this:
+
+[source,python]
+----
+>>> print "Hello, world"
+Hello, world
+>>>
+----
+
+Those greater than signs (>>>) mean that Python is ready for another command.
 
 ==== Working in a file
 
+Let's try saving some code into a file and running it. Open the text editor by going to File > New. In the window, type the following:
+
+[source,python]
+----
+print "Hello, world"
+----
+
+Save the file as 'hello.py', but don't close it. Instead, go to Run > Run Module. Then go back to see what happened in the interpreter. You should see the following:
+
+[source,python]
+----
+>>> ================================ RESTART ================================
+>>> 
+Hello, world
+>>> 
+----
+
+You can run this file again and again, which is a definite advantage over just typing stuff in the interpreter! Usually, I use the shell for when I want to mess around and test stuff, and Python files for the lines of code I want to save.
+
 === Working in the book!
+
+Every once in a while, you might notice a box that looks a bit like a shell, or that has some code in it. If the box looks like the one below, you can actually change and run that code!
+
+TODO: Add an editor
+
+TODO: Explain how it works
 
 ==== From the book to your computer
 
+TODO: Once I sort this out
+
+=== Try this!
+
+Try entering the following things into your interpreter:
+
+[source,python]
+----
+>>> 5 + 1
+>>> a = 5
+>>> print a
+----
+
+Look at what Python printed out. Why do you think it printed out what it did?
+
 === Notes for the adult
+
+In this lesson, we're going to get Python installed and get the student familiar with working with IDLE.
+
+Even if you're not a Python developer, you've probably never touched IDLE. Most developers I chat with at conferences aren't even aware that Python comes with an IDE! It's a great environment for beginners, though, because it comes with some great stuff out of the box:
+
+* There is no messing with paths. Run it and go! If the student is on Windows, this can be a huge boon to them.
+* It has tab completion! Getting tab completion is easy enough for experts to set up, but can be intimidating for beginners. 
+* It comes with color coding. Even if you're hard-core old school, color coding can really help a beginner understand syntax and gives them a feeling of confidence as the code.
+* It comes with Python. One install, and we're ready to go!
+* Drop down menus allow the student to explore what methods and attributes various objects have. Even the docs show up!
+
+You probably will want to take a while to get familiar with IDLE, since that's where I have the student work. Some of the stuff that might throw you:
+
+* Pressing the up arrow moves your cursor up rather than bringing up a previous command.
+* If your cursor is on a previously entered code, hitting enter will paste that code at your prompt.
+* If you can't seem to type, your cursor is probably just slightly off of where it needs to be. Hit enter or use the mouse to move the cursor to where it needs to be (which is right in front of the prompt).
+
+If students get stuck here, it's usually because they're not used to being precise. Remind them to type in everything *just* as I've shown, down to the punctuation marks. Another place they get stuck is that they try to enter the prompt in as code. 
+
+Let them play around with the shell and such, printing out various things, until they're comfortable enough to move on to the next lesson.
