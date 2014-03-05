@@ -4,6 +4,10 @@ Now that we have Python installed and IDLE up and running, let's get Python to d
 
 === Notes for the grown-up
 
+In this chapter, we're going to go over numbers, strings, and math in Python. This is usually a pretty easy chapter for students, but some do get caught up on precision. Every now and then, I get a student who can't understand why Python doesn't just give me 0.5 when I put `1 / 2` in the interpreter. 
+
+You might also run into rounding errors if the student is playing around. To see an example of this, try entering `0.9 + .2 + 5.1` into the interpreter. Most of the time, you'll get `6.199999999999999`. Most students aren't all that interested in talking about the peculiarities of floating point arithmatic, so I just say that Python is doing the math in a way that's faster. 
+
 === What you need for this chapter
 
 For this chapter, you'll need IDLE up and running. That's it! In future chapters, I might use this space to warn you that we're going to use a concept that we went over earlier. If you're feeling uncertain about anything I mention, do yourself a favor and go do a quick review of that topic before trying out that lesson or project.
