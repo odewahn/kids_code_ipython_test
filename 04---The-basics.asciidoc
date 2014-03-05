@@ -69,6 +69,7 @@ For the most part, Python uses operators that are pretty familiar to us. Sometim
 | Superscript (1^1^)
 | ^ (It's above the six)
 | 3 ^ 3
+|===
 
 There are more operators than these, but just knowing these will still allow you do to quite a bit. If you want to check out other operators, check out Table X.X in the Extra Materials section for a complete listing.
 
