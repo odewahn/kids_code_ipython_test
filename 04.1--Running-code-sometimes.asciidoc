@@ -1,0 +1,19 @@
+== Running code sometimes
+
+=== Notes for the grown-up
+
+=== What you need for this chapter
+
+=== Boolean: True and False
+
+=== Comparing values
+
+=== Using if statements
+
+==== What's a block?
+
+==== Adding in else
+
+==== elif: Doing many things!
+
+=== Try this!
