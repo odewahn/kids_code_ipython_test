@@ -163,7 +163,69 @@ Make sure that your quotes match! If you start with a single quote, you have to 
 
 ==== Printing text
 
+We've already been using the print statement, but we haven't really talked about what it does. `print` tells Python to show something on the screen. If you ask Python to print a string, Python will leave out the quotes.
+
+Try running the following commands. Look at the differences.
+
+TODO: Interactive
+
+[source,python]
+----
+>>> greeting = "Hello"
+>>> greeting
+>>> print greeting
+----
+
+Notice how when we just typed in `greeting`, Python printed out 'Hello' in quotes. But when we said `print greeting`, Python didn't add the quotes in.
+
+Also note that Python printed out each item on its own line. If you don't want Python to move to the next line, then add a comma to the end of your print statement. Try running the following code.
+
+TODO: Interactive
+
+[source,python]
+----
+print "Hello",
+print "world"
+----
+
+Both of the items were printed on the same line, weren't they?
+
+TODO: Maybe explain commas and joining?
+
 ==== Doing math?
+
+You can do math with strings! It's much more limited than doing math with numbers, but there are a few tricks you can do.
+
+You can use the additon operator (+) to join two strings together. Run the following code.
+
+TODO: Interactive
+
+[source,python]
+----
+name = "Coe"
+greeting = "Hi"
+print greeting + name
+----
+
+You can also store joined strings into a variable, like this:
+
+[source,python]
+----
+fruit = "apple"
+color = "red"
+my_fruit = color + fruit
+print my_fruit
+----
+
+Notice that Python didn't put any spaces between the two strings. That's because we didn't ask it to! In general, programming languages will only do _exactly_ what you ask them to. So, if you want a space, you need to put it in there yourself.
+
+[source,python]
+----
+fruit = "apple"
+color = "red"
+my_fruit = color + " " + fruit
+print my_fruit
+----
 
 === Comparing values
 
