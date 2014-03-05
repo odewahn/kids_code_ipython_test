@@ -106,9 +106,59 @@ TODO: Active console here
 
 Doing math is all well and good, but if we're going to make a useful program, we're going to have to store information so we can use it over and over, or so we can change a value as time goes on. To do that, we're going to need to create a variable.
 
+To create a variable, all we need to do is give it a name and a value to hold.
+
+[source, python]
+----
+>>> a = 5
+----
+
+If you type the above code into your intepreter, Python doesn't print anything out. That's because *this* time, you told Python what to do with the value! It stored it into the variable `a`. If you type `a` into the interpreter, Python should print out `5`. 
+
+You can think of variables like cups. Cups can hold lots of things. A cup might be empty, or you might fill it with water. You might even change your mind, empty the cup, and fill it with soda. Try the following:
+
+TODO: Interactive
+
+[source,python]
+----
+>>> a = 5
+>>> print a
+>>> a = 7
+>>> print a
+----
+
+When you saved the seven into the variable `a`, the value five was replaced by the seven. Python dumped it out, because you told Python that you no longer needed that value anymore.
+
 ==== Rules about naming variables
 
+There are some hard and fast rules about what you should name variables, and there's some guidelines you should keep in mind.
+
+If you do the following things, your program _will not run_:
+
+* Variable names can never start with a number.
+* They can only be made of letters, numbers, and underscores (_)
+* They can't be too long (how long they can be depends on your computer, but seriously, keep it to under 20 characters)
+
+Here are the guidelines you should follow. Python will still run, but following these will make your code easier for you (and others!) to work with:
+
+* Have descriptive variables! Don't use random words. Use words that describe what you'll be using that variable for.
+* Use all lower case letters (there are exceptions, but we'll get into that later)
+* If you use more than one word in your variable name, separate the words using underscores (ie. number_of_sandwiches)
+* Try not to use a lower case L or upper case O. In some fonts, they look like a one or zero.
+
 === Storing text
+
+Numbers are great, but you'll probably want to store some text at some point. In Python, we call text "strings." A string might be empty, have just one character, or it might contain all the text from your favorite book!
+
+To create a string, you need to enclose the text with either a set of single or double quotes, like this:
+
+[source, python]
+----
+>>> animal = "dog"
+>>> name = 'Gizmo'
+----
+
+Make sure that your quotes match! If you start with a single quote, you have to end with a single quote. The same goes for double quotes.
 
 ==== Printing text
 
