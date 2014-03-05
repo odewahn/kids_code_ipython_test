@@ -227,16 +227,28 @@ my_fruit = color + " " + fruit
 print my_fruit
 ----
 
-=== Comparing values
+You can also multiple a string! Try running this code:
 
-=== Let's play with turtles!
+[source,python]
+----
+print "=" * 50
+----
 
-==== How to get turtles started
-
-==== Moving the turtle
-
-==== Turning the turtle
-
-==== Stamping and pens
+A bunch of equals signs were printed out! When you multiply a string by an integer, Python will print that string out that many times.
 
 === Try this!
+
+In IDLE, open up a new file and enter the following:
+
+[source,python]
+----
+first_name = "Kylie"
+last_name = "Johnston"
+time = "morning"
+
+greeting = "Good" + " " + time + " " + first_name + " " + last_name
+
+print greeting
+----
+
+Can you change the code so Python says good afternoon to you? 
