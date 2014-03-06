@@ -10,7 +10,9 @@ include::02---Introduction-(for-parents).asciidoc[]
 
 include::03---Let's-get-started!.asciidoc[]
 
-include::04---The-basics.asciidoc[]
+include::04.0---The-basics.asciidoc[]
+
+include::04.1--Running-code-sometimes.asciidoc[]
 
 include::05---Loops.asciidoc[]
 
