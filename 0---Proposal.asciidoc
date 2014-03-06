@@ -17,3 +17,19 @@ This book does assume that the parent is a developer, and teaches the child Pyth
 While this book would work just fine as a print book, I believe that presenting it at a mixed-media package would work better for the current generation of students and teachers. A video might be used to reinforce a concept. An embedded coding environment would give a chance for students to play with code, without having to type it in by hand. It would also enable a parent to read one of the sections meant just for them without waiting for the student to reliquish the book.
   
 This would also enable us to give the student the assets required for the various projects without sending them to another website. They could click the link, download the files, and get started. 
+
+=== Audience
+
+This book is intended for middle-grade to young-adult students paired with someone who already knows how to code. Because the book leans on scaffolding and partnering, the age range can go as young as eight, but will work for high school age students. Interactive and downloadable code samples help younger coders, who may not have fast or accurate typing. Older students are encouraged to move straight into coding if they feel that they don't need the starter code.
+
+=== Market
+
+The market for teaching kids to code has been heating up in the past few years, with a spike in the past twelve months. Presidents to pop stars have started to push schools to include programming in more STEM programs. Parents have started to leap at every opportunity to get their kids started. When I run Young Coders, we have consistently had three times the number of students on our waitlist than we had in the classroom. Often, this was with almost no promotion and very little lead time.
+
+Schools are slow to catch up, though. Less than 10% of schools offer computer science. Of those schools, the vast majority only start offering it to upperclassmen. Until the 11th grade, most students have never seen a single line of code.
+
+=== Competiton
+
+There are several books on the market that attempt to teach kids how to code. This book, however, will be unique to the market.
+
+First, it will be the first interactive book available. The books currently available are available either in print or in non-interactive eBook format. Letting kids play with code while learning without having to go back and forth between a computer and a book / reader allows for a more organic learning experience.
