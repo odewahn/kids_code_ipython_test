@@ -35,3 +35,5 @@ There are several books on the market that attempt to teach kids how to code. Th
 First, it will be the first interactive book available. The books currently available are available either in print or in non-interactive eBook format. Letting kids play with code while learning without having to go back and forth between a computer and a book / reader allows for a more organic learning experience.
 
 Second, the other books on the market speak purely to the student. This book will not only teach the student Python, but will help teach the adult _how_ to teach. Places where students often get stuck will be highlighted, and quick answers to complicated questions will be offered. The expert will be coached on how much they should step in and when they should back off and let the student work.
+
+Finally, this will be the only book that will review websites and APIs. The books that are on the market today skip over this type of project, and yet it's one of the most requested projects I get from students (aside from making a Minecraft clone).
