@@ -6,3 +6,5 @@ This is stuff that I need to add somewhere.
 * Git and github?
 * Kivy and mobile
 * Contract b/w student and expert
+* Divide by zero in Try This - Basics
+* When we get to OOP, show off string methods.

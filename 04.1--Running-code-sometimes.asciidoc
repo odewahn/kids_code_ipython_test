@@ -1,12 +1,38 @@
 == Running code sometimes
 
+There are going to be times when you'll want to run some code _only_ if something is true. Maybe you'll want to print out a different message whether someone won or lost a game, or you might want to let a user choose an item from a menu.
+
+If we didn't have the ability to choose whether or not to run some code, our programs wouldn't be very flexible. They wouldn't be able to deal with bad input, and they might only be able to do one thing.
+
 === Notes for the grown-up
 
-=== What you need for this chapter
+=== What you need to know...
+
+You should have a good handle on text and numbers. If you don't know what a float, integer, or string is, go read the last chapter again, or watch the quick review video.
 
 === Boolean: True and False
 
-=== Comparing values
+In order to decide if you need to do something, you need to decide if a statement is true or not. If a statement is correct, then Python will return True. If it isn't, Python will return False.
+
+True and False are special values in Python called Boolean. Unlike strings and floats and integers, a Boolean can only be True or False. 
+
+Notice that True and False are capitalized. That's important! That's how you know that Python is talking about a Boolean value. Try running the following code:
+
+[source,python]
+----
+print True
+print true
+----
+
+The first line worked fine, but the second line got an error, didn't it? That's because True is a proper boolean, but Python doesn't know what to do with a true that's lower case.
+
+==== Comparing values
+
+We often get boolean values by comparing one or more items to each other. Sometimes, we want to see if two things are equal, while other times, we want to see if one is greater or smaller than the other.
+
+==== Testing multiple things
+
+==== Using not
 
 === Using if statements
 
