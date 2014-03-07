@@ -105,9 +105,41 @@ Here, the same expressions as the last exercise have been joined together using 
 
 === Using if statements
 
+Now that we know how to tell if a expression is true or not, let's learn how to run code only _if_ that expression is true! To do that, we'll create an `if` statement.
+
+Here's what a basic if statment looks like:
+
+[source,python]
+----
+if expression:
+    code
+    code
+    code
+----
+
+If the expression in the `if` statement is true, then the indented code beneath the `if` will run. Otherwise, Python will skip over that code. That indented code is called a *block*.
+
 ==== What's a block?
 
+In Python, you use blocks quite a bit. It's how we tell Python that a bit of code should run differently. We might want it only to run if something is true, or we might want it to run multiple times. 
+
+You create a block by putting four spaces before your code. If you're working in IDLE, Python should put that space there for you. If you ever happen to work in an editor that doesn't put that space in there for you, you'll have to do it yourself.
+
+Let's play around with an `if` statement. First, run the code and note what happens. Then, try to change the code so that the code under the `if` statment runs.
+
+[source,python]
+----
+name = "Jay"
+if name == "Kareem":
+    print "Hey, buddy!"
+print "How are you today?"
+----
+
+There are a few ways you could make it so "Hey, buddy!" prints out. You could change `name` to "Kareem", or you could change the `if` expression to `name == "Jay"`.
+
 ==== Adding in else
+
+Sometimes, you want to run something code if something is true, and run some _other_ code if that thing is false. In that case, we want to add an `else` to our `if` statment.
 
 ==== elif: Doing many things!
 

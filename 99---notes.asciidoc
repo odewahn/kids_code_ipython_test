@@ -8,3 +8,5 @@ This is stuff that I need to add somewhere.
 * Contract b/w student and expert
 * Divide by zero in Try This - Basics
 * When we get to OOP, show off string methods.
+* Inline quiz?
+* Spoilers?

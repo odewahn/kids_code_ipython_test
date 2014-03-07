@@ -159,13 +159,13 @@ Look at what Python printed out. Why do you think it printed out what it did?
 
 In this lesson, we're going to get Python installed and get the student familiar with working with IDLE.
 
-Even if you're not a Python developer, you've probably never touched IDLE. Most developers I chat with at conferences aren't even aware that Python comes with an IDE! It's a great environment for beginners, though, because it comes with some great stuff out of the box:
+Even if you're a Python developer, you've probably never touched IDLE. Most developers I chat with at conferences aren't even aware that Python comes with an IDE! It's a great environment for beginners, though, because it comes with some great stuff out of the box:
 
 * There is no messing with paths. Run it and go! If the student is on Windows, this can be a huge boon to them.
 * It has tab completion! Getting tab completion is easy enough for experts to set up, but can be intimidating for beginners. 
-* It comes with color coding. Even if you're hard-core old school, color coding can really help a beginner understand syntax and gives them a feeling of confidence as the code.
+* It comes with color coding. I know some old-school programmers hate it, but color coding can really help a beginner understand syntax and gives them a feeling of confidence as the code.
 * It comes with Python. One install, and we're ready to go!
-* Drop down menus allow the student to explore what methods and attributes various objects have. Even the docs show up!
+* Drop down menus allow the student to explore what methods and attributes various objects have. Even the docs show up as you mouse over the various options!
 
 You probably will want to take a while to get familiar with IDLE, since that's where I have the student work. Some of the stuff that might throw you:
 
@@ -173,6 +173,6 @@ You probably will want to take a while to get familiar with IDLE, since that's w
 * If your cursor is on a previously entered code, hitting enter will paste that code at your prompt.
 * If you can't seem to type, your cursor is probably just slightly off of where it needs to be. Hit enter or use the mouse to move the cursor to where it needs to be (which is right in front of the prompt).
 
-If students get stuck here, it's usually because they're not used to being precise. Remind them to type in everything *just* as I've shown, down to the punctuation marks. Another place they get stuck is that they try to enter the prompt in as code. 
+If students get stuck here, it's usually because they're not used to being precise. Remind them to type in everything *just* as I've shown, down to the punctuation marks. Another place they get stuck is that they try to enter the prompt in as code, so watch out for that.
 
 Let them play around with the shell and such, printing out various things, until they're comfortable enough to move on to the next lesson.
