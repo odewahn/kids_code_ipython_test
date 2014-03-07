@@ -30,6 +30,42 @@ The first line worked fine, but the second line got an error, didn't it? That's 
 
 We often get boolean values by comparing one or more items to each other. Sometimes, we want to see if two things are equal, while other times, we want to see if one is greater or smaller than the other.
 
+To test if something is equal to another thing, we use two equals signs (==) between the two values. Try the following statements out, and see what Python spits out:
+
+[source,python]
+----
+>>> 2 == 2
+>>> 2 == 3
+>>> "Ahmed" == "Ahmed"
+>>> "Dominique" == "dominique"
+----
+
+With each statement, Python returned either True or False. Notice that Python was super picky about things being equal. The two strings "Dominique" and "dominique" were _close_, but they weren't exactly alike. Python will only return true if the two items are _exactly the same_.
+
+You can also test for inequality, or two things _not_ being alike. To do this, you use an exclamation point and an equal sign (!=). Try the following statements:
+
+[source,python]
+----
+>>> 2 != 2
+>>> 2 != 3
+>>> "Ahmed" != "Ahmed"
+>>> "Dominique" != "dominique"
+----
+
+Compare that to the last bit of code. The results were the exact opposite! Once again, Python is super picky. If two things are even slightly different, then Python will return True when you ask it about inequality. Otherwise, it will return False.
+
+You can also test to see if something is greater than or less than something else. To do this, you use the greater than (>) or less than (<) sign. Try out the following statements:
+
+[source,python]
+----
+>>> 2 > 3
+>>> 2 < 3
+>>> 2 > 2
+>>> 2 < 2
+----
+
+
+
 ==== Testing multiple things
 
 ==== Using not
