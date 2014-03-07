@@ -64,11 +64,44 @@ You can also test to see if something is greater than or less than something els
 >>> 2 < 2
 ----
 
+We can also check to see if an item is greater/less than _or equal to_ another item. In math class, you might have used a special symbol ([\>=\]) to do equations where you were worried about something being greater than or equal to another item (or vice versa). You don't have that symbol on your keyboard, though, so instead, we just use the greater than / less than sign paired with an equal sign:
 
+
+[source,python]
+----
+>>> 2 >= 3
+>>> 2 <= 3
+>>> 2 >= 2
+>>> 2 <= 2
+----
 
 ==== Testing multiple things
 
-==== Using not
+Sometimes, you want to see if more than one thing is true. This is when using the `and` and `or` operators come in handy.
+
+Using `and` is pretty easy. You can use `and` to string together several expressions, and if all of them are true, Python will return True. If even one is false, though, Python will return False.
+
+Run the following code, and pay attention to what you're asking Python. Which expression is True, and which is False?
+
+[source,python]
+----
+1 == 1 and 2 == 2
+2 > 3 and 3 < 4
+4 !=5 and 6 != 6
+5 > 6 and 6 > 7
+----
+
+The `or` operator can be used to string together a series of expressions where you only care if _one_ of the expressions is true. So, even if you've strung together 100 expressions (please don't do that), if just one out of the 99 is true, Python will return True.
+
+Here, the same expressions as the last exercise have been joined together using `or`. Check out what Python returns this time.
+
+[source,python]
+----
+1 == 1 and 2 == 2
+2 > 3 and 3 < 4
+4 !=5 and 6 != 6
+5 > 6 or 6 > 7
+----
 
 === Using if statements
 
