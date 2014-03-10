@@ -139,8 +139,25 @@ There are a few ways you could make it so "Hey, buddy!" prints out. You could ch
 
 ==== Adding in else
 
-Sometimes, you want to run something code if something is true, and run some _other_ code if that thing is false. In that case, we want to add an `else` to our `if` statment.
+Sometimes, you want to run some code if something is true, and run some _other_ code if that thing is false. In that case, we want to add an `else` to our `if` statment.
+
+Here is what a basic `if` statment with an `else` clause looks like:
+
+[source,python]
+----
+donuts = 3
+if donuts < 5:
+    print "That's a bunch of donuts"
+else:
+    print "You're running low on donuts."
+----
+
+Run the code and note what happens. We have five donuts, so `donuts > 3` is false. Therefore, the code under the `else` clause is run. Python prints out "You're running low on donuts."
+
+NOTE: Note that the else clause has a block of code, too! Each clause for an `if` statement needs its own block to run!
 
 ==== elif: Doing many things!
+
+
 
 === Try this!
