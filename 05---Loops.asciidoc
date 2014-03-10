@@ -1,5 +1,7 @@
 == Loops
 
+So far, we've learned how to store information, make Python do what we want, and have Python run certain bits of code only if something is true. Now, it's time to have Python repeat code!
+
 === What you need to know...
 
 === Notes for the grown-up
