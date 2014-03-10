@@ -6,6 +6,16 @@ If we didn't have the ability to choose whether or not to run some code, our pro
 
 === Notes for the grown-up
 
+In this chapter, we're going to introduce `if` statements as well as the idea of Boolean statements. 
+
+Honestly, the hardest part of this chapter is often the indentation. Students either forget to indent code to make it a block, or they don't unindent a line so that they can start an elif or else clause. Be patient and sympathetic, and emphasize that Python really needs them to be precise. 
+
+Precision is hard for many students because, so far, they haven't had to be very precise! They might make a mistake on a spelling test, but that doesn't cause them to fail. Being precise is a habit that they'll soon pick up, so don't worry if you feel like you have to remind them to indent or unindent over and over.
+
+The other thing many students do is use one equal sign (=) rather than two (==) when checking for equality. Many students, when they make this mistake, get screen blindness and _just can't see_ what's wrong. I've found outright telling them rather than quizzing them gets them moving along faster. So, just say "You're missing an equals sign here" rather than "What do you think might be wrong with this line?"
+
+There are times to use the Socratic method, and there are times to remember that Socrates was kind of a jerk.
+
 === What you need to know...
 
 You should have a good handle on text and numbers. If you don't know what a float, integer, or string is, go read the last chapter again, or watch the quick review video.
