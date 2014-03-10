@@ -81,6 +81,14 @@ Sometimes, you want to see if more than one thing is true. This is when using th
 
 Using `and` is pretty easy. You can use `and` to string together several expressions, and if all of them are true, Python will return True. If even one is false, though, Python will return False.
 
+We do this in the real world, too. Let's say you wanted to buy a rabbit from a pet store. If you go to the shop by me, they check for a few things:
+
+* You have to be at least eighteen years old
+* You have to have enough money to buy the rabbit
+* You have to have a home for the rabbit at your house (no releasing these bunnies to the woods!)
+
+If any of these things aren't true, you don't get to buy a rabbit. Sorry!
+
 Run the following code, and pay attention to what you're asking Python. Which expression is True, and which is False?
 
 [source,python]
@@ -93,7 +101,15 @@ Run the following code, and pay attention to what you're asking Python. Which ex
 
 The `or` operator can be used to string together a series of expressions where you only care if _one_ of the expressions is true. So, even if you've strung together 100 expressions (please don't do that), if just one out of the 99 is true, Python will return True.
 
-Here, the same expressions as the last exercise have been joined together using `or`. Check out what Python returns this time.
+Again, we do this in the real world. Let's say I'm back at the pet shop, but I'm buying dog food. This time, they only check for three things:
+
+* Can I pay with cash?
+* Can I pay with a credit or debit card?
+* Can I pay with a check?
+
+As long as one those things is true, I can buy my dog food. I might have all of those things, or I might have only one. Either way, I'm good to go.
+
+In this example, the same expressions as the last exercise have been joined together using `or`. Check out what Python returns this time.
 
 [source,python]
 ----
@@ -158,6 +174,47 @@ NOTE: Note that the else clause has a block of code, too! Each clause for an `if
 
 ==== elif: Doing many things!
 
+So far, we can do some code if something is true and something else if it isn't true. What if we want to check for many things? In that case, we can add `elif` clauses to our `if` statment!
 
+When you write an `if` statement with `elif` clauses, Python will run through each Boolean expression, one by one. If one is true, Python will run that code block and skip the rest of the `if` statement. If none of the statements are true, Python will run the code under the `else` clause (if there is one).
+
+Here's an example of an `if` statment with `elif` clauses. Run it, and note what's printed out.
+
+[source,python]
+----
+player_score = 150
+worst_score = 50
+best_score = 200
+
+if player_score > best_score:
+	print "We have a new high score!"
+	best_score = player_score
+elif player_score > worst_score:
+	print "You did okay..."
+else:
+	print "Oh man. We have a new worst score."
+	worst_score = player_score
+----
+
+Notice that Python printed out "You did okay..." That's because the player didn't beat the high score, but also wasn't lower than the worst score.
+
+Try changing the code so that the player beats the best score, and then try changing the player score so it's lower than the worst score. What's printed out each time?
 
 === Try this!
+
+In IDLE, open up a new file and enter this code:
+
+[source,python]
+----
+name = "Angel"
+print "That name is", len(name), "letters long."
+
+if len(name) > 10:
+	print "That's a long name!"
+elif len(name) > 5:
+	print "That's an average name."
+else:
+	print "That's a short name!"
+----
+
+You don't know what `len()` does, but can you take a guess? Try switching your name for 'Angel'. Can you get Python to print out each of the responses?
