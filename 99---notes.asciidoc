@@ -10,3 +10,4 @@ This is stuff that I need to add somewhere.
 * When we get to OOP, show off string methods.
 * Inline quiz?
 * Spoilers?
+* Add section to each: Ask your expert about...
