@@ -1,3 +1,5 @@
+= Import Future: Projects and lessons for kids and grown-ups to do together
+
 == Introduction (for kids)
 
 TODO: Pithy intro

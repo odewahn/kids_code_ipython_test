@@ -1,6 +1,6 @@
-= Import future: Practical projects for parents and children to do together
+= Proposal
 
-== Proposal
+== Import future: Practical projects for parents and children to do together
 
 === Summary
 
@@ -17,6 +17,9 @@ This book does assume that the parent is a developer, and teaches the child Pyth
 While this book would work just fine as a print book, I believe that presenting it at a mixed-media package would work better for the current generation of students and teachers. A video might be used to reinforce a concept. An embedded coding environment would give a chance for students to play with code, without having to type it in by hand. It would also enable a parent to read one of the sections meant just for them without waiting for the student to reliquish the book.
   
 This would also enable us to give the student the assets required for the various projects without sending them to another website. They could click the link, download the files, and get started. 
+
+I also suggest having a quick 'review' video for each chapter. This would allow the student to quickly review any information in a chapter should they need it.
+In programming, concepts build upon each other, so the ability to quickly go over previously covered concepts will help students keep moving through the exercises. It should be noted that the author is no stranger to explaining programming concepts visually and verbally, having done so at conferences and for a video series on Python.
 
 === Audience
 

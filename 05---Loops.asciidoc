@@ -4,11 +4,21 @@ So far, we've learned how to store information, make Python do what we want, and
 
 === What you need to know...
 
+You should have a good handle on Boolean expressions! If you're not sure about them, go back read over that section, or check out the review video.
+
 === Notes for the grown-up
 
 === Why use a loop?
 
+If we didn't use loops to repeat code, then our code would be super long. If we wanted to do something five times, we'd have to have the same code, repeated five times. Maybe we would want to do something until something happened. How would we do that without loops? We would have to guess when something might happen, and repeat the code that many times!
+
 ==== Types of loops
+
+There are two kinds of loops: conditional loops and counting loops. 
+
+*Conditional loops* run until something happens. Maybe the user chooses to quit the program, or maybe the player slays the dragon. Maybe the dragon slays the player! Whatever the event, once it happens, the loop ends, and the program moves on.
+
+*Counting loops* run a certain number of times.
 
 === Counting loops (for)
 
