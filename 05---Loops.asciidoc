@@ -18,13 +18,73 @@ There are two kinds of loops: conditional loops and counting loops.
 
 *Conditional loops* run until something happens. Maybe the user chooses to quit the program, or maybe the player slays the dragon. Maybe the dragon slays the player! Whatever the event, once it happens, the loop ends, and the program moves on.
 
-*Counting loops* run a certain number of times.
+*Counting loops* run a certain number of times. You might want to run a block of code five times (or a hundred times!). For example, you may want to give a player a certain number of tries to guess a number. After their guesses are used up, you can tell them that they lost.
 
 === Counting loops (for)
 
+Let's start with counting loops. In Python, we call these `for` loops. They look like this:
+
+[source,python]
+----
+for num in range(nums):
+   code
+   code
+   code
+----
+
+`nums` is the number of times you want the loop to run. So, if you want to run the code block five times, you would say `range(5)`. 
+
+`num` is the *loop variable*. Every time the loop runs, it's going to store a new value. Let's look at the following code. Run it and note what is printed out.
+
+[source,python]
+----
+for num in range(10):
+    print num
+----
+
+Python printed out the numbers zero through nine! Let's talk a bit more about what `range()` does.
+
 ==== Range
 
-==== With lists
+`range()` has one job: It has to give you a list of numbers. Try out the following code:
+
+[source,python]
+----
+print range(5)
+----
+
+If you give `range()` just one number, then Python will give you a list of numbers, from zero to _one less_ than that number. Change the code above so that you get a list of numbers from zero to one hundred!
+
+What if you don't want to start at zero? Easy! You can give `range()` two numbers. The first is where Python starts, and the second number is where Python will stop. Note, though, that Python still stops _one less_ than that number. Try this code:
+
+[source,python]
+----
+print range(1, 10)
+----
+
+You should have gotten a list of numbers from one to nine. Can you change the numbers so that they go from one to ten? What happens if you reverse the numbers?
+
+What if you only want odd numbers or even numbers, or if you want to count by fives? You can give `range()` three numbers, and Python will start at the first number and "step" up until it reaches the max number. Take a look at this code:
+
+[source,python]
+----
+print range(1, 50, 2)
+----
+
+Python printed out a list of numbers, starting at one and stopping just short of 50. It only printed the odd numbers, though. How would you change this code to print out the even numbers? What about counting by fives?
+
+You can also change the step number to a negative number. What happens when you run this?
+
+[source,python]
+----
+print range(10, 0, -1)
+----
+
+You get a list of numbers, but this time starting at ten and going down to one! Can you change the code so that you get only even numbers?
+
+==== Range and for loops
+
+
 
 ==== Skipping to the next item
 
@@ -34,6 +94,6 @@ There are two kinds of loops: conditional loops and counting loops.
 
 ==== Infinite loops!
 
-==== Skipping to the next iteration
+==== Skipping a turn
 
 ==== Getting out of a loop early
