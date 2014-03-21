@@ -8,6 +8,14 @@ You should have a good handle on Boolean expressions! If you're not sure about t
 
 === Notes for the grown-up
 
+In this lesson, we're going to be going over loops. Once again, you might have to spend some extra time emphasizing the importance of code blocks and indentation in Python. You also might want to emphasize when you use one type of loop over another type of loop.
+
+For loops often present a special kind of challenge for many students. It might take a few tries for them to understand what a loop variable is. You might notice that were not teaching lists in this lesson. Going to start off by simply using range. If a student seems rather precocious, you might want to give them a brief overview of what a list is. If you need some help with that, check out the review video in the lists chapter.
+
+Be careful not to overwhelm the student. If they're just getting used to the idea of loops then go ahead and leave lists for later.
+
+As for range, younger students may need help with understanding steps when it comes to playing with range. If they seem confused don't be shy about moving on. I can count on one hand the number of times I've had to give range more than two parameters. You and you and your and you and you and you and you and and you and you and you and you and you and you and I know that your's is here in a you as you and you and you know my son and in a you know what is sleeping one is a you you is was Michael Cooley high as you as Lori will is will
+
 === Why use a loop?
 
 If we didn't use loops to repeat code, then our code would be super long. If we wanted to do something five times, we'd have to have the same code, repeated five times. Maybe we would want to do something until something happened. How would we do that without loops? We would have to guess when something might happen, and repeat the code that many times!
