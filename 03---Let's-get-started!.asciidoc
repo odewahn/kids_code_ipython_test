@@ -81,7 +81,7 @@ In the terminal window, type the word 'idle'. An applicaiton called IDLE should 
 
 If you're confused, here's a video, showing me getting a terminal window and opening up IDLE.
 
-video::https://www.youtube.com/watch?v=4BELLHgnFzM[]
+video::http://www.youtube.com/embed/4BELLHgnFzM[height='300', width='500', poster='generic_video.png']
 
 === IDLE
 
