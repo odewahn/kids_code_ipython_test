@@ -14,7 +14,7 @@ For loops often present a special kind of challenge for many students. It might 
 
 Be careful not to overwhelm the student. If they're just getting used to the idea of loops then go ahead and leave lists for later.
 
-As for range, younger students may need help with understanding steps when it comes to playing with range. If they seem confused don't be shy about moving on. I can count on one hand the number of times I've had to give range more than two parameters. You and you and your and you and you and you and you and and you and you and you and you and you and you and I know that your's is here in a you as you and you and you know my son and in a you know what is sleeping one is a you you is was Michael Cooley high as you as Lori will is will
+As for range, younger students may need help with understanding steps when it comes to playing with range. If they seem confused don't be shy about moving on. I can count on one hand the number of times I've had to give range more than two parameters. 
 
 === Why use a loop?
 
@@ -92,16 +92,180 @@ You get a list of numbers, but this time starting at ten and going down to one! 
 
 ==== Range and for loops
 
+Now that you have a handle on what `range()` does, let's combine it with a `for` loop. Before you run the following code, guess what Python will print out.
 
+[source,python]
+----
+for i in range(5):
+    print "Hello!"
+----
+
+Python printed out five hellos, didn't it? What do you think this code will do?
+
+[source,python]
+----
+for i in range(10):
+    print "@" * i
+----
+
+You should have gotten a triangle made out of at symbols on your screen.  
+
+Each time the code in the code block is run, that's called an *iteration*. It's important to know that word, because we're going to be using it quite a bit. So, if your `for` loop runs five times, it has five *iterations*. 
 
 ==== Skipping to the next item
 
+`for` loops are great, but sometimes you want to skip to the next iteration. To do that, we use `continue`. 
+
+Here's some code where we use `continue`. We want to print out the numbers zero through twenty, but if we can divide the number by three, then we want to print "Skip!"
+
+[source,python]
+----
+for i in range(21):
+    if i / 3 == i / 3.0:
+        print "Skip!"
+        continue
+    print i
+----
+
+Let's talk about what this code is doing line by line.
+
+*`for i in range(21)`*: This part should look familiar. We're going to iterate through the numbers zero through twenty.
+
+*`if i / 3 == 1 / 3.0`*: Remember our issue with dividing whole numbers? We can use that to our advantage here! Let's say `i` is five. If we enter `5 / 3` into our intepreter, we get `1`. If we enter `5 / 3.0`, though, we get `1.6666667`. So five isn't divisible by three! 
+
+*`print "Skip!"`*: We print skip if our current number is divisible by three...
+
+*`continue`*: Once Python sees this, it knows that you don't want it to run the rest of the code in the for loop. It goes back to the beginning, rather than running the rest of the code in the block.
+
+*`print i`*: If the number isn't divisible by three, then we print the number out.
+
+`continue` is extremely useful for blocks of code that are long, or where there may be many instances where you want to continue to the next iteration.
+
 ==== Ending the loop early
+
+Sometimes, you want to end a loop early. For example, you may be searching for a certain item. Once you find it, you don't want to keep going through every other item in the list. Your job is done! To do this, you use `break`. 
+
+This time, let's use `break` to quit our for loop once we find a number that is divisible by both five and seven.
+
+[source,python]
+----
+for i in range(1, 1000):
+    if i / 5 == i / 5.0 and i / 7 == i / 7.0:
+        print "Found it! It was:", i
+        break
+    print i, "doesn't work..."
+----
+
+If you run the code, you'll see that the loop stops at 35. Once we found our number, we didn't need to keep going, so we used `break` to stop the `for` loop early. This can be extremely useful if you have a bunch of reasons why you might want to break out of a loop.
 
 === Conditional loops (while)
 
+`for` loops are great for when you want to run a block of code a certain number of times. But what if you don't know how many times you want to run something? What if you want to run some code until something happens? That's when you use a `while` loop.
+
+A `while` loop looks like this:
+
+[source,python]
+----
+while expression:
+    code
+    code
+    code
+----
+
+While an expression is true, the code in the block will run (Just a reminder: an expression is something like `num == 5` or `books > 6`). Once that expression is false, Python will stop running that block of code.
+
+Let's check out a `while` loop in action. This time, we're going to run a block of code until `num` is greater than five. 
+
+[source,python]
+----
+num = 0
+while num <= 5:
+   print "Num is", num
+   num = num + 1
+----
+
+When you run the code, Python prints out six lines of text, starting with "Num is 0" and ending with "Num is 5". What's going on here?
+
+On the first iteration, `num` is zero. Zero is less than five, so the block of code is run. What happens during the last iteration? Well, `num` is five, so Python prints that out, then adds one to `num`. `num` is now six, which is *not* less than or equal to five, so Python doesn't run the code block.
+
 ==== Infinite loops!
+
+If you're going to use a `while` loop, you need to make sure that you can actually get out of them! It's very easy to create something called an *infinite loop* if you're not paying attention. An infinite loop is one that will keep going, on and on, until you force the program to quit. They're not a good thing!
+
+Let's take a look at what an infinite loop might look like. 
+
+[source,python]
+----
+num = 0
+while num <= 5:
+   print "Num is", num
+----
+
+That looks almost like the code in the last section, but we forgot to add one to `num`. If we run this code, this is what we'll see:
+
+[source,python]
+----
+Num is 0
+Num is 0
+Num is 0
+Num is 0
+Num is 0
+Num is 0
+...
+-----
+
+"Num is 0" will keep on printing until you force Python to stop. In IDLE, you do this by pressing control + C (this is the case for both Windows and Macs).
 
 ==== Skipping a turn
 
+Just like `for` loops, you can use `continue` to move to the next iteration of your `while` loop. Here, we have a `while` loop that will run while `num` is less than 20. If `num` equals eleven, though, we want to print out "My favorite number!"
+
+[source,python]
+----
+num = 0
+while num < 20:
+    num = num + 1
+    if num == 11:
+         print "My favorite!"
+         continue
+    print num
+----
+
+Note that eleven is never printed out. That's because we skip `print num` and move on to the next iteration of the `while` loop.
+
 ==== Getting out of a loop early
+
+Again, just like `for` loops, we can get out of a loop early by using `break`. Let's change the code from the last section so that we break out of the loop when we get to my favorite number.
+
+[source,python]
+----
+num = 0
+while num < 20:
+    num = num + 1
+    if num == 11:
+         print "My favorite!"
+         break
+    print num
+----
+
+This time, rather than printing out the numbers twelve through nineteen, Python stops once we hit eleven. Just like `for` loops, `break` is useful if there's many different reasons you might want to break out of a `while` loop. 
+
+==== Try this!
+
+In IDLE, open up a new file and enter this code:
+
+[source,python]
+----
+num = 1
+while num <= 100:
+    print "Num is", num
+    if num / 2 == num / 2.0:
+        num = num + 2
+        continue
+    if num / 5 == num / 5.0:
+        num = num - 1
+        continue
+    num = num + 1
+----
+
+When you run the code, watch what numbers are skipped. What happened when when `num` was ten? How about fifteen? What was added during each of those iterations?
