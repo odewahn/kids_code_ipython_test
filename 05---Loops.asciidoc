@@ -16,6 +16,8 @@ Be careful not to overwhelm the student. If they're just getting used to the ide
 
 As for range, younger students may need help with understanding steps when it comes to playing with range. If they seem confused don't be shy about moving on. I can count on one hand the number of times I've had to give range more than two parameters. 
 
+Also, we're going to be creating an infinite loop later in the chapter. You should probably make sure you know how to exit out of one of those! On most systems, Control + C will force Python to exit the loop. If that doesn't work, try Control + D.
+
 === Why use a loop?
 
 If we didn't use loops to repeat code, then our code would be super long. If we wanted to do something five times, we'd have to have the same code, repeated five times. Maybe we would want to do something until something happened. How would we do that without loops? We would have to guess when something might happen, and repeat the code that many times!
