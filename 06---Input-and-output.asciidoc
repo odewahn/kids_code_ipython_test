@@ -58,7 +58,87 @@ NOTE: Yes, I know that `\n` looks like two characters to us. To Python, though, 
 
 ==== Inserting values
 
+So far, when we've wanted to combine several values and a print statement, we've used commas or plus signs.
+
+[source,python]
+----
+>>> print "Hello", 5
+Hello 5
+>>> print "Hello", "person"
+Hello person
+----
+
+That's okay if we're printing out something simple, but what if we wanted to print out something more complicated? Let's say we wanted to print out someone's name, age, and grade? We might do something like this:
+
+[source,python]
+----
+name = "Kendra"
+grade = 6
+age = 11
+
+print "Hello," name, ". I see you're in grade", 6, "and that you're", age, "years old."
+----
+
+That's 'okay', but Python has a way to insert values into strings that's much easier to use. We can use curly brackets ({}) to tell Python where we want to insert information into a string.
+
+NOTE: Curly brackets are generally at the end of the first row of letters on your keyboard, above the square brackets. 
+
+There's a few ways to use the curly brackets. The easiest is to just put them in the string where you want your value inserted, then use `format` to tell Python what values you want inserted.
+
+[source,python]
+----
+>>> my_string = "Hello, {}, how are you?"
+>>> name = "Ahmed"
+>>> print my_string.format(name)
+Hello, Ahmed, how are you?
+----
+
+That's much easier to read than a string that's full of commas or plus signs, right? Even better, you can reuse it! We call strings with curly brackets in them *templates*. Here, we use a template over and over again to say hello to a bunch of people.
+
+[source,python]
+----
+>>> my_template = "It is {} in the morning."
+>>> for time in range(1, 3:
+        print my_template.format(name)
+It is 1 in the morning.
+It is 2 in the morning.
+It is 3 in the morning.
+----
+
+This is great if you only have one thing to insert. What if you have a really complicated string? You might start getting confused. That's when it's useful to use a keyword with your template. You can put some text in the curly braces, then use that when you format to string to say exactly what goes where.
+
+For example, let's look at our earlier string. We want to insert someone's name, age, and grade level into a string. This is a great place to use keywords!
+
+[source,python]
+----
+>>> my_name = "Alice"
+>>> my_grade = 6
+>>> my_age = 11
+>>> my_template = "Hello, {name}! I see you're in grade {grade}, and you're {age} years old!"
+>>> print my_template.format(name=my_name, grade=my_grade, age=my_age)
+Hello, Alice! I see you're in grade 6, and you're 11 years old!
+----
+
+This time, we used a keyword in each curly bracket, which makes it much easier to see which value is going where. The value in my_name is going to fill the `name` slot, `my_grade` is going into the `grade` slot, and `my_age` is going to go into the `age` slot.
+
+
 ==== Not moving to a new line
+
+Another trick you can do with the print statement is adding a comma to the end of the line. This tells Python *not* to move to the next line.
+
+[source,python]
+----
+print "Hello",
+print "World"
+----
+
+Why would you want to do this? Sometimes, you need to print out one thing, then do a bunch of calculations and print out something else. Maybe you need to get some information from a website (we'll do that later!) or maybe you just need to do some math. I often use this feature if I'm running through a `for` or `while` loop, and want everything to print out onto one line.
+
+[source,python]
+----
+>>> for i in range(1, 11):
+        print i,
+1 2 3 4 5 6 7 8 9 10
 
 === Getting information
 
