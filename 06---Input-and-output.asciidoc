@@ -10,6 +10,10 @@ For this chapter, you should be familiar with the basic data types (integers, st
 
 === Notes to the mentor
 
+Okay, things are going to start taking off in this chapter. Something about accepting input tends to make programs really come to life. Before now, the code we've written hasn't been very interactive. Now that we can take in input from a user, we can set up our programs to be more of a framework that can be used over and over again.
+
+We're also going to go over formating text, which is less important in the long run, but in the short run, it can make their programs look nicer. Don't underestimate the pride a student might take in having really nicely formatted screens. In fact, if they decide to take their time, making sure that their data looks nice, let them! We need more developers that care about the front-end!
+
 === Showing information
 
 Making what your computer prints out look nice isn't just about having a pretty program. Organized output is easier to use, and makes it less likely that your user will make mistakes. Think about how hard it would be to use a website where all the information was randomly thrown together. Even a simple page like search results is easier to use when the results are grouped together in a sensible way.
@@ -142,12 +146,56 @@ Why would you want to do this? Sometimes, you need to print out one thing, then 
 
 === Getting information
 
+Now that we know all kinds of ways to format information when it's printed to the screen, let's talk about how to get information from the user. 
+
+The most basic way to get information from whoever is using your program is by using `input()` and `raw_input()`. Let's start with `input()`.
+
 ==== Getting numbers
 
+We can use `input()` to get numbers from our user. Try running this code, entering your age when Python seems to be waiting for something to happen.
+
+[source,python]
+----
+print "How old are you?"
+age = input()
+print "You are", age, "years old!"
+----
+
+What happened? Python sat there and waited for you to type something, didn't it? Once you typed in your age, Python then printed out how old you are. 
+
+If Python gave you an error, then you probaby entered something that wasn't a number. That's because `input()` can only accept numbers. But what if you wanted to get text? That's when you use `raw_input()`.
+
 ==== Getting text
+
+If you use `raw_input()`, then whatever the user enters will be saved in a string. This is a *much* safer option, because it's harder to break. In general, I only use `input()` when I know that I'll be the only person using the program. I trust me! I don't trust anyone else.
+
+Let's look at `raw_input` in action.
+
+[source,python]
+----
+print "What is your name?"
+name = raw_input()
+print type(name)
+print "Give me a number:"
+num = raw_input()
+print type(num)
+----
+
+Note that even when you gave `raw_input()` a number, Python saved it as a string. Let's use `raw_input()` to get the users age.
+
+[source,python]
+----
+print "How old are you?"
+age = raw_input()
+print "You are", age, "years old!"
+----
+
+It worked just like before, but this time, if you enter 'eleven' instead of '11', you won't get an error!
 
 ==== Converting text to numbers
 
 ==== Clean up that text!
+
+==== Add a prompt
 
 ==== Try this!
