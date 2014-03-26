@@ -60,6 +60,27 @@ Because we had a `\n` character in our string, Python knew to move to a new line
 
 NOTE: Yes, I know that `\n` looks like two characters to us. To Python, though, it's just one character. It's easier to type out `\n` than it is to insert a character that's not on our keyboard.
 
+==== Not moving to a new line
+
+Another trick you can do with the print statement is adding a comma to the end of the line. This tells Python *not* to move to the next line.
+
+[source,python]
+----
+print "Hello",
+print "World"
+----
+
+Why would you want to do this? Sometimes, you need to print out one thing, then do a bunch of calculations and print out something else. Maybe you need to get some information from a website (we'll do that later!) or maybe you just need to do some math. I often use this feature if I'm running through a `for` or `while` loop, and want everything to print out onto one line.
+
+[source,python]
+----
+>>> for i in range(1, 11):
+        print i,
+1 2 3 4 5 6 7 8 9 10
+----
+
+Had we not added that comma, each number would have been printed on its own line.
+
 ==== Inserting values
 
 So far, when we've wanted to combine several values and a print statement, we've used commas or plus signs.
@@ -125,25 +146,6 @@ Hello, Alice! I see you're in grade 6, and you're 11 years old!
 
 This time, we used a keyword in each curly bracket, which makes it much easier to see which value is going where. The value in my_name is going to fill the `name` slot, `my_grade` is going into the `grade` slot, and `my_age` is going to go into the `age` slot.
 
-
-==== Not moving to a new line
-
-Another trick you can do with the print statement is adding a comma to the end of the line. This tells Python *not* to move to the next line.
-
-[source,python]
-----
-print "Hello",
-print "World"
-----
-
-Why would you want to do this? Sometimes, you need to print out one thing, then do a bunch of calculations and print out something else. Maybe you need to get some information from a website (we'll do that later!) or maybe you just need to do some math. I often use this feature if I'm running through a `for` or `while` loop, and want everything to print out onto one line.
-
-[source,python]
-----
->>> for i in range(1, 11):
-        print i,
-1 2 3 4 5 6 7 8 9 10
-
 === Getting information
 
 Now that we know all kinds of ways to format information when it's printed to the screen, let's talk about how to get information from the user. 
@@ -192,10 +194,103 @@ print "You are", age, "years old!"
 
 It worked just like before, but this time, if you enter 'eleven' instead of '11', you won't get an error!
 
+==== Add a prompt
+
+
+
 ==== Converting text to numbers
 
-==== Clean up that text!
+Using `raw_input()` is safer than using `input()`, but what if we need a number? In that case, I usually *convert* the string into a number. To do that, we use `float()` or `int()`.
 
-==== Add a prompt
+`float()` and `int()` will take a string and try to convert it into a number. `float()` will convert it into a float (a decimal number), and `int()` will convert it into an integer (a whole number). Let's use `int()` to convert the user's age to a integer.
+
+[source,python]
+----
+print "How old are you?"
+age = raw_input()
+age = int(age)
+print "In five years, you will be", age + 5
+----
+
+One problem with `int()` and `float()`, though, is that if you try to convert something that _isn't_ a number, you'll get an error. Run this code, and watch what happens.
+
+[source,python]
+----
+age = int("five")
+----
+
+This is one of the downsides to allowing users to give you input. Sure, your program is way more interactive now, but now the user can break it! 
+
+=== Getting good information from the user
+
+Once you start accepting information from the user, you should also start figuring out how to make sure what they give you is good. Unless you're the only user, you should never trust random input!
+
+==== try / except
+
+One good way to sidestep input that might give you an error is to use `try / except`. A `try / except` statement looks a bit like an `if / else` statement:
+
+[source,python]
+----
+try:
+    code
+    code
+    code
+except:
+    code
+    code
+    code
+----
+
+With a `try / except`, Python will run all the code in the `try` block. If it gets an error, Python will skip to the `except` block and run that code. If there are no errors, Python will skip the `except` block.
+
+Try running this code, and note what is printed out.
+
+[source,python]
+----
+try:
+    age = int("five")
+    print age + 5
+except:
+    print "I'm sorry, there was some kind of error"
+----
+
+Python printed out a nice message instead of a nasty error, didn't it? Change "five" to "5" and re-run the code. What happens?
+
+This time, because there wasn't an error, Python printed out ten and didn't bother with an error.
+
+NOTE: Unlike an `if` statement, the `except` is mandatory! If you don't want to do anything, just use the `pass` keyword to tell Python to keep on going.
+
+==== Make sure you get good information
+
+`try / except` is great because you don't get errors due to user input anymore, but you still don't have input that will work! Combining a `try / except` with a `while` loop can help make sure that we have good data to work with.
+
+If we want to make sure we get the users age, then we can put the `try / except` statement inside a while loop, and keep going until we get an age we can convert into an integer. First, run the code and try to enter in some bad values before you enter in a good value. 
+
+[source,python]
+----
+while True:
+    age = raw_input("Age? ")
+    try:
+        age = int(age)
+        break
+    except:
+        print "I'm sorry, I don't like that."
+----
+
+What's going on here? Let's take it line by line.
+
+*`while True:`* - Wait! Won't this create an infinite loop?! It will if we don't have a `break` statement somewhere. Happily, we do! You'll see `while True:` quite a bit when looking at other people's code, so it's a good idea to get used to it now!
+
+*`age = raw_input("Age? ")`* - This is pretty easy. We're getting the age from the user and storing it in a string.
+
+*`try:`* - Okay, we're going to try to do something...
+
+*`age = int(age)`* - A-ha! This is the code that might break. If the user enters in anything but a whole number, Python will give us an error.
+
+*`break`* - Here's our break that guarantees that we won't get stuck in an infinite loop. This line will only run _if_ we got good input from the user.
+
+*`except:`* - Here, we start the code that will run if the user gave us a bad value, like a string.
+
+*`print "I'm sorry..."`* - We print out an error message to be nice, then go back to the top of the while loop. We end up asking for the user's age again, and we'll keep doing that until we get some good information from them!
 
 ==== Try this!
