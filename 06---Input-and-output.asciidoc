@@ -14,6 +14,8 @@ Okay, things are going to start taking off in this chapter. Something about acce
 
 We're also going to go over formating text, which is less important in the long run, but in the short run, it can make their programs look nicer. Don't underestimate the pride a student might take in having really nicely formatted screens. In fact, if they decide to take their time, making sure that their data looks nice, let them! We need more developers that care about the front-end!
 
+Finally, I'm sneaking `try` and `except` into this lesson. If you're familiar with exceptions in Python (and most other modern languages!) you know that having naked exception is a bad thing. Catching only certain kinds of errors tend to confuse new coders, though, so I save that for when we start talking about debugging later on. By then, they'll be ready to start talking about all the different kinds of exceptions we can catch!
+
 === Showing information
 
 Making what your computer prints out look nice isn't just about having a pretty program. Organized output is easier to use, and makes it less likely that your user will make mistakes. Think about how hard it would be to use a website where all the information was randomly thrown together. Even a simple page like search results is easier to use when the results are grouped together in a sensible way.
@@ -196,7 +198,17 @@ It worked just like before, but this time, if you enter 'eleven' instead of '11'
 
 ==== Add a prompt
 
+So far, we've been printing out a line of text, then getting the user input. We can combine those two lines, however, by adding a prompt to `input()` or `raw_input()`.
 
+To add a prompt, put a string in the parenthesis after `input()` or `raw_input()`. It looks something like this:
+
+[source,python]
+----
+name = raw_input("What is your name? ")
+print "Hi," name
+----
+
+This time, rather than getting the input on the next line, we get it on the same line. This looks much nicer, and makes our code a bit easier to maintain. We don't have to worry about keeping those two lines together anymore.
 
 ==== Converting text to numbers
 
@@ -206,8 +218,7 @@ Using `raw_input()` is safer than using `input()`, but what if we need a number?
 
 [source,python]
 ----
-print "How old are you?"
-age = raw_input()
+age = raw_input("How old are you?")
 age = int(age)
 print "In five years, you will be", age + 5
 ----
@@ -293,4 +304,16 @@ What's going on here? Let's take it line by line.
 
 *`print "I'm sorry..."`* - We print out an error message to be nice, then go back to the top of the while loop. We end up asking for the user's age again, and we'll keep doing that until we get some good information from them!
 
+If you use a `while` loop paired with a `try / except` statement, then it becomes much harder for your user to break your program!
+
 ==== Try this!
+
+Here's some code that inserts some numbers into a string of text. Can you change the code so that it uses templates and curly brackets?
+
+[source,python]
+----
+bananas = 5
+oranges = 6
+
+print "You have", bananas, "bananas and ", oranges, "oranges."
+----
