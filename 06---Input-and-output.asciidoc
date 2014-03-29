@@ -16,6 +16,16 @@ We're also going to go over formating text, which is less important in the long 
 
 Finally, I'm sneaking `try` and `except` into this lesson. If you're familiar with exceptions in Python (and most other modern languages!) you know that having naked exception is a bad thing. Catching only certain kinds of errors tend to confuse new coders, though, so I save that for when we start talking about debugging later on. By then, they'll be ready to start talking about all the different kinds of exceptions we can catch!
 
+=== Input? Output?
+
+We're going to be talking about input and output during this lesson, so it's very important that you understand what those two words mean.
+
+*Input* is the information that goes _into_ your program. A user might enter it. It might come from another program that's running elsewhere (like a website). It might even come from a device, like a camera!
+
+*Output* is what your program displays somehow. It might show something on a screen, or it might pass some information to another program. When you use a `print` statement to print something to your screen, your program is creating output.
+
+First, let's talk about output, and how we can make it look nice.
+
 === Showing information
 
 Making what your computer prints out look nice isn't just about having a pretty program. Organized output is easier to use, and makes it less likely that your user will make mistakes. Think about how hard it would be to use a website where all the information was randomly thrown together. Even a simple page like search results is easier to use when the results are grouped together in a sensible way.
