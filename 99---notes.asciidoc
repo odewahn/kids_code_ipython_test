@@ -10,6 +10,8 @@ This is stuff that I need to add somewhere.
 * When we get to OOP, show off string methods.
 * Spoilers?
 * Glossary
+* Add chapter: Edit this code (Use turtles!)
+* Change 'adult' or 'parent' to 'mentor'
 
 Add to each section on revision:
 
