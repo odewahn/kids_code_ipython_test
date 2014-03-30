@@ -1,12 +1,73 @@
 == Project: Number guessing game
 
+Finally, you have enough coding knowledge to write a simple game! Because this is our first project, let's go over how this is going to work.
+
+First, I'm going to lay out a plan for you. This plan will include everything our game needs to have in it. Once you read over the plan, you may already have an idea of what the code should look like. If you want to start coding, go right ahead.
+
+If you're still a little uneasy, though, feel free to move to the next section. There, we'll have some code for you to work with. It works, so try to play around with it and understand how it's doing what it's doing.
+
+Once we have the basic game, I'll make some suggestions on what you should try adding. Feel free to add whatever you want, or add your own twist to the game.
+
+Finally, I'll show you my finished code. The final code will have all of the additions that I suggested along the way.
+
 === What you need to know...
 
-=== A note for the grown-up
+You should be familiar with everything we've gone over until now, but you should be especially comfortable with:
+
+* Testing for equality
+* Loops
+* `if` statements
+* Getting input from the user
+* Converting strings into integers
+
+If you're fuzzy on any of these topics, go back and check out their review videos.
+
+=== A note for the mentor
+
+You've made it to the first project! You also might get to witness your first crisis of confidence in your student. Even a student who has effortlessly raced through each of the previous lesson's examples might stumble the first time they have to put everything together. Don't worry! This is common, and students become more confident as they go further in the book. 
+
+Guessing games are great for adding personal twists, so once we're done with the main requirements, feel free to help you student brainstorm ways to make the game even more interesting.
 
 === The plan!
 
+We're going to make a two person guessing game. The first player will type in a number for the second person to guess. If the second person guesses right, then they win! Otherwise, they lose.
+
+Because we're using two people, we have to make sure that the number the first player enters isn't seen by the second player. A bunch of print statments should push that off the screen, though.
+
+Here are the components that you'll have to use to make the basic game:
+
+* `input()` or `raw_input()`
+* An `if` statement
+* Some sort of comparison
+* `print`
+
 === The basic game
+
+This is probably the most simple guessing game you can make. Two people and exactly one guess. Here's what the code looks like:
+
+[source,python]
+----
+secret_num = input("Player One, give me a number: ")
+
+for i in range(100):
+	print "Don't look, Player Two!"
+
+guess = input("Player Two, what's your guess? ")
+
+if guess == secret_num:
+	print "You got it!"
+else:
+	print "Sorry, you lose."
+----
+
+Basically, this code is:
+
+* Getting a secret number from Player One
+* Printing out a *bunch* of text to push that number off of the screen
+* Getting a guess from Player Two
+* Checking to see if the guess is equal to the secret number, and printing out a win / lose message
+
+This program is _okay_, but it's not very exciting. Let's add some more features!
 
 ==== Try adding...
 
