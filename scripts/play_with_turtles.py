@@ -1,6 +1,7 @@
 import turtle
 
 turtle.showturtle()
+turtle.turtlesize(3)
 
 colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple']
 
