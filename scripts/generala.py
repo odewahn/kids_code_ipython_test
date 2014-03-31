@@ -4,8 +4,52 @@ SCORE_TYPES = ("pair", "two pair", "3 of a kind", "4 of a kind", "full house",
     "small straight", "large straight", "chance", "generala",
     "ones", "twos", "threes", "fours", "fives", "sixes")
 
-def score_dice(dice, scores, score):
-    pass
+SUM_SCORES = ("pair", "two pair", "3 of a kind", "4 of a kind", "chance",
+    "ones", "twos", "threes", "fours", "fives", "sixes")
+
+STATIC_SCORES = {
+    "full house": 20,
+    "small straight": 25,
+    "large straight": 30,
+    "generala": 50 
+}
+
+def add_option_list(options, num, score_type):
+    if options.has_key(score_type):
+        options[score_type].append(num)
+    else:
+        otions[score_type] = [num]
+
+def get_choice_options(dice):
+    options = {}
+    dice.sort()
+    dice_str = ""
+    for die in dice:
+        dice_str = dice_str+str(die)
+    if dice_str in ("12345", "23456"):
+        options["large straight"] = None
+    if dice_str in ("1234", "2345", "3456"):
+        options["small straight"] = None
+    for i in "123456":
+        if dice_str.count(i) >= 2:
+            
+        if dice_str.count(i) >= 3:
+            if options.has_key("3 of a kind"):
+                options["three of a kind"].append(i)
+            else:
+                options["three of a kind"] = [i]
+
+
+def get_dice_sum(dice, choice):
+    return 0
+
+def add_score(dice, scores, choice):
+    if choice in SUM_SCORES:
+        pass
+    elif choice in STATIC_SCORES.keys():
+        pass
+    else:
+        print "I'm not sure what I should do..."
 
 def draw_dice(dice):
     # Draw the top line
@@ -71,7 +115,7 @@ def get_score_choice(dice, scores):
         except:
             print "Sorry, that dosn't work"
 
-    add_score(dice, scores, choice)
+    return choice
 
 def main():
     scores = {}
@@ -89,7 +133,8 @@ def main():
         get_new_dice(dice)
         draw_dice(dice)
     print_score_sheet(scores)
-    get_score_choice(dice, scores)
+    choice = get_score_choice(dice, scores)
+    add_score(dice, scores, choice)
 
 if __name__ == '__main__':
     main()
