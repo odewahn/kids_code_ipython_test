@@ -1,14 +1,84 @@
 == Grouping values: Dictionaries and lists
 
+So far, when we've saved been saving one value to one variable. So, we might save how much something costs to a variable called `price`, or we might save the title of a book to a variable called `title`. 
+
+But what if we want to group some values together? I might want to save all the names of students to a variable called `classroom`. I also might want to save a list of words and definitions to a variable called `vocabulary`. Does Python have some data types that can do these things? Yes! They're called *lists* and *dictionaries*.
+
 === What you need to know...
 
-=== A note for the grown-up
+This chapter is going to use loops quite a bit, so make sure that you're familiar with them before we move on. If you need a refresher, check out the loops video.
+
+=== Notes for the mentor
 
 === Lists
 
+We're going to go over two new data types in this lesson, starting with lists. 
+
+Lists in Python are just like lists in real life! People make lists all the time: shopping lists, directions to a place, steps to create something. *Lists* are simply a collection of values, saved to one variable.
+
+In Python, the values in a list are contained in a pair of square brackets (`[ ]`). You'll find these brackets at the end of the first row of letters on your keyboard. Let's make a few lists.
+
+[source,python]
+----
+my_nums = [1, 2, 3, 4]
+animals = ["beta fish", "dog", "cat", "llama"]
+print my_nums
+print my_names
+----
+
+Note that each value is separated by a comma, and all the values are inside of the pair of square brackets. If you use anything other than square brackets, or if you forget the commas, your program may throw an error or work strangely.
+
 ==== What's an index?
 
+Every item in your list has a place in line. That place is called its *index*. We use the index to get that item out of the list or change it.
+
+Indexes start at zero. The first item in the list has an index of zero, the second item has an index of one, and so on.
+
+[source]
+----
+List : [ 1,  2,  3,  4 ]
+         ^   ^   ^   ^
+Index :  0   1   2   3
+----
+
+To find out what item is stored at a certain index, you put the index in brackets after the variable name. It looks like this:
+
+[source,python]
+----
+>>> colors = ["red", "yellow", "blue"]
+>>> print colors[0]
+red
+>>> print colors[1]
+yellow
+----
+
+You can also use the index to change what's been stored at a certain index. Here, we're going to switch "blue" for "turquoise".
+
+[source,python]
+----
+>>> colors = ["red", "yellow", "blue"]
+>>> colors[2] = "turquoise"
+>>> print colors
+['red', 'yellow', 'turquoise']
+----
+
+Now, instead of holding 'blue', the last item in `colors` is turquoise.
+
 ==== Addding values to a list
+
+We can also add items to a list. This is a good thing, too, since a list isn't much good if we can't add to it!
+
+To add an item to a list, we use `append()`. `append()` is tacked onto the end of the list we want to add to, and we put the item we want to add in the parenthesis. It looks like this:
+
+[source,python]
+----
+>>> colors = ["red", "yellow", "blue"]
+>>> colors.append("violet")
+>>> colors
+['red', 'yellow', 'blue', 'violet']
+----
+
+When you use `append()`, the item you want to add gets added to the end of the list. 
 
 ==== Removing values from a list
 
