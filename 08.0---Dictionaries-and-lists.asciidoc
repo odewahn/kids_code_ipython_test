@@ -34,7 +34,7 @@ Every item in your list has a place in line. That place is called its *index*. W
 
 Indexes start at zero. The first item in the list has an index of zero, the second item has an index of one, and so on.
 
-[source]
+[source,python]
 ----
 List : [ 1,  2,  3,  4 ]
          ^   ^   ^   ^
