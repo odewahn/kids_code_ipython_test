@@ -161,7 +161,13 @@ Run the code, and watch what's printed out. Every time the `for` loop runs, Pyth
 
 === Dictionaries
 
+In the real world, a dictionary is a book that has a bunch of words paired with their definitions. In Python, dictionaries are filled with key / value pairs. They're great for when you want to pair one piece of information to another, like pairing names with birthdates, items with prices, or video games with genres.
+
 ==== Keys and values
+
+Dictionaries are made of key / value pairs. Each key is paired up with one value. 
+
+In dictionaries, keys are unique. So, in your dictionary, you can only use a key once. Also, you can only use certain data types as keys. In general, I like to stick to strings or integers as my keys, since other data types can either cause errors, or might cause Python to start acting weird.
 
 ==== Adding values to a dictionary
 
