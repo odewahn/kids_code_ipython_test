@@ -78,7 +78,40 @@ To add an item to a list, we use `append()`. `append()` is tacked onto the end o
 ['red', 'yellow', 'blue', 'violet']
 ----
 
-When you use `append()`, the item you want to add gets added to the end of the list. 
+When you use `append()`, the item you want to add gets added to the end of the list. What if you wanted to insert an item into a list, though? Let's say we want to add 'orange' to our list, but we want it to go in its proper place: between 'red' and 'yellow'. To do that, we use `insert()`.
+
+`insert()` works almost like `append()`, but it takes two values: 
+
+* The index where you want to insert the item
+* The item you want to insert
+
+Using `insert()` looks like this:
+
+[source,python]
+----
+mylist.insert(index, new_value)
+----
+
+In order to use `insert()`, you have to figure out _where_ you want to insert your item. Here's our list of colors:
+
+[source, python]
+----
+['red', 'yellow', 'blue']
+----
+
+We want 'orange' to be after 'red'. 'red' is at index zero, so 'orange' should be at index one.
+
+Now that we've sorted out where we want to put orange, we can use `insert()` to update our list:
+
+[source, python]
+----
+>>> colors = ["red", "yellow", "blue"]
+>>> colors.insert(1, "orange")
+>>> colors
+['red', 'orange', 'yellow', 'blue']
+----
+
+Now, 'orange' is between 'red' and 'yellow', right where it should be!
 
 ==== Removing values from a list
 
