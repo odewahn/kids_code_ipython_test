@@ -131,6 +131,34 @@ Above, I accidentally added something that wasn't a color ("apple"), so I remove
 
 ==== Lists and loops!
 
+Lists are already pretty great. Grouping items is incredibly useful, making it so that you have fewer variables to keep track of as you code. Where they really shine, though, is when you pair them with `for` loops.
+
+In the loops lesson, we learned about repeating code a block of code a certain number of times by using `range()`. If we pair a `for` loop with a list, though, we can run a block of code for every item in the list.
+
+Using a list with a `for` loop looks like this:
+
+[source,python]
+----
+for item in my_list:
+    code
+    code
+    code
+----
+
+Python starts with the first item in the list, runs the code in the code block. Once that code is done, Python does the same thing with the second item in the list, and so on, until it runs out of items.
+
+Let's use a list with a `for` loop to see how this works. We're going to create a list of animals, then talk about how much we like them.
+
+[source,python]
+----
+animals = ['dog', 'cat', 'pig', 'goose', 'emu']
+
+for animal in animals:
+    print "I love my", animal
+----
+
+Run the code, and watch what's printed out. Every time the `for` loop runs, Python takes one of the animals and stores it into the loop variable `animal`, then runs the code in the block. Once that code is run, Python moves on to the next animal, and so on.
+
 === Dictionaries
 
 ==== Keys and values
