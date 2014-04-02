@@ -64,7 +64,7 @@ You can also use the index to change what's been stored at a certain index. Here
 
 Now, instead of holding 'blue', the last item in `colors` is turquoise.
 
-==== Addding values to a list
+==== Addding items to a list
 
 We can also add items to a list. This is a good thing, too, since a list isn't much good if we can't add to it!
 
@@ -78,7 +78,7 @@ To add an item to a list, we use `append()`. `append()` is tacked onto the end o
 ['red', 'yellow', 'blue', 'violet']
 ----
 
-When you use `append()`, the item you want to add gets added to the end of the list. What if you wanted to insert an item into a list, though? Let's say we want to add 'orange' to our list, but we want it to go in its proper place: between 'red' and 'yellow'. To do that, we use `insert()`.
+When you use `append()`, the item you want to add gets added to the end of the list. What if you wanted to insert an item into a list, though? Let's say we want to add "orange" to our list, but we want it to go in its proper place: between "red" and "yellow". To do that, we use `insert()`.
 
 `insert()` works almost like `append()`, but it takes two values: 
 
@@ -99,7 +99,7 @@ In order to use `insert()`, you have to figure out _where_ you want to insert yo
 ['red', 'yellow', 'blue']
 ----
 
-We want 'orange' to be after 'red'. 'red' is at index zero, so 'orange' should be at index one.
+We want "orange" to be after "red". "red" is at index zero, so "orange" should be at index one.
 
 Now that we've sorted out where we want to put orange, we can use `insert()` to update our list:
 
@@ -111,11 +111,23 @@ Now that we've sorted out where we want to put orange, we can use `insert()` to 
 ['red', 'orange', 'yellow', 'blue']
 ----
 
-Now, 'orange' is between 'red' and 'yellow', right where it should be!
+Now, "orange" is between "red" and "yellow", right where it should be!
 
 ==== Removing values from a list
 
-==== Changing a value
+Sometimes, you want to remove an item from a list completely. Maybe you're done with that task, or you realize you added an item one too many times. To remove an item from a list, we use `pop()`.
+
+To use `pop()`, we need to know exactly what item we want Python to remove from our list. In order to be super crystal clear about what we want to do, Python needs the index of the item we want to trash. Using `pop()` looks like this:
+
+[source,python]
+----
+>>> colors = ["red", "yellow", "blue", "apple"]
+>>> colors.pop(3)
+>>> colors
+['red', 'yellow', 'blue']
+----
+
+Above, I accidentally added something that wasn't a color ("apple"), so I removed it by using `pop()` and its index (which was three). 
 
 ==== Lists and loops!
 
