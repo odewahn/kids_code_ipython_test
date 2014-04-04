@@ -169,14 +169,172 @@ Dictionaries are made of key / value pairs. Each key is paired up with one value
 
 In dictionaries, keys are unique. So, in your dictionary, you can only use a key once. Also, you can only use certain data types as keys. In general, I like to stick to strings or integers as my keys, since other data types can either cause errors, or might cause Python to start acting weird.
 
+==== Creating a dictionary
+
+Dictionaries have some important differences from lists. First, dictionaries are surrounded by curly braces ({ }). These are _above_ the square brackets on your keyboard. Second, keys and values are separated by a colon, and key / value pairs are separated by a comma. A dictionary might look something like this:
+
+[source,python]
+----
+my_dict = {key: value, key2: value}
+----
+
+You can also break up a dictionary onto several lines, if you want. I do this, because it makes it much easier to read.
+
+[source,python]
+----
+my_dict = {key: value, 
+           key2: value}
+----
+
+Let's make a dictionary. In this dictionary, we're going to pair a pet's name with what kind of animal they are.
+
+[source,python]
+----
+pets = {'Gizmo': 'dog',
+        'Coe': 'fish',
+        'Niko': 'cat'}
+----
+
+To get a value out of a dictionary, you use the key that's paired with it. It looks a bit like using a list, but instead of a index, you're using another value.
+
+Let's find out what kind of animal Gizmo is.
+
+[source,python]
+----
+>>> pets = {'Gizmo': 'dog',
+        'Coe': 'fish',
+        'Niko': 'cat'}
+>>> print pets['Gizmo']
+dog
+----
+
+Note that we use the _key_. If we try to use a value, we're going to get an error.
+
+[source,python]
+----
+>>> pets = {'Gizmo': 'dog',
+        'Coe': 'fish',
+        'Niko': 'cat'}
+>>> pets['dog']
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'dog'
+----
+
+Now that we know how to make a dictionary, let's make some changes to it.
+
 ==== Adding values to a dictionary
+
+You don't need anything special to add a value to dictionary. Just give the dictionary the key you want to use, and tell it what value you want it to save.
+
+Let's add another pet to our menagerie.
+
+[source,python]
+----
+>>> pets = {'Gizmo': 'dog',
+        'Coe': 'fish',
+        'Niko': 'cat'}
+>>> pets['Hannah'] = "kindergartener"
+>>> print pets
+{'Hannah': 'kindergartener', 'Coe': 'fish', 'Niko': 'cat', 'Gizmo': 'dog'}
+----
+
+When we check to see see what's in `pets` now, we see that Hannah the kindergartener has been added!
 
 ==== Changing values in a dictionary
 
+My son saw my dictionary and pointed out that Hannah will only be a kindergartener for so long. It would be better if we referred to her as a 'grade schooler.' Here's how we would change the value paired with 'Hannah':
+
+[source,python]
+---- 
+>>> pets = {'Hannah': 'kindergartener', 'Coe': 'fish', 'Niko': 'cat', 'Gizmo': 'dog'}
+>>> pets['Hannah'] = 'grade schooler'
+>>> pets
+{'Hannah': 'grade schooler', 'Coe': 'fish', 'Niko': 'cat', 'Gizmo': 'dog'}
+----
+
+Now, instead of being a kindergartener, Hannah is now a 'grade schooler.'
+
 ==== Removing values from a list
+
+Eventually, Hannah hears of this list and protests. She is *not* a pet! She's a human! She wants *off* of that list! We can remove her by using `pop()` and the key we want to remove.
+
+[source,python]
+----
+>>> print pets
+{'Hannah': 'kindergartener', 'Coe': 'fish', 'Niko': 'cat', 'Gizmo': 'dog'}
+>>> pets.pop('Hannah')
+'kindergartener'
+>>> print pets
+{'Coe': 'fish', 'Niko': 'cat', 'Gizmo': 'dog'}
+----
+
+Now, Hannah is no longer on the list, even though she can be a bit wild sometimes. 
+
+One thing to note: When you use `pop()`, Python gives you the value associated with that key. You don't need to do anything with it if you want. If you don't save it to a variable, it just goes away.
 
 ==== Getting all the keys (or values!)
 
+Dictionaries come with two really neat tricks: You can get a list of all the keys or values in a dictionary! 
+
+To get all of the keys in a dictionary, use `keys()`. 
+
+[source,python]
+----
+>>> pets.keys()
+['Coe', 'Niko', 'Gizmo']
+----
+
+To get all of the values that are in a dictionary, use `values()`:
+
+[source,python]
+----
+>>> pets.values()
+['fish', 'cat', 'dog']
+----
+
+Getting all of the keys or values out of a dictionary can be helpful when you need to search for an item, or do something with that list. Just remember that changing that list doesn't change your dictionary!
+
 ==== Dictionaries and loops!
 
+Just like lists, you can use dictionaries with `for` loops. First, take a look at this code and guess what is going to be printed out. Then run the code, and see if you were right.
+
+[source,python]
+----
+inventory = {'apples': 5,
+             'pears': 7,
+             'grapes': 10,
+             'kiwi': 0}
+
+for item in inventory:
+    print "We have", item
+----
+
+When you run the code, you should see something like this:
+
+[source,python]
+----
+We have grapes
+We have kiwi
+We have apples
+We have pears
+----
+
+So, when you use a dictionary and a `for` loop, the `for` loop runs through each of the keys in the dictionary. If you want, you can use the key to get the value out of the dictionary.
+
+[source,python]
+----
+inventory = {'apples': 5,
+             'pears': 7,
+             'grapes': 10,
+             'kiwi': 0}
+
+for item in inventory:
+    print "We have {} {}".format(inventory[item], item)
+----
+
+Run the code and see what happens now!
+
 === Try this!
+
+Try creating a dictionary of your favorite books. What do you think should be the key: The title, or the author? Discuss your reasoning with your mentor.
