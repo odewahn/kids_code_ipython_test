@@ -1,10 +1,10 @@
-== Project: Generala
+== Project: Pig
 
 === What you'll need to know...
 
 === A note for the grown-up
 
-=== What is generala?
+=== What is pig?
 
 ==== The rules
 
