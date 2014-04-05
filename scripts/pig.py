@@ -60,6 +60,7 @@ def print_scores(players):
         print "{} has {} points.".format(player, players[player])
 
 def main():
+    print "Let's play Pig!\n"
     print_rules()
     running = True
     winner = None
@@ -72,10 +73,8 @@ def main():
                 players[player] += total
                 print_scores(players)
                 if players[player] >= 100:
-                    break
-            for player in players:
-                if players[player] >= 100:
                     winner = player
+                    break
         print "The winner was {}!".format(winner)
         running = get_continue("Play again?")         
 

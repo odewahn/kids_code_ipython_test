@@ -1,8 +1,14 @@
 == Using files
 
+So far, we've been saving all off our information in our program. This is okay, if we want to save a few values to variables,like how many times we want a game to run, or what prompt we want to use. But what if we want to save a bunch of information, like the text of a book? What if we want that information to change over time? We might want to save our game so we can pick it up later, or we might need to save our essay so we can finish it later.
+
+In this lesson, we're going to use Python to create, open, and edit files. Working with files will allow us to create programs that take in tons of information, and will allow users to save information for later use.
+
 === What you need to know...
 
-=== A note for the grown-up
+You'll need to be familiar with lists, because Python creates lists when working with files. We'll also be getting information from a user, so make sure that you're familiar with all of the things we covered in the Input and Output chapter.
+
+=== A note for the mentor
 
 === Opening a file
 
