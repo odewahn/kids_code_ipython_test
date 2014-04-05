@@ -10,6 +10,25 @@ This chapter is going to use loops quite a bit, so make sure that you're familia
 
 === Notes for the mentor
 
+In this lesson, we're going to start going over more complex data types. Even though lists and dictionaries are more complex than strings and integers, I find most students grasp the concept pretty quickly.
+
+The harder part for many students is understanding indexes. Counting from zero confuses many new programmers, especially since there's not many pat answers as to why we don't start at one like we do everywhere else. I usually tell students that we start at zero because, at one point, it was the best option. Most students accept this, because, well, they're used to arbitrary answers. After all, "because I said so," is something most students have heard more than once!
+
+If the student is really interested, though, here are some non-expert resources for exploring this question further:
+
+TODO
+
+We're also going to be using methods in this lesson. Some students have trouble with the format and will try to do something like this:
+
+[source,python]
+----
+my_list = [1, 2, 3]
+
+my_list append(5)
+----
+
+Just remind them that they need a period between the variable name and the method we're using. Don't dive too deeply into what, exactly, a method is. We'll be going over that in our OOP chapter.
+
 === Lists
 
 We're going to go over two new data types in this lesson, starting with lists. 
