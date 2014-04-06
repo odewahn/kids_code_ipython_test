@@ -8,11 +8,59 @@ In this lesson, we're going to use Python to create, open, and edit files. Worki
 
 You'll need to be familiar with lists, because Python creates lists when working with files. We'll also be getting information from a user, so make sure that you're familiar with all of the things we covered in the Input and Output chapter.
 
+As always, if you're not sure if you've got these topics down pat, feel free to go back and check out the refresher videos. It's just a few minutes, and it'll make this lesson go so much easier!
+
 === A note for the mentor
+
+In this chapter, we're going to be working with files. You'll note that I spent quite a bit of energy stepping around the issue of paths. This is because many students begin to get overwhelmed when trying to get their head around directories and relative paths and absolute paths. 
+
+We _will_ be working with paths later! For now, though, I'm going to have students work in one directory. You might get called over if Python can't find a file a student made, or (more commonly) if the student decided to skip making the file and charged ahead with the rest of the lesson.
+
+=== Creating a file
+
+In order to work with files, we're going to need to create a file. In IDLE, create a new file by going to File > New. In the blank window, enter the following text:
+
+[source,python]
+----
+Mary had a little lamb
+Its fleece was white as snow.
+And everywhere that Mary went
+The lamb was sure to go.
+----
+
+Save this file as "poem.txt", and close that window.
+
+TODO: If this is in a fiddle, nuke this part!
 
 === Opening a file
 
+Now that we have a file, let's use Python to open it. 
+
+When we talk about Python opening a file, this isn't like opening a file in a word processing program (like Word or Open Office). What Python is going to do is find the file and sit at the beginning of the file, waiting for us to tell it what to do. 
+
+It's like you've handed Python a piece of paper, but haven't said what you what it to do. Python doesn't read the piece of paper, write on it, or throw it in the trash. It just... waits.
+
+To open a file in Python, you need to use `open()` and the name of the file you want to open.
+
+[source,python]
+----
+f = open("poem.txt")
+----
+
+Nothing appears to happen, because Python doesn't know what we want to do yet. Let's do some things with our file!
+
 === Reading from a file
+
+To simply read what's in a file, we use `readlines()`. `readlines()` gives us a list of all the lines in a file.
+
+[source,python]
+----
+f = open("poem.txt")
+lines = f.readlines()
+print lines
+----
+
+
 
 === Writing to a file
 

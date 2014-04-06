@@ -2,18 +2,19 @@ from random import randint
 
 def get_turn_total(player):
     total = 0
-    print "It's {}'s turn!".format(player)
+    print "\nIt's {}'s turn!".format(player)
     cont = True
     while cont:
-        print "Total so far for this turn:", total
         roll = randint(1, 6)
         if roll == 1:
-            print "Eek! A one!"
+            print "Eek! A one!\n"
             return 0
         else:
             print "You rolled a", roll
             total += roll
+        print "Total so far for this turn:", total
         cont = get_continue("Roll? ")
+    print
     return total
 
 def get_continue(prompt):
@@ -34,13 +35,13 @@ def get_players():
         try:
             num = int(num)
             break
-        except Exception, e:
+        except:
             print "Sorry, that's not valid."
 
     players = {}
     for i in range(num):
         while True:
-            name = raw_input("Player {} name: ".format(i))
+            name = raw_input("Player {} name: ".format(i + 1))
             if not name in players:
                 players[name] = 0
                 break
@@ -76,7 +77,7 @@ def main():
                     winner = player
                     break
         print "The winner was {}!".format(winner)
-        running = get_continue("Play again?")         
+        running = get_continue("Play again? ")         
 
 
 if __name__ == '__main__':
