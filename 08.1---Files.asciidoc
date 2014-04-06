@@ -60,7 +60,42 @@ lines = f.readlines()
 print lines
 ----
 
+Each of the lines of our poem was saved as an item in a list.
 
+==== Cleaning up lines
+
+One thing you might notice is that each "line" ends with `\n`. In the Basics chapter, we learned that `\n` tells Python to move to the next line. When we read lines from a file, we'll often see that character at the end of each line.
+
+If you want to get rid of that character, you can use `strip()`. `strip()` tells Python to remove a certain string from the beginning and end of another string. For example, we can get rid of a new line character in a string like this:
+
+[source,python]
+----
+>>> text = "Here is some text with a new line\n"
+>>> text.strip('\n')
+'Here is some text with a new line'
+----
+
+So, if we wanted to get rid of all of the new line characters in our list, we might do something like this:
+
+[source,python]
+----
+f = open("poem.txt")
+lines = f.readlines()
+
+for i in range(len(lines)):
+	lines[i] = lines[i].strip('\n')
+
+print lines
+----
+
+Let's look at what we're doing in this bit of code:
+
+1. First, we get our lines. 
+1. Then, we use a `for` loop to run through each item in the list. 
+   - We use `range()` and `len()`, though, because that makes it easier to change each item. 
+1. We use `strip()` on each item in the list, so that we get rid of that pesky new line 
+   character.
+1. Printing out the lines, we can see that all the new line characters are gone!
 
 === Writing to a file
 
