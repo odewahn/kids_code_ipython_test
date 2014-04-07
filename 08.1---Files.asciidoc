@@ -97,7 +97,9 @@ Let's look at what we're doing in this bit of code:
    character.
 1. Printing out the lines, we can see that all the new line characters are gone!
 
-=== Writing to a file
+=== Saving to a file
+
+
 
 === Appending to a file
 
