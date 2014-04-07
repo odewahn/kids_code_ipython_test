@@ -101,6 +101,8 @@ Let's look at what we're doing in this bit of code:
 
 
 
+Now that we can see what's in a file, let's save some information to a file!
+
 === Appending to a file
 
 === Close those files!
