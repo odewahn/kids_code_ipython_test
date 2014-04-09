@@ -16,6 +16,23 @@ In this chapter, we're going to be working with files. You'll note that I spent 
 
 We _will_ be working with paths later! For now, though, I'm going to have students work in one directory. You might get called over if Python can't find a file a student made, or (more commonly) if the student decided to skip making the file and charged ahead with the rest of the lesson.
 
+If you're still having problems getting the file where it needs to be, open up IDLE on the student's computer and run the following code:
+
+[source,python]
+----
+f = open('poem.txt', 'w')
+
+poem = "Mary had a little lamb\n\
+Its fleece was white as snow.\n\
+And everywhere that Mary went\n\
+The lamb was sure to go."
+
+f.write(poem)
+f.close()
+----
+
+That will create the file the student needs, allowing them to move on to the "Opening and closing a file" section.
+
 === Creating a file
 
 In order to work with files, we're going to need to create a file. In IDLE, create a new file by going to File > New. In the blank window, enter the following text:
@@ -32,7 +49,7 @@ Save this file as "poem.txt", and close that window.
 
 TODO: If this is in a fiddle, nuke this part!
 
-=== Opening a file
+=== Opening and closing a file
 
 Now that we have a file, let's use Python to open it. 
 
@@ -47,7 +64,14 @@ To open a file in Python, you need to use `open()` and the name of the file you 
 f = open("poem.txt")
 ----
 
-Nothing appears to happen, because Python doesn't know what we want to do yet. Let's do some things with our file!
+Nothing appears to happen, because Python doesn't know what we want to do yet. Let's do some things with our file! If we're done with a file, then we should close it by using `close()`.
+
+[source,python]
+----
+f.close()
+----
+
+If you don't close a file, then you may have issues later on! You may not be able to do anything with the file, or you may block another program from getting to a file it needs.
 
 === Reading from a file
 
@@ -97,14 +121,129 @@ Let's look at what we're doing in this bit of code:
    character.
 1. Printing out the lines, we can see that all the new line characters are gone!
 
-=== Saving to a file
-
-
+=== Saving to a new file
 
 Now that we can see what's in a file, let's save some information to a file!
 
-=== Appending to a file
+First, we're going to create a new file. To tell Python to create a file, we need to give `open()` two things:
+
+* The name of the file we want to create
+* The *mode* for that file
+
+A *mode* is how we want Python to open a file. We might open it so that we can save to it, or we might add to the end of it. We might just want to see what's in the file. If we don't give `open()` a mode, Python assumes that we just want to read what's in the file. 
+
+Here, we want Python to *write* to the file, so we give `open()` a mode of "w". Let's say we want to create a file called "colors.txt". We would have a line of code that looks like this (don't put this code in IDLE quite yet!):
+
+[source,python]
+----
+>>> f = open("colors.txt", "w")
+----
+
+Now, the file has been created, and Python is waiting for us to do something with it. Let's put some colors in our file! One way to do that is to use `write()`. 
+
+[source,python]
+----
+>>> f = open("colors.txt", "w")
+>>> f.write("red")
+>>> f.write("orange")
+>>> f.write("yellow")
+>>> f.close()
+----
+
+Now, our file has three colors in it. Let's see exactly what's in our file:
+
+[source,python]
+----
+>>> f = open("colors.txt")
+>>> lines = f.readlines()
+>>> f.close()
+>>> print lines
+['redorangeyellow']
+----
+
+Huh. It looks like Python put all of our colors on one line. That's because we didn't tell Python to put in any new lines. Never forget that Python will only do exactly what you tell it to do! Let's fix this.
+
+[source,python]
+----
+>>> f = open("colors.txt")
+>>> f.write("red\n")
+>>> f.write("orange\n")
+>>> f.write("yellow\n")
+>>> f.close()
+----
+
+Now, if we check what's in the file, we'll see the results look much better.
+
+[source,python]
+----
+>>> f = open("colors.txt")
+>>> f.readlines()
+['red\n', 'orange\n', 'yellow\n']
+----
+
+Each color is on its own line! But wait, where did the stuff that was in the file before go? We had a line that said "redorangeyellow", and now it's gone...
+
+=== Editing an existing file
+
+When you open a file in write mode, if it already exists, Python will *delete everything in the file*. This is extremely important to remember! You don't want to accidentally delete everything in a file! Python does *not* come with undo.
+
+If you want to change an existing file, you usually want to do this:
+
+1. Open the file and get everything in it
+1. Close the file
+1. Make your edits
+1. Open the file in write mode
+1. Write everything to the file
+1. Close the file
+
+It can seem like a bunch of steps, but this is probably the safest way to work with files. Don't worry, after so long, it becomes second nature.
+
+Let's add another color to "colors.txt". We already have red, orange, and yellow, so I think it's time to add green. First, let's get everything that's currently in "colors.txt" into a list.
+
+[source,python]
+----
+>>> f = open("colors.txt")
+>>> lines = f.readlines()
+>>> f.close()
+----
+
+Now, we have all of the lines of text in "colors.txt" in `lines`. First, I'm going to check to make sure I have all of the colors I want, then add green.
+
+[source,python]
+----
+>>> lines
+['red\n', 'orange\n', 'yellow\n']
+>>> lines.append('green\n')
+----
+
+We have all of our colors ready in `lines`, so let's save them to "colors.txt":
+
+[source,python]
+----
+>>> f = open("colors.txt", "w")
+>>> for line in lines:
+        f.write(line)
+
+>>> f.close()
+----
+
+Now, if we take a look at our file, it will contain four colors, each on its own line!
+
+=== Writing many lines at once
+
+You can use `writelines()` rather than `write()` to write an entire list to a file. It works just like the `for` loop in the last example, but saves you some typing.
+
+[source,python]
+----
+>>> f.writelines(lines)
+----
+
+Just remember, if you want each item in the list on its own line, each item needs to have is own new line character. Otherwise, the whole list will be written to one line!
 
 === Close those files!
 
+I said this before, but I'll say it again: When you're done with your file, close it! It's a good habit to be in, even if you think that no one else will ever need your file, and you're pretty sure that you won't need that file again in your program. Once you no longer need it to be open, *close it*!
+
 === Try this!
+
+Create a short program that lets you enter in the names of your favorite movies. Once you enter 'q', Python should save the movies to "my_movies.txt".
