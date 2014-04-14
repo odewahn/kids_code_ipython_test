@@ -1,0 +1,46 @@
+== Project: To-do list
+
+Now that we know how to make lists in Python, and we're familiar with saving text to files, let's put that knowledge together to make a simple to-do list program. 
+
+=== What you'll need to know...
+
+You'll need to be very familiar with:
+
+* Lists
+* Reading from files
+* Saving to files
+* Loops
+
+As always, if you don't feel very confident on one of these topics, go ahead and watch the review videos for each of these subjects. It should only take a few minutes, and it'll make writing the code for this project so much easier!
+
+=== A note for the grown-up
+
+This project is going to be creating a to-do list. While most of the projects in this book are games, I like to include a few options that are more practical. It's important to point out that coding can also help make your life easier. Some of my favorite scripts do nothing more than take a boring task and automate it!
+
+If the student has Dropbox (or some other cloud storage service), you also might show them how to open a file saved in a synced folder. That might spark some really interesting ideas!
+
+Make sure to keep in mind what the student _hasn't_ learned yet. The first time I tried to write `todo.py`, I kept wanting to toss in functions and string methods. A student can get overwhelmed when they realize how much they don't know, so it's important to point out that this project is totally doable with just the tools they have so far.
+
+It's also nice to have a program that works, but can be made better as the student learns more. For example, the next chapter is going to be on errors and `try / except`. Just learning how to fail gracefully is going to make this script a bunch more helpful!
+
+Because we don't have `try / except` yet, the to-do file is going to have to already exist before the student runs the script. You might have to jump in and help. If you're having trouble, open up IDLE's shell and paste in the following code:
+
+[source,python]
+----
+f = open("mytodo.txt", "w")
+f.close()
+----
+
+That will create the file that the student will be saving their to-do list to.
+
+=== The plan!
+
+We're going to create a script that will help us manage a to-do list. It should allow us to add items, delete items, and print out our list.
+
+=== Some structure
+
+=== The basic code
+
+=== Try adding...
+
+=== The final code

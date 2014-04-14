@@ -1,0 +1,19 @@
+== Errors and failing with grace
+
+=== What you'll need to know...
+
+=== A note for the mentor
+
+=== What does an error look like?
+
+=== Errors are good!
+
+=== Some common errors
+
+=== Figuring out a traceback
+
+=== Working around errors
+
+==== No naked exceptions!
+
+=== Try this!
