@@ -10,6 +10,8 @@ You'll need to be very familiar with:
 * Reading from files
 * Saving to files
 * Loops
+* Getting input from the user
+* IDLE
 
 As always, if you don't feel very confident on one of these topics, go ahead and watch the review videos for each of these subjects. It should only take a few minutes, and it'll make writing the code for this project so much easier!
 
@@ -37,10 +39,204 @@ That will create the file that the student will be saving their to-do list to.
 
 We're going to create a script that will help us manage a to-do list. It should allow us to add items, delete items, and print out our list.
 
+You're going to need to code this in IDLE. You'll want that to-do list to be on your computer if you want it to be of any use to you! You'll also need to create a blank file for your todo list. In IDLE, go to File > New. This will create a blank file. Save that file as "mytodo.txt". 
+
+Here's what running the script might look like:
+
+----
+Do you want to [a]dd an item, [r]emove an item, [p] the list, or [q]uit?
+a/r/p/q: a
+Item: Feed fish
+Do you want to [a]dd an item, [r]emove an item, [p] the list, or [q]uit?
+a/r/p/q: a 
+Item: Take out trash
+Do you want to [a]dd an item, [r]emove an item, [p] the list, or [q]uit?
+a/r/p/q: p
+*****
+Do dishes
+Do homework
+Feed fish
+Take out trash
+*****
+Do you want to [a]dd an item, [r]emove an item, [p] the list, or [q]uit?
+a/r/p/q: r
+0 Do dishes
+1 Do homework
+2 Feed fish
+3 Take out trash
+Remove #: 2
+Do you want to [a]dd an item, [r]emove an item, [p] the list, or [q]uit?
+a/r/p/q: p
+*****
+Do dishes
+Do homework
+Take out trash
+*****
+Do you want to [a]dd an item, [r]emove an item, [p] the list, or [q]uit?
+a/r/p/q: q
+Goodbye!
+----
+
+Keep in mind that you're going to be saving your to-do items to a file. Before the user quits, make sure to save what they've added and removed!
+
+If you feel ready to try coding this script, go right ahead! Once you're happy with what you have, go to the final checklist and make sure your program does everything on the list. If you feel like you need some help, move on to the next section.
+
 === Some structure
 
-=== The basic code
+It can be intimidating to start a new project. Often, I'll start by writing some comments that say what I want to do. Then, bit by bit, I replace the comments with actual code. Learning to break down a problem is one of the most important things a programmer learns to do!
+
+Here's a basic outline of what your script needs to do, along with some hints about what you might want to use. Copy and paste this into a new file in IDLE, then try to replace some of the comments with code. Don't be afraid to grab your mentor and ask for help!
+
+[source,python]
+----
+# Open 'mytodo.txt'
+
+# Get the items from the file
+
+# Loop: While the user doesn't want to quit...
+
+# Ask them if they want to add an item, remove an item, print the list, or quit
+
+# If they want to add an item, append it
+
+# If they want to remove an item, figure out which one they want to remove, and pop it.
+
+# If they want to print the list, print the to-do items out
+
+# If they want to quit, stop running this loop
+
+# save the to-do items to 'mytodo.txt'
+----
+
+=== The checklist
+
+Think you have your code working? Double check to make sure your script:
+
+* Opens a file
+* Allows the user to:
+  * Add to-do items
+  * Delete to-do items
+  * Print out all to-do items
+  * Quit
+* Saves the todo list to a file
+
+=== The final code
+
+Here's what I ended up writing:
+
+[source,python]
+----
+f = open("mytodo.txt")
+to_do_items = f.readlines()
+f.close()
+
+for i in range(len(to_do_items)):
+    to_do_items[i] = to_do_items[i].strip('\n')
+
+choice = "x"
+while choice != 'q':
+    print "Do you want to [a]dd an item, [r]emove an item, [p] the list, or [q]uit?"
+    choice = raw_input("a/r/p/q: ")
+    if choice == 'a':
+        item = raw_input("Item: ")
+        to_do_items.append(item)
+    elif choice == 'r':
+        for i in range(len(to_do_items)):
+            print i, to_do_items[i]
+        remove = input("Remove #: ")
+        to_do_items.pop(remove)
+    elif choice == 'p':
+        for item in to_do_items:
+            print item
+    elif choice == 'q':
+        print "Goodbye!"
+    else:
+        print "Huh?"
+
+f = open("mytodo.txt", "w")
+for item in to_do_items:
+    f.write(item + "\n")
+f.close()
+----
+
+Let's talk about what this code is doing, bit by bit.
+
+This first part should look familiar. I'm opening a file, getting all of the lines in it, then closing the file.
+
+[source,python]
+----
+f = open("mytodo.txt")
+to_do_items = f.readlines()
+f.close()
+-----
+
+Next, I decided to get rid of those pesky newline characters.
+
+[source,python]
+----
+for i in range(len(to_do_items)):
+    to_do_items[i] = to_do_items[i].strip('\n')
+----
+
+Now it's time to start editing the to-do list! I start the main loop and ask the user what they want to do.
+
+[source,python]
+----
+choice = "x"
+while choice != 'q':
+    print "Do you want to [a]dd an item, [r]emove an item, [p] the list, or [q]uit?"
+    choice = raw_input("a/r/p/q: ")
+----
+
+If the user wants to add an item, I append that item to the to-do list.
+
+[source,python]
+----
+    if choice == 'a':
+        item = raw_input("Item: ")
+        to_do_items.append(item)
+----
+
+If the user wants to remove an item, I need to figure out which item to remove. I print out the list with their index numbers and use `input()` to get the index for the thing they want to remove. I then use `pop()` to get rid of that item.
+
+[source,python]
+----
+    elif choice == 'r':
+        for i in range(len(to_do_items)):
+            print i, to_do_items[i]
+        remove = input("Remove #: ")
+        to_do_items.pop(remove)
+----
+
+If the user wants to print all of the items in the list, I use a `for` loop to do that.
+
+[source,python]
+----
+    elif choice == 'p':
+        for item in to_do_items:
+            print item
+----
+
+If the user wants to quit, I say goodbye. If I get any other input, I print a very brief error message.
+
+[source,python]
+----
+	elif choice == 'q':
+        print "Goodbye!"
+    else:
+        print "Huh?"
+----
+
+Once the user decides to quit, I save the to-do list items to a file. I add a new line character to each item. If I don't, then all of my to-do items end up on one line!
+
+[source,python]
+----
+f = open("mytodo.txt", "w")
+for item in to_do_items:
+    f.write(item + "\n")
+f.close()
+----
 
 === Try adding...
 
-=== The final code
+What if we wanted the option to keep track of things that we had completed? Try giving the user the option to mark items as 'done' and save them to another file. 
