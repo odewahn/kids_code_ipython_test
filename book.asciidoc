@@ -24,7 +24,9 @@ include::08.0---Dictionaries-and-lists.asciidoc[]
 
 include::08.1---Files.asciidoc[]
 
-include::09---Project:-To-do-list.asciidoc[]
+include::09.0---Project:-To-do-list.asciidoc[]
+
+include::09.1---Errors.asciidoc[]
 
 include::10---Importing-modules.asciidoc[]
 
