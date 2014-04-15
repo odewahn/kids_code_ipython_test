@@ -1,19 +1,86 @@
 == Errors and failing with grace
 
+I've yet to meet a programmer who can write lines and lines and lines of code without ever getting an error. Python wants us to be super precise. If we forget a colon or a parentheses, Python will simply refuse to do anything until we go and fix our mistake. In this lesson, we're going to learn about what errors in Python look like, how to read the errors, and 
+
 === What you'll need to know...
+
+We won't be using `if` statements in this lesson, but we'll be learning about something that looks very similar. Be comfortable with writing `if / else` statements before you move on.
 
 === A note for the mentor
 
+Errors freak students out at first. Some will think they've broken Python. Others will take it as a sign that they should never write another line of code. I've watched students walk away from a program that was mostly working because tracebacks can look scary at first blush.
+
+It's important to emphasize that everyone gets errors. The only difference between the errors a beginner gets and the errors an experienced coder gets is that the experienced coder gets more obtuse errors. Well, sometimes. Over a decade in, I still forget colons now and then.
+
+We're also going to be learning about catching exceptions with `try / except`. It's vital that you emphasize that you need to be careful about catching errors. Some students will start wrapping all of their code in a `try / except` so that they never have to see an error again!
+
 === What does an error look like?
+
+You've probably seen an error already, but just in case your Python has been 100% perfect, let's go ahead and make Python throw an error. Run the following code, and watch what Python spits out.
+
+[source,python]
+----
+x = 1 / 0
+----
+
+You should have gotten something like this:
+
+[source,python]
+----
+>>> x = 1 / 0
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ZeroDivisionError: integer division or modulo by zero
+----
+
+When Python throws an error (and yes, we call it _throwing_ an error), we call it a *traceback*. Python starts at where it got an error, and steps back in the program to show where it was right before the error happened.
+
+Think of it like this: Have you ever misplaced something? Someone will usually ask you where you were the last time you had it. When you tell them, they ask you where you were before that, and before that, and before that. You retrace your steps until you find the thing you lost. Python is doing the same thing, telling you where your code went off the rails, and then talking about everything it was doing up until that point.
 
 === Errors are good!
 
-=== Some common errors
+Errors can seem really scary at first! Python spits a bunch of information at you and your code isn't working and it can be tempting to just walk away and become a hermit. 
+
+As an experienced developer, however, I feel relieved when I see an error. Python is doing its very best to tell me how to make my program work. I have something I can pop into a search engine, which allows me to find out how other people solved my problem. I have something I can easily share with my friends, so they can help me figure out what's going on.
+
+Sometimes, programs don't work the way you expect them to, but they don't give you an error. That is _much_ harder to figure out. You have to start digging through your code to sort out where things have gone wrong, which takes much longer.
 
 === Figuring out a traceback
+
+There are two parts to a traceback: 
+
+* What Python was doing
+* What kind of error you got
+
+Here, I have a script that threw an error:
+
+----
+Hi, this is a my program
+Getting some stuff
+Give me a num: f
+Traceback (most recent call last):
+  File "makeerror.py", line 11, in <module>
+    main()
+  File "makeerror.py", line 8, in main
+    num = get_num()
+  File "makeerror.py", line 2, in get_num
+    num = input("Give me a num: ")
+  File "<string>", line 1, in <module>
+NameError: name 'f' is not defined
+----
+
+In general, I scroll down to the bottom of my traceback and read up. The last part of the traceback is the exact error I got:
+
+ 
+
+=== Some common types of errors
+
+=== Sharing a traceback
 
 === Working around errors
 
 ==== No naked exceptions!
+
+=== Forcing an error
 
 === Try this!

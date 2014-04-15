@@ -221,7 +221,7 @@ If the user wants to quit, I say goodbye. If I get any other input, I print a ve
 
 [source,python]
 ----
-	elif choice == 'q':
+    elif choice == 'q':
         print "Goodbye!"
     else:
         print "Huh?"
