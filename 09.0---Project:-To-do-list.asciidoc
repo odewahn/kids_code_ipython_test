@@ -240,3 +240,5 @@ f.close()
 === Try adding...
 
 What if we wanted the option to keep track of things that we had completed? Try giving the user the option to mark items as 'done' and save them to another file. 
+
+Also, my script doesn't do a very good job of checking user input. Can you improve on it, so the user can't break the script by entering a bad value?
