@@ -55,25 +55,120 @@ There are two parts to a traceback:
 Here, I have a script that threw an error:
 
 ----
-Hi, this is a my program
-Getting some stuff
-Give me a num: f
+Name: Jacob
+Age: 13
 Traceback (most recent call last):
-  File "makeerror.py", line 11, in <module>
+  File "makeerror.py", line 18, in <module>
     main()
-  File "makeerror.py", line 8, in main
-    num = get_num()
-  File "makeerror.py", line 2, in get_num
-    num = input("Give me a num: ")
-  File "<string>", line 1, in <module>
-NameError: name 'f' is not defined
+  File "makeerror.py", line 15, in main
+    print_stuff(name, age)    
+  File "makeerror.py", line 10, in print_stuff
+    print "Hi, " + name + ", who is " + age + "."
+TypeError: cannot concatenate 'str' and 'int' objects
 ----
 
 In general, I scroll down to the bottom of my traceback and read up. The last part of the traceback is the exact error I got:
 
- 
+----
+TypeError: cannot concatenate 'str' and 'int' objects
+-----
+
+The first word is the kind of error, and the rest of the text tries to explain exactly what happened. Apparently, we can't "concatenate" some things?
+
+If I look up "concatenate" in any dictionary, I see that means "add together." Okay, we tried to add two things together that can't be added. Python says I tried to add "str" and "int" together... Sounds like I tried to add a string and an integer together, doesn't it?
+
+If we look a the next two lines up (remember, we're starting from the bottom), we can see a bit of code, and where it is in my script:
+
+----
+  File "makeerror.py", line 10, in print_stuff
+    print "Hi, " + name + ", who is " + age + "."
+----
+
+It looks like the script is trying to print out something using a plus sign. It's a good bet that age is an integer! This is probably where our error is from, but if we weren't sure, we could keep going back. At least now, we have a place to start digging around.
 
 === Some common types of errors
+
+It's good to be familiar with some of the basic errors that you can get in Python. Sure, you can look them up when you get them, but if you can skip a search, then you can get to solving your problem even faster!
+
+*SyntaxError*: Syntax is the grammar of a programming language. Python expects certain everything in a certain order, and is very particular about you remembering to put colons and parentheses where they need to be. 
+
+For example, here, I forgot to add the colon when making an `if` statement:
+
+[source,python]
+----
+>>> if 1 == 1
+  File "<stdin>", line 1
+    if 1 == 1
+            ^
+SyntaxError: invalid syntax
+----
+
+If you get this, double check what sort of syntax Python is expecting. 
+
+*IndentationError*: You probably have gotten this one a few times. Python needs you to indent your code properly, so it knows what goes in a block. Here, I didn't indent my code properly, causing Python to throw an error:
+
+[source,python]
+----
+>>> while True:
+print "Hey"
+  File "<stdin>", line 2
+    print "Hey"
+        ^
+IndentationError: expected an indented block
+----
+
+If you see this, make sure that all of the code in a block is indented the same number of spaces.
+
+*NameError*: Often, this error will pop up if you try to use a variable that doesn't exist yet. Nine times out of ten, when I see this, it's because I made a typo somewhere. In this example, pay attention to what variables I'm using:
+
+[source,python]
+----
+>>> myname = "Katie"
+>>> print mynmae
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'mynmae' is not defined
+----
+
+If you see this, check to see that the variable that threw the error is spelled correctly, and that you've used it at least once.
+
+*TypeError*: All data has types, and we can only do specific things with certain types of data. If you see this pop up, then you're probably trying to do something with that type of data that you can't do. For example, I can't add a list to an integer.
+
+[source,python]
+----
+>>> [1, 2, 3] + 4
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can only concatenate list (not "int") to list
+----
+
+If you see this, either use a different way of doing what you want to do, or convert the value that's giving you trouble into a data type that works.
+
+*IndexError*: You usually see this error with lists. It pops up when you a list doesn't have anything for an index that you give it. For example, this list only goes up to index two, and we're trying to see what's in index three.
+
+[source,python]
+----
+>>> mylist = [1, 2, 3]
+>>> mylist[3]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: list index out of range
+----
+
+If you see this, double check how many items you actually have in your list first by using `len()`.
+
+*KeyError*: This error is like an IndexError for dictionaries. When you see this, it's probably because the dictionary you're working with doesn't have a value paired with the key you're trying to use. Here, I have the keys "one", "two", and "three", but not "four":
+
+[source,python]
+----
+>>> mydict = {"one": 1, "two": 2, "three": 3}
+>>> mydict["four"]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'four'
+----
+
+If you see this, you might want to add an `if` statement, checking to see if that key is actually in that dictionary.
 
 === Sharing a traceback
 
