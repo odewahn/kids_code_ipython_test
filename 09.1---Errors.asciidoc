@@ -86,7 +86,7 @@ If we look a the next two lines up (remember, we're starting from the bottom), w
 
 It looks like the script is trying to print out something using a plus sign. It's a good bet that age is an integer! This is probably where our error is from, but if we weren't sure, we could keep going back. At least now, we have a place to start digging around.
 
-=== Some common types of errors
+==== Some common types of errors
 
 It's good to be familiar with some of the basic errors that you can get in Python. Sure, you can look them up when you get them, but if you can skip a search, then you can get to solving your problem even faster!
 
@@ -170,9 +170,21 @@ KeyError: 'four'
 
 If you see this, you might want to add an `if` statement, checking to see if that key is actually in that dictionary.
 
-=== Sharing a traceback
+==== Sharing a traceback
+
+Sometimes, you'll want a second pair of eyes to look at your error. Your first instinct might be to copy the entire error and email it to someone, or paste it in a chat window.
+
+*Don't do this!*
+
+A better way to share errors is to use a website that allows you to share bits of code with other people. You can paste the code into a form, and the website will create a URL for you to share. The formatting will be nicer, you can share the link with many people, and you won't be making someone's chat cliet go nuts.
+
+There are many sites that allow you to share code, but my favorite is dpaste.com. It's simple and free, and you don't need to create an account to use it. Also, it automatically deletes your code after a while, so you don't have to worry about old errors sitting out there forever.
+
+One warning: If there's any sensitive information (like usernames, passwords, etc) in your code, *delete them* before pasting it. Remember, anyone can see these!
 
 === Working around errors
+
+
 
 ==== No naked exceptions!
 
