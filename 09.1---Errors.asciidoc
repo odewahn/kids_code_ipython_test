@@ -184,10 +184,84 @@ One warning: If there's any sensitive information (like usernames, passwords, et
 
 === Working around errors
 
+Sometimes, you know that an error might happen with your code. You don't want Python to stop working, though. Maybe you have a backup plan, or maybe you just want to have the program close without a nasty error.
 
+This is where `try / except` is useful. A `try / except` statement looks a bit like `if \ else`.
+
+[source,python]
+----
+try:
+  code
+  code
+except ErrorType:
+  code
+  code
+----
+
+When Python sees a `try / except` statement, it will first run all the code in the `try` block. If Python gets an error, it will check to see if there's an `except` block for that error. If there is, Python will run that code and continue with the program. If there isn't a matching `except` block, Python will go ahead and throw the error.
+
+Let's watch this in action! Let's say I want to get two numbers from a user, then divide the first number by the second number:
+
+[source,python]
+----
+num1 = input("First number: ")
+num2 = input("Second number: ")
+print "Result:", num1 / num2
+----
+
+This works fine... until the user gives me a zero. That causes an error, because you can't divide by zero.
+
+----
+First number: 5
+Second number: 0
+Result:
+Traceback (most recent call last):
+  File "divzero.py", line 3, in <module>
+    print "Result:", num1 / num2
+ZeroDivisionError: integer division or modulo by zero
+----
+
+We can use `try / except` to work around this possibility, though! Here, we're going to put it around the print statement. If we get a `ZeroDivisionError`, we print "Infinity".
+
+----
+num1 = input("First number: ")
+num2 = input("Second number: ")
+try:
+  print "Result:", num1 / num2
+except ZeroDivisionError:
+  print "Result: Infinity"
+----
+
+Now, when we run our program, it doesn't crash when the user gives us a zero.
+
+----
+First number: 5
+Second number: 0
+Result: Result: Infinity
+----
+
+Note that our program isn't set up to catch any errors _besides_ dividing by zero. Enter something that isn't a number, and the program will still crash.
 
 ==== No naked exceptions!
 
-=== Forcing an error
+Every now and then, you'll see something like this:
+
+[source,python]
+----
+try:
+  code
+except:
+  code
+----
+
+Did you see what was missing? The error type! If Python throws _any_ kind of error, the code in the `except` block will run.
+
+At first, this seems like a great time saver. Why figure out what errors you want to prepare for when you can just do one thing for them all? This can make your program act weird, though, and much harder to debug. Remember: *errors are good*. They make it easier for us to figure out how to fix broken code.
+
+So don't let your exceptions be naked!
 
 === Try this!
+
+In our To-Do list project, we assumed that the file "mytodo.txt" already existed. Add a `try / except` where, if we can't open the file, we create a blank list for our to-do items.
+
+Another place where you might get an error is when the user tries to delete something. Make it so that the user can't give you a bad value. You might use a `while` loop to do this, or a `try / except` statement, or a combination of the two!
