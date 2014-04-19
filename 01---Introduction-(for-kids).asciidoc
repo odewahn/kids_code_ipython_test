@@ -2,7 +2,18 @@
 
 == Introduction (for kids)
 
-TODO: Pithy intro
+Programming is a funny thing. I've known people who wrote their first program before they had figured out how to make their own lunch. I've taught retirees how to code. I know people that do it for a living, and many others that do it just for fun, or to make their everyday work easier. The community of programmers I'm in spans the globe, and the language we're about to use has been used on every contient... including Antartica!
+
+[[antartica]]
+.Selfie at the south pole
+[float="true"]
+image::images/antartica.jpg["A man takes a picture of himself using the reflective South Pole. The site is surrounded by flags from many countries."]
+
+So why is it that people think very narrowly about what it means to be a programmer? The sterotype is that we work in an office on super boring applications, and that all we do is code. And drink a ton of coffee.
+
+Very few programmers I know fit into that stereotype, though. I know people at Disney who use code to make animated films. Others use code to help advocate causes they believe in. Programmers work in labs, finding cures for cancer, and they work in the game industry, making the next big sellers. Me? I written code at NASA, at newspapers, and I've used code to automate some of the more boring tasks in my life. I've given talks at conferences about programming, and I've written books about it.
+
+Programming is awesome because it opens doors.
 
 === Who is this book for?
 

@@ -1,5 +1,20 @@
 == Minecraft and Python
 
+////
+Notes for me:
+
+Need: 
+ - Minecraft
+ - Craftbukkit
+
+Notes:
+ - MC and CB versions MUST MATCH
+ - You can downgrade MC in the profile editor
+
+Connecting:
+ - localhost is what you want, more than likely
+////
+
 === What you'll need to know...
 
 === A note for the grown-up

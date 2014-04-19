@@ -12,7 +12,6 @@ This is stuff that I need to add somewhere.
 * Glossary
 * Add chapter: Edit this code (Use turtles!)
 * Change 'adult' or 'parent' to 'mentor'
-* Add try / except
 
 Add to each section on revision:
 

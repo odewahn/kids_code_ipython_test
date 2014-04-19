@@ -1,0 +1,25 @@
+By May 15
+=========
+
+- Let's get started:
+  - Video: Install on 7
+  - Video: Install on 8
+  - Video: Get started on Mac
+  - Final edits
+  - Inline quizzes
+  - Adult -> Mentor
+  - Ask mentor about...
+
+- The Basics:
+  - Review video
+  - Final edits
+  - Inline quizzes
+  - Divide by zero
+  - Adult -> Mentor
+  - Ask mentor about...
+
+- Running code sometimes:
+  - Inline quizzes
+  - Adult -> Mentor
+  - Ask mentor about
+  - Review video
