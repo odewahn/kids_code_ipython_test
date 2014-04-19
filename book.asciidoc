@@ -2,8 +2,6 @@
 
 = Kids Code
 
-include::0---Proposal.asciidoc[]
-
 include::01---Introduction-(for-kids).asciidoc[]
 
 include::02---Introduction-(for-parents).asciidoc[]
