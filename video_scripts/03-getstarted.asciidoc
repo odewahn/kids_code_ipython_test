@@ -1,0 +1,17 @@
+== Video scripts
+
+Each section will its own video
+
+=== Installing on Windows 7
+
+In this video, we’re going to install Python on Windows 7. If you’ve installed anything before, then this will be a cinch!
+
+Browser shots
+
+First, we need to get Python from Python.org. Bring up python.org in any browser and hover over "Downloads". Go ahead and select "Windows"
+
+Here, you can see there's a bunch of versions to choose from. We're just interested in this one, though: 2.7.5. Make sure you select the latest release that starts with two! If you install Python 3, some of the code in this book won't work.
+
+Install shots
+
+Now that Python is downloaded, let's install it. Click on the downloaded file.
