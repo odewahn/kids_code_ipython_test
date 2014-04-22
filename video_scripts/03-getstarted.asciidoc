@@ -6,12 +6,34 @@ Each section will its own video
 
 In this video, we’re going to install Python on Windows 7. If you’ve installed anything before, then this will be a cinch!
 
-Browser shots
+Screen: Browser shots
 
 First, we need to get Python from Python.org. Bring up python.org in any browser and hover over "Downloads". Go ahead and select "Windows"
 
 Here, you can see there's a bunch of versions to choose from. We're just interested in this one, though: 2.7.5. Make sure you select the latest release that starts with two! If you install Python 3, some of the code in this book won't work.
 
-Install shots
+Screen: Install shots
 
-Now that Python is downloaded, let's install it. Click on the downloaded file.
+Now that Python is downloaded, let's install it. Click on the downloaded file. 
+
+In general, you can just keep clicking "Next." The default settings are just fine.
+
+Once you're done installing Python, you should have a few new things in your Start menu. As you can see, there's now a Python 2.7 folder that has a few things in it. We'll be working with IDLE, so go ahead and open that up. Next, we'll go over how to use IDLE.
+
+=== Installing on Windows 8
+
+In this video, we’re going to install Python on Windows 8. If you’ve installed anything before, then this will be a cinch!
+
+Screen: Browser shots
+
+First, we need to get Python from Python.org. Bring up python.org in any browser and hover over "Downloads". Go ahead and select "Windows"
+
+Here, you can see there's a bunch of versions to choose from. We're just interested in this one, though: 2.7.5. Make sure you select the latest release that starts with two! If you install Python 3, some of the code in this book won't work.
+
+Screen: Install shots
+
+Now that Python is downloaded, let's install it. Click on the downloaded file. 
+
+In general, you can just keep clicking "Next." The default settings are just fine.
+
+Once you're done installing Python, bring up Metro. If you start typing "Python," you'll see some new items pop up. We'll be working with IDLE, so go ahead and open that up. Next, we'll go over how to use IDLE.
