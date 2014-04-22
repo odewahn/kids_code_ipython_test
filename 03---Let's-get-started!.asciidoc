@@ -12,6 +12,29 @@ For this section, you're going to need:
 
 *An Internet connection.* You're going to need to download Python in order to install it. 
 
+=== Notes for the mentor
+
+In this lesson, we're going to get Python installed and get the student familiar with working with IDLE.
+
+Even if you're a Python developer, you've probably never touched IDLE. Most developers I chat with at conferences aren't even aware that Python comes with an IDE! It's a great environment for beginners, though, because it comes with some great stuff out of the box:
+
+* There is no messing with paths. Run it and go! If the student is on Windows, this can be a huge boon to them. So many students get stuck on paths!
+* It has tab completion! Getting tab completion is easy enough for experts to set up, but can be intimidating for beginners. 
+* It comes with color coding. I know some old-school programmers hate it, but color coding can really help a beginner understand syntax and gives them a feeling of confidence as the code.
+* It comes with Python. One install, and we're ready to go!
+* Drop down menus allow the student to explore what methods and attributes various objects have. Even the docs show up as you mouse over the various options!
+
+You probably will want to take a while to get familiar with IDLE, since that's where I have the student work. Some of the stuff that might throw you:
+
+* Pressing the up arrow moves your cursor up rather than bringing up a previous command.
+* If your cursor is on a previously entered code, hitting enter will paste that code at your prompt.
+* If you can't seem to type, your cursor is probably just slightly off of where it needs to be. Hit enter or use the mouse to move the cursor to where it needs to be (which is right in front of the prompt).
+* Also, if you create a block, IDLE will indent for you, but you won't get the usual three dots indicating that you're in a block. You'll just be missing the usual prompt.
+
+If students get stuck in the upcoming lessons, it's usually because they're not used to being precise. Remind them to type in everything *just* as I've shown, down to the punctuation marks. Another place they get stuck is that they try to enter the prompt in as code, so watch out for that.
+
+Let them play around with the shell and such, printing out various things, until they're comfortable enough to move on to the next lesson.
+
 .Python 2 vs Python 3
 [NOTE]
 ====
@@ -30,6 +53,12 @@ Let's install Python! First, though, we need to figure out what operating system
 
 An operating system is a collection of programs that works with the hardware of your computer (that's the stuff you can touch). So, your operating system helps images appear on your monitor, or knows that when you move your mouse or touch your touchpad that you want to move the cursor. It's a layer between the programs you want to run (like games, browsers, or word processing programs) and the physical part of the machine.
 
+[[os_interaction]]
+.How the hardware, operating system, and programs interact
+image::images/os_interaction.png[]
+
+So, as in <<os_interaction>>, the user presses a key on a keyboard, and the keyboard tells the operating system which key was pressed. Note, however, that the keyboard doesn't know that the user hit the space key! It only knows that key 216 was pressed! The operating system knows that 216 is the space key, so it tells the game. The game knows that when the space key is pressed, that the user's character should jump.
+
 More than likely, you're running one of the two major operating systems. 
 
 ==== Windows
@@ -40,9 +69,9 @@ If you have a computer that has Start menu or Start screen, then you're running 
 .Screenshots of Windows XP, 7, and 8
 image::images/windows_shots.png["Default sceenshots of three Windows desktops"]
 
-If you are, in fact, running Windows, go ahead and download Python from http://www.python.org/download/[Python.org's download page]. 
+If you are, in fact, running Windows, go ahead and download Python from https://www.python.org/downloads/windows/[Python.org's download page]. 
 
-Python will run on nearly every version of Windows out there, but the download page has multiple versions available. You're going to need to search for the link that says something like "Python 2.7.6 Windows Installer".
+There are going to be a bunch of links on that page, but we only care about the top two. Pick the one for Python 2.7.6.
 
 [NOTE]
 ====
@@ -50,8 +79,6 @@ The version numbers might change slightly. Just make sure that the first number 
 ====
 
 Installing it should be pretty easy. Once the file has downloaded, click on the installer and follow the instructions. If you get stuck or nervous, I've included a video here that goes through the process step-by-step and explains what each screen means.
-
-TODO: Video
 
 Once you're done installing Python, check out your installed applications. On XP and 7, you can click on the Start button. On Windows 8, you can hit your Windows key and type 'Python' to bring up your Python applications. 
 
@@ -64,14 +91,20 @@ One of the applications is called IDLE. That's what we'll be working in for the 
 
 ==== Mac OS
 
-If you have a computer that has a glowing apple on it or an Apple on the toolbar (check out Figure X.X), then you're on a Mac! And guess what? Python is already installed! You won't see it as an application in your Applications folder, but it's there, trust me.
+If you have a computer that has a glowing apple on it or an Apple on the toolbar (check out <<apple_toolbar>>), then you're on a Mac! 
+
+[[apple_toolbar]]
+.The apple on a Mac's toolbar
+image::images/mactoolbar.png[]
+
+And guess what? Python is already installed! You won't see it as an application in your Applications folder, but it's there, trust me.
 
 [[mac_spotlight]]
 .Mac's spotlight menu at work
 [float="true"]
 image::images/spotlight.png["A user is searching for Adobe using Spotlight"]
 
-Before we move on, we want to make sure that Python is working. First, you'll need to bring up something called a Terminal. Search for Terminal in your Spotlight (the magnifying glass on your toolbar). When you click on it, a window should pop up that looks something like the screenshot in Figure X.X.
+Before we move on, we want to make sure that Python is working. First, you'll need to bring up something called a Terminal. Search for Terminal in your Spotlight (the magnifying glass on your toolbar). When you click on it, a window should pop up that looks something like the screenshot in <<mac_terminal>>.
 
 [[mac_terminal]]
 .Mac Terminal
@@ -87,34 +120,34 @@ video::http://www.youtube.com/embed/4BELLHgnFzM[height='300', width='500', poste
 
 By now, no matter what operating system you're on, you should have IDLE up. What is IDLE?
 
-IDLE is an application that comes with Python that makes it easier for you to write and run code. It has two parts: The interpreter, and the editor. Right now, you probably have the interpreter open (there should be a prompt that looks like this: ">>>"). To open the editor, go to File > New. A blank window should open.
+IDLE is an application that comes with Python that makes it easier for you to write and run code. It has two parts: The shell, and the editor. Right now, you probably have the shell open (there should be a prompt that looks like this: ">>>"). To open the editor, go to File > New. A blank window should open.
 
 [idle_intepreter]
-.The IDLE interpreter
-image::images/idle-intepreter.png["A screenshot of the IDLE intepreter",scale=50]
+.The IDLE shell
+image::images/idle-intepreter.png["A screenshot of the IDLE shell",scale=50]
 
 [idle_editor]
 .The IDLE editor
 image::images/idle-editor.png["A screenshot of the IDLE editor",scale=50]
 
-The interpreter is like a live wire. Python is sitting there, listening, waiting for you go give it a command. Once you give it a command, it will run it right away, then wait for the next command.
+The shell is like a live wire. Python is sitting there, listening, waiting for you go give it a command. Once you give it a command, it will run it right away, then wait for the next command.
 
-The interpreter is like a bumbling minion. The second you tell it to do something, it runs off and does it! So, if you had ten things for it to do, you're going to have to wait around until it comes back so you can give it your next command.
+I like to think of the shell as a bumbling minion. The second you tell it to do something, it runs off and does it! So, if you had ten things for it to do, you're going to have to wait around until it comes back so you can give it your next command.
 
-The editor is used to create Python files, which allow you to write out a series of commands and save them. Once you've saved the Python file, you can run it,a nd the results will show up in the interpreter. 
+The editor is used to create Python files, which allow you to write out a series of commands and save them. Once you've saved the Python file, you can run it,a nd the results will show up in the shell. 
 
 The editor is like working with a better trained minion. This one, you can give a list of things to do, and it will only come back if it had trouble or if it's done with all its tasks.
 
-==== Working in the Interpreter
+==== Working in the shell
 
-Let's play around in the interpreter for a bit. Try typing out the following:
+Let's play around in the shell for a bit. Try typing out the following:
 
 [source,python]
 ----
 >>> print "Hello, world"
 ----
 
-Hit enter. Python should have immediately printed out 'Hello, world' on the next line. Your interpreter should look something like this:
+Hit enter. Python should have immediately printed out 'Hello, world' on the next line. Your shell should look something like this:
 
 [source,python]
 ----
@@ -134,7 +167,7 @@ Let's try saving some code into a file and running it. Open the text editor by g
 print "Hello, world"
 ----
 
-Save the file as 'hello.py', but don't close it. Instead, go to Run > Run Module. Then go back to see what happened in the interpreter. You should see the following:
+Save the file as 'hello.py', but don't close it. Instead, go to Run > Run Module. Then go back to see what happened in the shell. You should see the following:
 
 [source,python]
 ----
@@ -144,7 +177,7 @@ Hello, world
 >>> 
 ----
 
-You can run this file again and again, which is a definite advantage over just typing stuff in the interpreter! Usually, I use the shell for when I want to mess around and test stuff, and Python files for the lines of code I want to save.
+You can run this file again and again, which is a definitely easier than just typing stuff in the shell! Usually, I use the shell for when I want to mess around and test stuff, and Python files for the lines of code I want to save.
 
 === Working in the book!
 
@@ -160,7 +193,7 @@ TODO: Once I sort this out
 
 === Try this!
 
-Try entering the following things into your interpreter:
+Try entering the following things into your shell:
 
 [source,python]
 ----
@@ -170,26 +203,3 @@ Try entering the following things into your interpreter:
 ----
 
 Check out that last line of code. What did Python print out when you entered `print a`? Why do you think it printed out what it did?
-
-=== Notes for the adult
-
-In this lesson, we're going to get Python installed and get the student familiar with working with IDLE.
-
-Even if you're a Python developer, you've probably never touched IDLE. Most developers I chat with at conferences aren't even aware that Python comes with an IDE! It's a great environment for beginners, though, because it comes with some great stuff out of the box:
-
-* There is no messing with paths. Run it and go! If the student is on Windows, this can be a huge boon to them. So many students get stuck on paths!
-* It has tab completion! Getting tab completion is easy enough for experts to set up, but can be intimidating for beginners. 
-* It comes with color coding. I know some old-school programmers hate it, but color coding can really help a beginner understand syntax and gives them a feeling of confidence as the code.
-* It comes with Python. One install, and we're ready to go!
-* Drop down menus allow the student to explore what methods and attributes various objects have. Even the docs show up as you mouse over the various options!
-
-You probably will want to take a while to get familiar with IDLE, since that's where I have the student work. Some of the stuff that might throw you:
-
-* Pressing the up arrow moves your cursor up rather than bringing up a previous command.
-* If your cursor is on a previously entered code, hitting enter will paste that code at your prompt.
-* If you can't seem to type, your cursor is probably just slightly off of where it needs to be. Hit enter or use the mouse to move the cursor to where it needs to be (which is right in front of the prompt).
-* Also, if you create a block, IDLE will indent for you, but you won't get the usual three dots indicating that you're in a block. You'll just be missing the usual prompt.
-
-If students get stuck here, it's usually because they're not used to being precise. Remind them to type in everything *just* as I've shown, down to the punctuation marks. Another place they get stuck is that they try to enter the prompt in as code, so watch out for that.
-
-Let them play around with the shell and such, printing out various things, until they're comfortable enough to move on to the next lesson.
