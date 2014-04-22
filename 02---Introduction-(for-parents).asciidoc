@@ -1,6 +1,6 @@
-== Introduction (for adults)
+== Introduction (for mentors)
 
-I spend a significant amount of time teaching kids to code at conferences or clubs. There, I always run into parents who had wanted their kids to learn to code, but the books on the market seemed to fall short. Some kids showed interest in the idea of programming, but even the most approachable book seemed to lose them after a few chapters.
+I spend a significant amount of time teaching kids to code at conferences and clubs. There, I always run into parents who had wanted their kids to learn to code, but the books on the market seemed to fall short. Some kids showed interest in the idea of programming, but even the most approachable book seemed to lose them after a few chapters.
 
 Why was this happening? I surveyed a few kids (my own son included), and found that the main problem wasn't the books. It was getting stuck.
 
@@ -10,9 +10,9 @@ This book is meant to be a journey for both you and the student. In fact, I'm go
 
 === Who is this book for?
 
-This book is written for a novice / expert pair. One of you you should be pretty comfortable with programming. The other doesn't need to know anything at programming at all. 
+This book is written for a novice / mentor pair. One of you you should be pretty comfortable with programming. The other doesn't need to know anything at programming at all. 
 
-You, the expert, don't need to be an expert on everything I'm going to go over. I'm going to be covering some topics that not every developer is familiar with, like building websites and messing around with game libraries. That's okay, though! The chapters that go with these projects should be enough to at least allow you to help your novice troubleshoot.
+You, the mentor, don't need to be an expert on everything I'm going to go over. I'm going to be covering some topics that not every developer is familiar with, like building websites and messing around with game libraries. That's okay, though! The chapters that go with these projects should be enough to at least allow you to help your novice troubleshoot.
 
 ==== If you don't know Python...
 
@@ -44,15 +44,13 @@ This is actually a popular concept in the psychology of learning. It's called sc
 
 ==== Scaffolding
 
-Scaffolding was first described by Lev Vygotsky. He noticed that children in a Russian village were able to create complexly colored fabrics at a young age. He noticed that the elders had a particular way of teaching the youth of the village: they were given tasks that were only slightly out of their current level of ability.
+Scaffolding was first described by Lev Vygotsky. He noticed that children in a rural village were able to create complexly colored fabrics at a young age. He noticed that the elders had a particular way of teaching the youth of the village: they were given tasks that were only slightly outside their current level of ability.
 
 [[vygotsky]]
 .Good ol' Lev Vygotsky
 image::images/lev.jpg["A portrait of Vygotsky", scale=25]
 
-TODO: Verify story to make sure it was in Russia!
-
-So, they might first help a parent on a loom, threading a row or two, or helping with the spools. Later, they might be given a small loom with a work already in progress and allowed to continue it. Eventually, they would move up to helping with more complex projects, starting their own projects, and eventually doing complex works on their own. Each time, the child was moved only slightly outside of their comfort zone, and always under the eye of an expert.
+The child might first help a parent on a loom, threading a row or two, or helping with the spools. Later, they might be given a small loom with a work already in progress and allowed to continue it. Eventually, they would move up to helping with more complex projects, starting their own projects, and eventually doing complex works on their own. Each time, the child was moved only slightly outside of their comfort zone, and always under the eye of an expert.
 
 ==== Hands on / Hands off
 
@@ -70,7 +68,7 @@ If you have to guess (and there will be some guesswork in the beginning), always
 
 Managing expectations is critical to averting frustration, both yours and theirs. Some kids come in expecting to write a Minecraft clone, and are distressed when they realize they won't be doing that inside of a week. Some parents are distressed as well when they feel that the lessons are going too slowly. 
 
-Know that I move slowly at first because this is *major stuff* the student is learning. This is a completely foreign concept to most students. Even the most basic of concepts, storing values in variables, can seem weird. Where did the old value go? Why can't I get get that value back after I close down my interpretter? Why does the variable need to come first? Why can't it start with a number?
+Know that I move slowly at first because this is *major stuff* the student is learning. This is a completely foreign concept to most students. Even the most basic of concepts, storing values in variables, can seem weird. Where did the old value go? Why can't I get get that value back after I close down my shell? Why does the variable need to come first? Why can't it start with a number?
 
 So, as we get revved up, be patient, and even more importantly, celebrate small victories. I think developers forget how cool it was the first time we combined a print statement with a variable to get the computer to say something to us. It was cool, though! We were taking a mysterious thing and making it do what we wanted! 
 
@@ -78,7 +76,7 @@ So make sure to comfort the impatient student by pointing out that we *will* be 
 
 === The set-up
 
-First, you need to make sure that the student has access to a computer and a quiet space. If you share a family computer, it might be a good idea to set up a schedule so that they don't get into the zone, only to be ripped out because a sibling has to check Facebook, or a parent has to send an email.
+First, you need to make sure that the student has access to a computer and a quiet space. If the student shares a family computer, it might be a good idea to set up a schedule so that they don't get into the zone, only to be ripped out of it because a sibling has to check Facebook, or a parent has to send an email.
 
 You should also discuss how you want to work through the book together. The older student may just want to show you the finished product, while the younger one may want you to sit side-by-side and work through some of the code samples and projects. Don't be afraid to help! You're there to show off what Python can do as well as answer questions that this book doesn't cover.
 

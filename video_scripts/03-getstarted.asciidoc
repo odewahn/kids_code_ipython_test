@@ -1,4 +1,4 @@
-== Video scripts
+== Video scripts for "Getting Started"
 
 Each section will its own video
 
@@ -37,3 +37,15 @@ Now that Python is downloaded, let's install it. Click on the downloaded file.
 In general, you can just keep clicking "Next." The default settings are just fine.
 
 Once you're done installing Python, bring up Metro. If you start typing "Python," you'll see some new items pop up. We'll be working with IDLE, so go ahead and open that up. Next, we'll go over how to use IDLE.
+
+=== Installing on Mac OS
+
+If you're using a Mac, you don't have to install anything! Macs come with Python installed. 
+
+To bring up IDLE, we're going to have to use your terminal. Go to Spotlight and search for "Terminal." Click "Terminal" to bring up a Terminal window.
+
+If your Spotlight isn't working, you'll find Terminal under Applications > Utilities.
+
+Once your Terminal is open, type in "idle". This will bring up IDLE! Note, though, that if you close this particular terminal window, IDLE will close!
+
+
