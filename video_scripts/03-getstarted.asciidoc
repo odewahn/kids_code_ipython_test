@@ -48,4 +48,6 @@ If your Spotlight isn't working, you'll find Terminal under Applications > Utili
 
 Once your Terminal is open, type in "idle". This will bring up IDLE! Note, though, that if you close this particular terminal window, IDLE will close!
 
+=== Working with IDLE
+
 

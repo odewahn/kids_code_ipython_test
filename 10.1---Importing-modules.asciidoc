@@ -1,0 +1,91 @@
+== Using modules
+
+One of my main jobs as a programmer is to figure out how to write less code. 
+
+If someone else has done something similar, then it only makes sense to use their code rather than duplicate all of their effort. In the Python community, we often will put up code that helped us in our job for others to use. Most of the time, we don't even charge for it! 
+
+Python comes with a large library of code that other people have written, just to make your life a bit easier. It's well worth the time and energy to get to know what's in this library so that you can start making awesome things sooner.
+
+=== What you'll need to know...
+
+=== A note for the mentor
+
+In this lesson, we're going to *finally* get to modules. 
+
+This is one of the lessons that I find to be the easiest to teach. Students do not mind being shown a shortcut. This is also one of those places where their programs really start to bloom. Feel free to show off your favorite modules, or take an hour to search for modules to help them do what they want to do. If you want more of a guided tour, check out the modules and frameworks appendix.
+
+So buckle up! This should be a fun ride!
+
+=== What's a module?
+
+A module is nothing more than a file that has a bunch of code that you want to import into your code. Once you import a module, you can use everything in it just like you had written the code yourself.
+
+Importing a module usually looks like one of these lines:
+
+[source,python]
+----
+import module
+from module import thing
+----
+
+Why import three different ways? Because sometimes you want just a few things, and sometimes you want it all.
+
+If you do `import module`, then Python will import all the things in that module into your program. It might be five things. It might be twenty things. You'll be getting them all, though.
+
+If you use this method, then your code would look something like this:
+
+[source,python]
+----
+import module
+
+module.thing()
+----
+
+If you just want to bring in one thing, then you can do `from module import thing`. Then, your code would look something like this:
+
+[source,python]
+----
+from module import thing
+
+thing()
+----
+
+Notice how we didn't have to say `module.thing()`? We can just use thing on its own.
+
+=== Why use them?
+
+=== Random
+
+==== Getting random numbers
+
+==== Getting random items
+
+=== Datetime
+
+==== Getting the current time
+
+==== Creating a date
+
+==== Time math
+
+=== os
+
+==== Moving around your computer
+
+==== Getting a list of files in a directory
+
+==== Make a new directory
+
+=== Turtles!
+
+==== Creating a turtle
+
+==== Moving it around
+
+=== Making your own module
+
+==== Organizing your module
+
+==== Installing your module!
+
+=== Try this!
