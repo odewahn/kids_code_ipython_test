@@ -55,7 +55,7 @@ An operating system is a collection of programs that works with the hardware of 
 
 [[os_interaction]]
 .How the hardware, operating system, and programs interact
-image::images/os_interaction.png[]
+image::images/osinteraction.png["Dialogue between OS, keyboard, and a game (fully described in text)"]
 
 So, as in <<os_interaction>>, the user presses a key on a keyboard, and the keyboard tells the operating system which key was pressed. Note, however, that the keyboard doesn't know that the user hit the space key! It only knows that key 216 was pressed! The operating system knows that 216 is the space key, so it tells the game. The game knows that when the space key is pressed, that the user's character should jump.
 
