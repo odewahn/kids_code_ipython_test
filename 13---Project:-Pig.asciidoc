@@ -1,5 +1,9 @@
 == Project: Pig
 
+////
+Note to self: Finish this chapter, then start doing vid scripts and final edits for previous chaps.
+////
+
 === What you'll need to know...
 
 === A note for the grown-up
