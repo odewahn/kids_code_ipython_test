@@ -54,9 +54,25 @@ Notice how we didn't have to say `module.thing()`? We can just use `thing` on it
 
 === Why use them?
 
-The most important reason 
+The most important reason to use them is that it saves you time. At least, that's the first reason _I_ use modules. I don't want to spend weeks trying to write code that someone else has written! Many of these modules took a long time to write, as well as a crazy amount of expertise.
+
+That brings us to another reason to use modules: Usually, experts wrote them. It's harder than you think to create random numbers, or get Python to spit out a web page. The people who wrote these modules are usually experts in these fields, and the code gets reviewed by other experts.
+
+Another good reason to use modules: They're maintained. Over time, other people in the community will improve the modules so that they run faster, or they fix security issues. Even if you think you might be able to build your own module, you're probably better off using something that everyone wants to keep running.
+
+Finally, they make your code so much easier to maintain. If you need to share your code with someone else, it's likely that they're going to be pretty familiar with how `random()` works. If they don't know, they can just do an Internet search! Can you say as much for your code?
+
+If you think you'll never share your code with anyone else, remember one thing: Future You is a person, too. Chances are good that you'll come back to your code one day, either to change how it works, or remember how you did a cool thing. Be kind to Future You, and write code that's easy to maintain.
+
+Now that you know why you should use modules, let's learn about a few!
 
 === Random
+
+If you want to make games, chances are, you're going to need get something random at some point. You might want to get a figure out how much damage a monster does, or pick a random piece of treasure, or simply arrange a board in a random manner.
+
+[[random_in_dungeon]]
+.It wouldn't be much of a dungeon if nothing random happened.
+image::images/randomindungeon.png["A heroine gets bit by a dragon, finds a treasure, and looks at a number puzzle."]
 
 ==== Getting random numbers
 
