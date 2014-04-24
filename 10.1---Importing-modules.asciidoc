@@ -50,9 +50,11 @@ from module import thing
 thing()
 ----
 
-Notice how we didn't have to say `module.thing()`? We can just use thing on its own.
+Notice how we didn't have to say `module.thing()`? We can just use `thing` on its own.
 
 === Why use them?
+
+The most important reason 
 
 === Random
 
