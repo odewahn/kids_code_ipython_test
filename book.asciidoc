@@ -8,6 +8,8 @@ include::02---Introduction-(for-parents).asciidoc[]
 
 include::03---Let's-get-started!.asciidoc[]
 
+include::03---getstarted-video-script.asciidoc[]
+
 include::04.0---The-basics.asciidoc[]
 
 include::04.1--Running-code-sometimes.asciidoc[]
@@ -26,13 +28,11 @@ include::09.0---Project:-To-do-list.asciidoc[]
 
 include::09.1---Errors.asciidoc[]
 
-include::10---Importing-modules.asciidoc[]
+include::10---Functions.asciidoc[]
+
+include::10.1---Importing-modules.asciidoc[]
 
 include::11.0---Project:-Haiku-genertor.asciidoc[]
-
-include::11.1---Minecraft.asciidoc[]
-
-include::12---Functions.asciidoc[]
 
 include::13---Project:-Pig.asciidoc[]
 
