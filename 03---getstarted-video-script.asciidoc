@@ -1,0 +1,65 @@
+== Video scripts for "Getting Started"
+
+Each section will its own video
+
+=== Installing on Windows 7
+
+In this video, we’re going to install Python on Windows 7. If you’ve installed anything before, then this will be a cinch!
+
+Screen: Browser shots
+
+First, we need to get Python from Python.org. Bring up python.org in any browser and hover over "Downloads". Go ahead and select "Windows"
+
+Here, you can see there's a bunch of versions to choose from. We're just interested in this one, though: 2.7.5. Make sure you select the latest release that starts with two! If you install Python 3, some of the code in this book won't work.
+
+Screen: Install shots
+
+Now that Python is downloaded, let's install it. Click on the downloaded file. 
+
+In general, you can just keep clicking "Next." The default settings are just fine.
+
+Once you're done installing Python, you should have a few new things in your Start menu. As you can see, there's now a Python 2.7 folder that has a few things in it. We'll be working with IDLE, so go ahead and open that up. Next, we'll go over how to use IDLE.
+
+=== Installing on Windows 8
+
+In this video, we’re going to install Python on Windows 8. If you’ve installed anything before, then this will be a cinch!
+
+Screen: Browser shots
+
+First, we need to get Python from Python.org. Bring up python.org in any browser and hover over "Downloads". Go ahead and select "Windows"
+
+Here, you can see there's a bunch of versions to choose from. We're just interested in this one, though: 2.7.5. Make sure you select the latest release that starts with two! If you install Python 3, some of the code in this book won't work.
+
+Screen: Install shots
+
+Now that Python is downloaded, let's install it. Click on the downloaded file. 
+
+In general, you can just keep clicking "Next." The default settings are just fine.
+
+Once you're done installing Python, bring up Metro. If you start typing "Python," you'll see some new items pop up. We'll be working with IDLE, so go ahead and open that up. Next, we'll go over how to use IDLE.
+
+=== Installing on Mac OS
+
+If you're using a Mac, you don't have to install anything! Macs come with Python installed. 
+
+To bring up IDLE, we're going to have to use your terminal. Go to Spotlight and search for "Terminal." Click "Terminal" to bring up a Terminal window.
+
+If your Spotlight isn't working, you'll find Terminal under Applications > Utilities.
+
+Once your Terminal is open, type in "idle". This will bring up IDLE! Note, though, that if you close this particular terminal window, IDLE will close!
+
+=== Working with IDLE
+
+Let's talk about how IDLE works.
+
+(bring up shell)
+
+When you bring up IDLE, you'll see a screen that looks something like this (shell screen). This is your shell. Here, Python is just waiting for you to do something, like enter a command. If I type in `print "Hello, world"`, Python will run that right away.
+
+The shell is great for experimentation. I often use the shell for brainstorming, or checking out how certain things in a program work.
+
+(bring up file)
+
+If you want to actually write a program, you need to save your work to a file. To do that, go to File > New. This will bring up a blank screen. You can write code in here and run it over and over.
+
+I'm going to enter `print "Hello, world"` here, and save it as hello.py. Now, if I want to run it, I got to Run > Run Module. The results show up in my shell.
