@@ -1,0 +1,8 @@
+== Video script for The basics
+
+All of these sections will be their own video.
+
+=== Doing math
+
+One thing that programming languages are really good at is dealing with numbers. 
+
