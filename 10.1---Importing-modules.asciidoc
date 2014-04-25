@@ -74,9 +74,91 @@ If you want to make games, chances are, you're going to need get something rando
 .It wouldn't be much of a dungeon if nothing random happened.
 image::images/randomindungeon.png["A heroine gets bit by a dragon, finds a treasure, and looks at a number puzzle."]
 
+This is where the `random` module comes in. Getting random numbers is strangely hard. Lots of math and tricks go into just picking a random number from one to ten. It's not like your computer can just roll a die! This makes `random` a great example of something you wouldn't want to code yourself, but that can be extremely useful.
+
 ==== Getting random numbers
 
+One of the most basic things you can do with `random` is get a random number. `random()` will give you a float between zero and one:
+
+[source,python]
+----
+>>> from random import random
+>>> random()
+0.5273507151845394
+>>> random()
+0.47881243230537496
+>>> random()
+0.9711759468551575
+----
+
+That can sometimes be useful, but usually, I want a number, usually an integer, between two numbers. So, I might want to simulate the roll of a die by getting a number between one and six, or I might decide that a monster can do an amount of damage somewhere between ten and fifteen.
+
+To get a random integer, you use `randint()`. `randint()` expects at least two integers. It then returns an integer between those two values.
+
+[source,python]
+----
+>>> from random import randint
+>>> randint(1, 5)
+1
+>>> randint(1, 5)
+3
+>>> randint(1, 5)
+4
+>>> randint(1, 5)
+2
+----
+
+How random is `randint()`? Let's find out! Here, we have a quick script. I get 1000 random numbers, and store how many times each one comes up in a dictionary. Then, I print out the dictionary. 
+
+[source,python]
+----
+from random import randint
+
+totals = {}
+
+for i in range(1000):
+  n = randint(1, 10)
+  if n in totals:
+    totals[n] += 1
+  else:
+    totals[n] = 1
+
+for num in totals:
+  print "{num}:\t{total}".format(num=num, total=totals[num])
+----
+
+Run the code and see what you get. The first time I ran it, I got this:
+
+----
+1:	101
+2:	98
+3:	101
+4:	101
+5:	113
+6:	88
+7:	96
+8:	110
+9:	101
+10:	91
+----
+
+Your numbers will be slightly different, but you should see that each number got used, though some will be used much more and much less. (If one of your numbers was never used, you should probably go play the lottery. The chances of that get pretty close to none!)
+
 ==== Getting random items
+
+Another one of my favorite things to use in the `random` module is `choice()`. `choice()` accepts a list and returns a random item from that list. Here, I have a list of things on my desk. I use `choice()` to pick one out.
+
+[source,python]
+----
+>>> from random import choice
+>>> mystuff = ["phone", "coffee cup", "lamp", "notebook", "chocolates"]
+>>> choice(mystuff)
+'coffee cup'
+>>> choice(mystuff)
+'chocolates'
+>>> choice(mystuff)
+'notebook'
+----
 
 === Datetime
 
