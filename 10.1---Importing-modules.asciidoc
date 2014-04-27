@@ -144,7 +144,7 @@ Run the code and see what you get. The first time I ran it, I got this:
 
 Your numbers will be slightly different, but you should see that each number got used, though some will be used much more and much less. (If one of your numbers was never used, you should probably go play the lottery. The chances of that get pretty close to none!)
 
-==== Getting random items
+==== `random` and lists
 
 Another one of my favorite things to use in the `random` module is `choice()`. `choice()` accepts a list and returns a random item from that list. Here, I have a list of things on my desk. I use `choice()` to pick one out.
 
@@ -155,14 +155,59 @@ Another one of my favorite things to use in the `random` module is `choice()`. `
 >>> choice(mystuff)
 'coffee cup'
 >>> choice(mystuff)
-'chocolates'
+'notebook'
 >>> choice(mystuff)
 'notebook'
 ----
 
-=== Datetime
+`random` also comes with a function called `shuffle()`. If you give `shuffle()` a list, Python will mix up all the items in the list. It's like shuffling a deck of cards.
+
+[source,python]
+----
+>>> from random import shuffle
+>>> nums = [1, 2, 3, 4, 5]
+>>> shuffle(nums)
+>>> print nums
+[2, 5, 1, 3, 4]
+----
+
+In my code samples, I just imported the function I needed. If I wanted to import the entire `random` module, my code would have looked like this:
+
+[source, python]
+----
+>>> import random
+>>> nums = [1, 2, 3, 4, 5]
+>>> random.random()
+0.11253931059851596
+>>> random.randint(1, 5)
+2
+>>> random.shuffle(nums)
+>>> random.choice(nums)
+1
+----
+
+Which style you use is up to you. I prefer just importing what I need, but there are times when you might want to just import everything and be done with it.
+
+=== Dates and time
+
+You might think dealing with dates and times would be easy. You do this all the time, after all! If I ask you what time it will be an hour from now, you can probably answer me without thinking too hard.
+
+Dates and times are deceptive, though. It can be easy to forget that things like leap years happen. Figuring out what day of the week a day falls on can be tricky. It's easy to forget that, when dealing with minutes and seconds, you don't count up to 100, but rather stop at sixty.
+
+Python has a library called `datetime` that makes it much easier to deal with dates and time. This is one of those libraries I encourage everyone to take the time to learn, because it's only a matter of time (Ha!) before you need to add it to one of your programs.
 
 ==== Getting the current time
+
+The first thing people normally need to use `datetime` for is to get the current time. To do this, we use `now()`.
+
+[source,python]
+----
+>>> from datetime import datetime
+>>> datetime.now()
+datetime.datetime(2014, 4, 26, 9, 11, 47, 577735)
+----
+
+
 
 ==== Creating a date
 

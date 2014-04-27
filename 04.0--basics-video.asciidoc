@@ -4,5 +4,26 @@ All of these sections will be their own video.
 
 === Doing math
 
-One thing that programming languages are really good at is dealing with numbers. 
+One thing that programming languages are really good at is dealing with numbers. In fact, the first computer program ever written was for calculating a series of numbers called Bernoulli numbers. (Just so you know, that's a set of numbers that has to do with how air flows around objects) (link to video explaining that in the video)
+
+Let's do a bit of math in Python. I'm in my shell, and I'm going to start throwing out some statements.
+
+[source,python]
+----
+>>> 8 + 5
+>>> 9.2 * 2
+>>> 10 - 20
+----
+
+Notice how Python accepts some input from me and spits something back out? That's because we're in the shell. Right now, Python is like a live wire, just waiting for us to give it something to do. As soon as we give it something, it spits the results back out. In this case, we get numbers back.
+
+These expressions should look pretty similar to what you see in math class. The only one that might seem weird is the fact that we're using an asterisk instead of an 'x' or a dot to multiply numbers.
+
+Let's go over some common operators. An operator is a symbol like a plus sign or minus sign that lets Python know what we want to do with two pieces of information. Here's the ones you're most likely to use:
+
+* The minus sign is just a minus sign. You can also use this to make a number negative.
+* The plus sign is used for addition.
+* The forward slash is used for division. There are two slashes on your keyboard, so make sure you use the right one! The one you want is at the end of the bottom row of letters on your keyboard, after the period.
+* The asterisk is used to multiply. The asterisk symbol is above the eight on your keyboard.
+* If you want to do powers, you use two asterisks together.
 
