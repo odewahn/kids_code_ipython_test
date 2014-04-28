@@ -27,3 +27,6 @@ Let's go over some common operators. An operator is a symbol like a plus sign or
 * The asterisk is used to multiply. The asterisk symbol is above the eight on your keyboard.
 * If you want to do powers, you use two asterisks together.
 
+So far, we've just been typing in numbers and getting numbers back. That would be fine if all we wanted was a calculator, but what if we want something more? What if we wanted to save a value for later? To do that, we need to create a variable.
+
+To create a variable, we need to 

@@ -207,9 +207,49 @@ The first thing people normally need to use `datetime` for is to get the current
 datetime.datetime(2014, 4, 26, 9, 11, 47, 577735)
 ----
 
+Take a look at what comes back. It has a bunch of numbers that, at first blush, may not make any sense. They're in a specific order, though. The first one is a year, the second is a month, the third is a date, and so on, down to microseconds (just in case you really need to know what time it is).
 
+----
+2014,   4,       26,    9,     11,     47,   577735
+^year   ^month   ^day   ^hour  ^min    ^sec  ^microsecond
+----
+
+So, when I ran the above code, it was April 26th, 2014, at 9:11 in the morning.
+
+If you want, you can save that value into a variable. That also makes getting the values out of it easier. All you have to do is add what value you want out of the time object to the end of the variable. Here, I'm going to see what hour and year it was when I saved `datetime.now()` to `mytime`.
+
+----
+>>> from datetime import datetime
+>>> mytime = datetime.now()
+>>> mytime.hour
+9
+>>> mytime.year
+2014
+>>> mytime.weekday
+2
+----
+
+The last value I asked the datetime object about was something called "weekday." That's for getting the day of the week. But it returned a two! That's because `weekday`, rather than returning "Monday" or "Sunday", gives us a number that goes with a day of the week. In Python, the week starts at Monday (and Python starts counting at zero), so "2" is "Wednesday."
+
+<<datetime_attr>> has all most of the values you can get out of a datetime object.
+
+[[datetime_attr]]
+.Values we can get from a datetime object
+[width="50%",options="header"]
+|===========================
+|Value        |Example
+|Year         |d.year
+|Month        |d.month
+|Day          |d.day
+|Minute       |d.minute
+|Second       |d.second
+|Millisecond  |d.millisecond
+|Weekday      |d.weekday
+|===========================
 
 ==== Creating a date
+
+Sometimes, you want to create a date. For example, you might want to save someone's birthday, or you might want to figure out what day of the week a test falls on.
 
 ==== Time math
 
