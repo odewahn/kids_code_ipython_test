@@ -27,24 +27,141 @@ Let's go over some common operators. An operator is a symbol like a plus sign or
 * The asterisk is used to multiply. The asterisk symbol is above the eight on your keyboard.
 * If you want to do powers, you use two asterisks together.
 
-==== Data types
-
 What happens if we divide one by two? You'd expect 0.5, but we get a zero! That's because we gave Python two whole numbers. In Python, those are called *integers*.
 
 The other kind of number you'll probably need to use is called a float. You might know this as a "decimal" number. Any number with a decimal in it is considered a float, even if there's just a zero after the decimal! So, 5.0 is a float, even though it's identical to just a plain old five.
 
-When you have an expression that just has integers in it, Python assumes you want an integer back. 
+When you have an expression that just has integers in it, Python assumes you want an integer back. If you want Python to be more precise, you have to give it at least one float.
+
+Let's divide one by two, but this time, make one of the numbers a float.
+
+[source,python]
+----
+>>> 1 / 2.0
+0.5
+----
+
+Why does Python have to be asked to be precise? Because if it was precise all the time, your programs would take longer to run, and they would take more energy. Sometimes, an integer is good enough for what we want to do.
+
+To review:
+
+* Whole numbers are called integers
+* Decimal numbers are called floats
+* If you want Python to give you a float back, you have to have at least one float in your expression.
 
 === Storing values
 
-So far, we've just been typing in numbers and getting numbers back. That would be fine if all we wanted was a calculator, but what if we want something more? What if we wanted to save a value for later? To do that, we need to create a variable.
+So far, we've just been typing in numbers and getting numbers back. That would be fine if all we wanted was a calculator, but we eventually want to make something a bit more complex. What if we wanted to save a value for later? To do that, we need to create a variable.
 
-To create a variable, we need to give it a name and a value to hold. We do that using the equals sign. 
+To create a variable, we need to give it a name and a value to hold. We do that using the equals sign. Here, my variable is named `num`, and the value stored in it is the number five.
 
 [code,python]
 ----
 >>> num = 5
 ----
 
-After you store a value in a variable, you can get it
+You'll note that after pressing enter, nothing happens. That's because we told the shell what to do with the value. Before, it had no idea what to do with the value, so it just spit it back at us. Now, though, it's stored in `num`!
 
+[code,python]
+----
+>>> num
+5
+----
+
+Now that we've stored a number in `num`, we can use it in expressions. We can even change the value that's been stored in num by changing the existing value, or putting in a completely new value.
+
+[code,python]
+----
+>>> num + 5 		# this won't change num
+10
+>>> num = num + 2
+>>> num
+7
+>>> num = 24
+>>> num
+24
+----
+
+There are some rules about what you can name your variable.
+
+* You can only use letters (upper and lower), numbers, and the underscore (it's above the hyphen on your keyboard)
+* You can't start with a number
+* Your variable name can't be too long. I recommend keeping it well under 20 characters.
+
+You should also make sure that your variable names make sense. Sometimes, new coders use random words as their variable names, sure that they'll remember what they meant later. Trust me, you won't remember! Try to pick variable names that describe what kind of information should be stored in that variable.
+
+Also, if you use more than one word in your variable name, separate those words with an underscore. I would also use only lower case letters, because that's easier to read and to type.
+
+So, to review:
+
+* You can store values into variables
+* You can change the value stored into a variable
+* There are rules about what you can name a variable
+
+=== Strings
+
+Numbers are great, but what about text? Eventually, we're going to want to use text in our programs. 
+
+In Python (and most programming languages), we call text *strings*. That's because they're made of strings of individual characters. They can be made of any kinds of characters, from letters to numbers to special characters, like percent signs and punctuation.
+
+Strings are wrapped with either single quotes or double quotes.
+
+[source,python]
+----
+>>> "Hello, world!"
+'Hello, world!'
+----
+
+Just like numbers, you can store text into variables.
+
+[source,python]
+----
+>>> greeting = "Hello, world!"
+>>> greeting
+'Hello, world!'
+----
+
+To show a string on the screen, use the `print` command.
+
+[source,python]
+----
+>>> print greeting
+Hello, world!
+----
+
+If you don't want Python to move to the next line after printing something, you can put a comma at the end of the line. This is easier to show in a script, so I'm going to create a new Python file.
+
+[source,python]
+----
+print "Hello", # Notice how I have the comma here?
+print "world"  # Let's run this and see what happens.
+----
+
+As you can see, "Hello" and "world" ended up on the same line.
+
+You can also do *some* math with strings. For example, you can add two strings together.
+
+[source,python]
+----
+>>> first = "Gizmo"     # Here, we have my dog's first name
+>>> last = "Dawg"       # ... and his last name
+>>> print first + last  # And if we print the two using a plus sign...
+GizmoDawg               # We get GizmoDawg, but with no spaces
+----
+
+You can also multiply strings! If you multiply a string and an integer, then Python will create a new string that repeats your original text that number of times.
+
+[source,python]
+----
+>>> '*' * 20 	# So if we multiply a string containing a asterisk 20 times...
+'********************' 	# We get a string with twenty asterisks!
+----
+
+So, to review:
+
+* Strings store text
+* They have to be surrounded by single or double quotes
+* You can use `print` to display strings to the screen
+* You can use a comma after a print statement to keep Python from moving to the next line
+* You can add strings using the plus sign
+* You can multiply a string by an integer to get a string with that text repeated that many times.
