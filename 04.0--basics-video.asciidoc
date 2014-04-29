@@ -1,8 +1,8 @@
 == Video script for The basics
 
-All of these sections will be their own video.
+All level two sections will be their own video.
 
-=== Doing math
+=== Numbers and math
 
 One thing that programming languages are really good at is dealing with numbers. In fact, the first computer program ever written was for calculating a series of numbers called Bernoulli numbers. (Just so you know, that's a set of numbers that has to do with how air flows around objects) (link to video explaining that in the video)
 
@@ -11,7 +11,7 @@ Let's do a bit of math in Python. I'm in my shell, and I'm going to start throwi
 [source,python]
 ----
 >>> 8 + 5
->>> 9.2 * 2
+>>> 9 * 2
 >>> 10 - 20
 ----
 
@@ -27,6 +27,24 @@ Let's go over some common operators. An operator is a symbol like a plus sign or
 * The asterisk is used to multiply. The asterisk symbol is above the eight on your keyboard.
 * If you want to do powers, you use two asterisks together.
 
+==== Data types
+
+What happens if we divide one by two? You'd expect 0.5, but we get a zero! That's because we gave Python two whole numbers. In Python, those are called *integers*.
+
+The other kind of number you'll probably need to use is called a float. You might know this as a "decimal" number. Any number with a decimal in it is considered a float, even if there's just a zero after the decimal! So, 5.0 is a float, even though it's identical to just a plain old five.
+
+When you have an expression that just has integers in it, Python assumes you want an integer back. 
+
+=== Storing values
+
 So far, we've just been typing in numbers and getting numbers back. That would be fine if all we wanted was a calculator, but what if we want something more? What if we wanted to save a value for later? To do that, we need to create a variable.
 
-To create a variable, we need to 
+To create a variable, we need to give it a name and a value to hold. We do that using the equals sign. 
+
+[code,python]
+----
+>>> num = 5
+----
+
+After you store a value in a variable, you can get it
+
