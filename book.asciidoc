@@ -63,3 +63,5 @@ include::23---Project:-Lyrics.asciidoc[]
 include::24---What-now?-(for-kids).asciidoc[]
 
 include::25---What-now?-(for-parents).asciidoc[]
+
+include::26---Advanced---Minecraft.asciidoc[]
