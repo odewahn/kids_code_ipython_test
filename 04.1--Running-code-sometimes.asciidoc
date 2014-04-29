@@ -168,6 +168,7 @@ We do this in the real world, too. Let's say you wanted to buy a rabbit from a p
 
 If any of these things aren't true, you don't get to buy a rabbit. Sorry!
 
+[[bunnyproblem]]
 .Sorry everyone! No rabbits for you!
 image::images/bunnyproblems.png["Three people trying to get a rabbit: A child, a woman with an empty purse, and a rabbit liberator with a protest sign reading 'Free the bunnies'. Each is told 'No' by an offscreem person."]
 
