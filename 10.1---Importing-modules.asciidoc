@@ -249,11 +249,31 @@ The last value I asked the datetime object about was something called "weekday."
 
 ==== Creating a date
 
-Sometimes, you want to create a date. For example, you might want to save someone's birthday, or you might want to figure out what day of the week a test falls on.
+Sometimes, you want to create a date. For example, you might want to save someone's birthday, or you might want to figure out what day of the week a test falls on. 
 
-==== Time math
+Creating a date is easy. You just tell `datetime()` what month, day, and year you want for your date.
+
+[source,python]
+----
+>>> from datetime import datetime
+>>> april_fools = datetime(month=4, day=1, year=2014)
+>>> april_fools
+datetime.datetime(2014, 4, 1, 0, 0)
+----
+
+If you don't give `datetime()` an hour and minute, it assumes that you want to use midnight (so, hour zero and minute zero). If you do want to add a time, you have use 24 hour time. Midnight is hour zero, noon is hour twelve, one o'clock pm is hour thirteen, and all the way up to hour 23. So, let's say I want make a date for lunchtime on July 5, 2014. It would look like this:
+
+[source,python]
+----
+>>> from datetime import datetime
+>>> lunch = datetime(month=7, day=5, year=2014, hour=12, minute=30)
+>>> lunch
+datetime.datetime(2014, 7, 5, 12, 30)
+----
 
 === os
+
+`os` is short for operating system. It's a module that helps Python interact with all the stuff going on in your systems. For example, you might use it to see what files are in a directory, or you want to make a new directory.
 
 ==== Moving around your computer
 
