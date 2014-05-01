@@ -271,17 +271,9 @@ If you don't give `datetime()` an hour and minute, it assumes that you want to u
 datetime.datetime(2014, 7, 5, 12, 30)
 ----
 
-=== os
-
-`os` is short for operating system. It's a module that helps Python interact with all the stuff going on in your systems. For example, you might use it to see what files are in a directory, or you want to make a new directory.
-
-==== Moving around your computer
-
-==== Getting a list of files in a directory
-
-==== Make a new directory
-
 === Turtles!
+
+Turtles are a fun way to play with Python in a visual way! So far, all of what we've been doing has been in the shell or on the command line. The turtle module gives you a super simple way to 
 
 ==== Creating a turtle
 

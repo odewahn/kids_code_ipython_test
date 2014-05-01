@@ -1,0 +1,35 @@
+== Getting around your computer
+
+=== os
+
+`os` is short for operating system. It's a module that helps Python interact with all the stuff going on in your systems. For example, you might use it to see what files are in a directory, or you want to make a new directory. This can be helpful when you find yourself creating bunches of files, or when you want to work with a bunch of files.
+
+
+==== Directories and paths
+
+A directory is the same thing as a folder. So, if you create a folder to hold all the pictures from a vacation, you've really created a *directory*. 
+
+Often, directories are nested inside of each other. So, you might have a directory for all your photos, then a directory inside that for each year you have pictures for, and inside those directories are directories for each event you attended. Your directory structure might look like this:
+
+----
+- Photos
+  - 2012
+    - Birthday
+    - Class trip
+    - Disneyworld
+  - 2013
+  	- Christmas
+  	- Thanksgiving 
+  - 2014
+  	- Fall dance
+----
+
+
+
+==== Where am I?
+
+==== Moving around your computer
+
+==== Getting a list of files in a directory
+
+==== Make a new directory
