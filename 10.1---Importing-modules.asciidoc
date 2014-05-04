@@ -295,9 +295,32 @@ Once you run this, you should get a screen that has a small triangle on it, poin
 .What our turtle looks like when we start it up
 image::images/turtlestart.png["A screen with a small triangle on it."]
 
-
+If you go back to your shell, you can start entering commands that allow you to control your turtle!
 
 ==== Moving it around
+
+Let's start with a moving your turtle around the screen. There are a few commands you should know:
+
+* `turtle.forward()` moves the turtle forward.
+* `turtle.right()` turns the turtle to its right.
+* `turtle.left()` turns the turtle to its left.
+* `turtle.backwards()` moves the turtle backward.
+
+With each command, you need to give Python an integer that tells you how much you want to move the turtle. With right and left, Python will turn the turtle that many degress. With backwards and forwards, Python will move the turtle that many pixels.
+
+Let's move our turtle around! In the same shell that you started your turtle from, enter the following commands:
+
+[source,python]
+----
+>>> turtle.right(15)
+>>> turtle.forward(15)
+----
+
+You should see something like this on your screen:
+
+[[turtlemove]]
+.It moved!
+image::images/turtlemove.png["The turtle has moved down and to the right, drawing a line behind it."]
 
 === Making your own module
 
