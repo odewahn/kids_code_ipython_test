@@ -11,7 +11,7 @@ while True:
         turtle.color(color)
         turtle.stamp()
         turtle.forward(10)
-        turtle.left(10)
+        turtle.left(1)
 
 # add some colors
 # add something that isn't a color?

@@ -271,11 +271,31 @@ If you don't give `datetime()` an hour and minute, it assumes that you want to u
 datetime.datetime(2014, 7, 5, 12, 30)
 ----
 
+==== Try this!
+yle
+What day of the week were you born? Start by creating a datetime object with your birthday, then seeing what day of the week it gives you. What day of the week will your birthday be on this year?
+
 === Turtles!
 
-Turtles are a fun way to play with Python in a visual way! So far, all of what we've been doing has been in the shell or on the command line. The turtle module gives you a super simple way to 
+Turtles are a fun way to play with Python in a visual way! So far, all of what we've been doing has been in the shell or on the command line. The turtle module gives you a super simple way to create patterns and graphics in Python. 
 
 ==== Creating a turtle
+
+To create a turtle, you need to import the module `turtle`, then call `showturtle()`.
+
+[source,python]
+----
+>>> import turtle
+>>> turtle.showturtle()
+----
+
+Once you run this, you should get a screen that has a small triangle on it, pointing to the right side of the screen.
+
+[[turtlestart]]
+.What our turtle looks like when we start it up
+image::images/turtlestart.png["A screen with a small triangle on it."]
+
+
 
 ==== Moving it around
 

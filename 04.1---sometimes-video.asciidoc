@@ -1,0 +1,219 @@
+== Running code sometimes - Video
+
+Each of these sections is its own video.
+
+=== True and False
+
+It's important in programming to be able to test whether something is True or False. For example, let's say you're writing a game. The game is over if the user eats up all the pellets, or if they get eaten by a monster. So, you'd have to test to see if all the pellets were gone or if a monster had gotten to them.
+
+To test whether something is true or not, we create a *Boolean expression*. That's just a fancy way of saying, "Hey, Python, is this true or not?"
+
+Here's an example Boolean expression. Here, we're testing to see if one equals one (spoiler alert: it does).
+
+[source, python]
+----
+>>> 1 == 1
+True         # See? We get True back.
+----
+
+Note that I used two equals signs, not one. That's the operator for "is equal to." Let see what happens when I test to see if one is equal to two.
+
+[source,python]
+----
+>>> 1 == 2
+False
+----
+
+Python returned False. Note that Python is giving us either capital T True or capital F False back. In Python, these are special values called Booleans (that's why we call these Boolean expressions. They give us a boolean back!).
+
+We can also test for inequality using an exclamation point and an equals sign.
+
+[source,python]
+----
+>>> 1 != 1  # One does equal one, so this returns False
+False
+>>> 1 != 2  # But one does not equal two, so this returns True!
+True
+----
+
+We can also test to see if one item is greater than another.
+
+[source,python]
+----
+>>> 1 > 3  # One isn't greater than three...
+False
+>>> 3 > 2  # but three *is* greater than two!
+True
+>>> 1 < 3  # We can also see if something is less than something else
+True
+----
+
+Also, sometimes we might want to see if something is greater than or equal to something (or less than or equal to something). To do that, we use the greater than or less than sign and an equals sign. 
+
+[source,python]
+----
+>>> 1 <= 2 # So, one is less than two, so this is True
+True
+>>> 1 <= 1 # And one is equal to one, so this is True
+True
+>>> 3 >= 4 # But three isn't greater than four, nor is it equal to four
+False
+----
+
+There are going to be times when you want to test multiple things. To do this, you use the keywords `or` and `and`. Let's start with `and`.
+
+If you join a bunch of Boolean expressions with `and`, each one of them has to be True for Python to return True. For example, let's say you go to a fancy restaurant. In order to get a table, you need a reservation, AND you need to be dressed nicely, AND there needs to be a table ready for you. If any of those are false, you're not eating there. Sorry!
+
+[source,python]
+----
+>>> 1 == 1 and 2 == 2  # So, because one does equal one and two does equal two
+True 				   # we get True!
+>>> 1 == 1 and 2 != 2  # But if we switch our second expression to two does not
+False                  # equal two, we're going to get False back
+>>> 1 != 1 and 2 != 2  # And if both expressions are false? We get False back.
+False
+----
+
+Sometimes, you only want to do something if one or more things is true. That's when you use the `or` keyword. 
+
+For example, let's say you get seated at the fancy restaurant and order your meal. Once you're done, you have to pay. They accept credit cards, or debit cards, or cash, or gift certificates. As long as you have one of those ways to pay, you're good! If you don't? Well, I guess you're washing dishes.
+
+[source,python]
+----
+>>> 1 == 1 or 2 == 2 # Both of these expressions are true, so we get True back
+True
+>>> 1 == 1 or 2 != 2 # One of these is false, but because at least one of them
+True                 # is true, we get True back!
+>>> 1 != 1 or 2 !=2  # Neither of these is true, so we get False back.
+False
+----
+
+One final thing you should know about is the keyword `not`. `not` is used to reverse a boolean.
+
+[source,python]
+----
+>>> not True  # The opposite of True is False
+False
+>>> not False # And the opposite of False is True
+True
+>>> not 1 == 1 # So, this expression will return False
+False 		   # because one does equal one
+>>> not 1 != 1 # and this returns True
+True
+----
+
+So, to review:
+
+* You can test to see if one item is equal to, not equal to, greater than, or less than another item.
+* These tests are called Boolean expressions, and return either True or False
+* You can chain Boolean expressions with `and` and `or`
+* If you use `and`, every expression has to be true.
+* If you use `or`, at least one expression has to be true.
+* `not` reverses a Boolean.
+
+=== A basic if statement
+
+Now that we know how to test whether something is True or False, we can now create something called an `if` statement.
+
+(Open new file) An if statement looks something like this:
+
+----
+if expression:   # If an expression is true...
+	code		 # run this code
+	code
+	code
+----
+
+Note that the code is indented. That's called a *block*, and it's used to seperate out a bit of code in Python. When paired with an `if` statement, Python will only run the code in the block if the expression is true.
+
+Let's create an if statement in our shell (open shell):
+
+[source,python]
+----
+>>> grade = 90				# Let's say someone got a 90 on a test
+>>> if grade > 89:			# If the grade is greater than 89...
+   		print "Good going!"	# Python indents for us! Let's print something nice.
+   							# Here, you'll have to hit enter again to run the if statement 
+Good going!					# Python prints Good Going!
+>>> grade = 87				# Let's say someone gets a lower grade.
+>>> if grade > 89:			# Let's grab our if statement again..
+   		print "Good going!" # Hit return...
+
+>>>							# Nothing happens!
+---
+
+Let's play around with this in a file.
+
+[source,python]
+----
+grade = 87
+if grade > 89:
+    print "Good going!"
+print "Your grade was", grade  # Hit backspace to get out of the block
+----
+
+Notice where the indent is? Only the indented code under the `if` statement will run. That second print statement will print no matter what the grade is. Here, I'll prove it to you.
+
+(Run as is) Python only prints out the student's grade when the grade is 87. Let's change the grade to 90. (Change and run) Now, both lines print out!
+
+If we want to expland the `if` statement, we can add an `else` clause. It would look something like this (open editor window)
+
+----
+if expression:  # This should look familiar...
+	code
+	code
+else:			# Note that this is *not* in the block! We have to backspace
+	code		# so that this lines up with the if statement
+	code		# Also, the else has its own block.
+----
+
+With an `else` clause, if the expression in the `if` statement is false, the code under the `else` block will run. Let's add an `else` clause to our `if` statement (open old code)
+
+[source,python]
+----
+grade = 87
+if grade > 89:
+    print "Good going!"
+else:									#Let's add another print statement
+	print "You need to try harder..."
+print "Your grade was", grade  # Hit backspace to get out of the block
+----
+
+Let's run the code. This time, rather than just printing out the student's grade, we get an extra message. Let's change the grade to a 90 and see what happens. (do so and run). When we do that, we get the other message!
+
+Sometimes, you'll find yourself wanting to test for more than one thing. That's when you'll want to bring in an `elif` clause. An if statement with an `elif` clause looks something like this:
+
+----
+if expression:
+	code
+elif expression: 	# elifs get their own expression!
+	code
+else:				# This will run if the if and elif expressions were all false.
+	code
+----
+
+When you have an `if` statement with `elif` clauses, as soon as Python finds an expression that's true, it skips the rest of the `elif`s and the `else` clauses. So, if the second expression in your statement is True, even if you have fifty more, Python will skip them.
+
+Let's add a `elif` to our code!
+
+[source,python]
+----
+grade = 87
+if grade > 89:
+    print "Good going!"
+elif grade > 75:			# Let's add that elif...
+	print "Not bad!"
+else:									
+	print "You need to try harder..."
+print "Your grade was", grade
+----
+
+Let's run the code. (do so) This time, "Not bad!" was printed out. That's because the grade (87) wasn't greater than 89, but was greater than 75. 
+
+You can only have one `if` and one `else` per `if` statement, but you can have as many `elif`s as you want! 
+
+To review:
+
+* Use an `if` statement if you want to run some code only if something is true.
+* You can add an `else` clause to an `if` statement to run code if the `if` expression wasn't true.
+* You can add `elif`s to your `if` statement to test for many things.
