@@ -196,7 +196,6 @@ When you have an `if` statement with `elif` clauses, as soon as Python finds an 
 
 Let's add a `elif` to our code!
 
-[source,python]
 ----
 grade = 87
 if grade > 89:
