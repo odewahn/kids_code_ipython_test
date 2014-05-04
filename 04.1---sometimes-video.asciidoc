@@ -140,7 +140,7 @@ Good going!					# Python prints Good Going!
    		print "Good going!" # Hit return...
 
 >>>							# Nothing happens!
----
+----
 
 Let's play around with this in a file.
 
