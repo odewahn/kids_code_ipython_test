@@ -2,8 +2,12 @@
 
 = Kids Code
 
-include::03---getstarted-video-script.asciidoc[]
+include::01---Introduction-(for-kids).asciidoc[]
 
-include::04.0--basics-video.asciidoc[]
+include::02---Introduction-(for-parents).asciidoc[]
 
-include::04.1---sometimes-video.asciidoc[]
+include::03---Let's-get-started!.asciidoc[]
+
+include::04.0---The-basics.asciidoc[]
+
+include::04.1--Running-code-sometimes.asciidoc[]
