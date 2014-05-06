@@ -272,7 +272,7 @@ datetime.datetime(2014, 7, 5, 12, 30)
 ----
 
 ==== Try this!
-yle
+
 What day of the week were you born? Start by creating a datetime object with your birthday, then seeing what day of the week it gives you. What day of the week will your birthday be on this year?
 
 === Turtles!
@@ -313,7 +313,7 @@ Let's move our turtle around! In the same shell that you started your turtle fro
 [source,python]
 ----
 >>> turtle.right(15)
->>> turtle.forward(15)
+>>> turtle.forward(150)
 ----
 
 You should see something like this on your screen:
@@ -322,10 +322,19 @@ You should see something like this on your screen:
 .It moved!
 image::images/turtlemove.png["The turtle has moved down and to the right, drawing a line behind it."]
 
-=== Making your own module
+Wherever the turtle moves, it draws a line behind it. You can change the color of the turtle (and the line), by using `color()`. Try this in your shell:
 
-==== Organizing your module
+[source,python]
+----
+>>> turtle.color("red")
+>>> turtle.forward(50)
+----
 
-==== Installing your module!
+Your line has grown longer, but now, part of it is red! 
+
+[NOTE]
+====
+Want more colors? There's a complete list in Appendix TODO
+====
 
 === Try this!
