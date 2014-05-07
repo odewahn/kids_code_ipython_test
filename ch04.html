@@ -84,11 +84,11 @@
 <p>If a number has a decimal point, it’s a float. It might have a bunch of numbers after the decimal point (1.3243432532), or it might have a zero (5.0). In either case, however, it’s a float.</p>
 <p>If a number has no decimal point, it’s considered a integer. Even if it’s super long (1000000000), it’s still considered an integer.</p>
 <p>Why do we have two kinds of numbers? Because one is more precise than another. Let’s look at a case when this matters. Let’s divide one by two. What would you normally expect? Run this in the shell:</p>
-<pre data-type="programlisting" data-code-language="python">&gt;&gt;&gt; 1 / 2</pre>
+<pre data-executable="true" data-type="programlisting" data-code-language="python">1 / 2</pre>
 <p>When you ran the code, you got zero, didn’t you? That’s not right! You should have gotten 0.5! What’s going on here?</p>
 <p>Because you used two integers, Python assumed you wanted an integer back, so it lopped off everything after the decimal point. Computers are very careful to be only as precise as you ask them to be, because precision takes power. If Python always assumed you wanted to be super precise, your programs would run much more slowly.</p>
 <p>So, what do we do if we want precision? Make sure at least one of the numbers in your statement is a decimal. If you do that, Python will know you want a decimal back! Try changing one of the numbers here to a decimal point so you get 0.5 back instead of 0.</p>
-<pre data-type="programlisting" data-code-language="python">&gt;&gt;&gt; 1 / 2</pre>
+<pre data-type="programlisting" data-code-language="python" data-executable="true">1 / 2</pre>
 </section>
 <section id="_quiz_float_or_integer" data-type="sect2"><h2>Quiz: Float or Integer?</h2>
 
@@ -148,13 +148,13 @@
 
 <p>Doing math is all well and good, but if we’re going to make a useful program, we’re going to have to store information so we can use it over and over, or so we can change a value as time goes on. To do that, we’re going to need to create a <strong>variable</strong>.</p>
 <p>To create a variable, all we need to do is give it a name and a value to hold.</p>
-<pre data-type="programlisting" data-code-language="python">&gt;&gt;&gt; a = 5</pre>
+<pre data-type="programlisting" data-executable="true" data-code-language="python">a = 5</pre>
 <p>If you type the above code into your intepreter, Python doesn’t print anything out. That’s because <strong>this</strong> time, you told Python what to do with the value! It stored it into the variable <code>a</code>. If you type <code>a</code> into the shell, Python should print out <code>5</code>.</p>
 <p>You can think of variables like cups. Cups can hold lots of things. A cup might be empty, or you might fill it with water. You might even change your mind, empty the cup, and fill it with soda. Try the following:</p>
-<pre data-type="programlisting" data-code-language="python">&gt;&gt;&gt; a = 5
-&gt;&gt;&gt; print a
-&gt;&gt;&gt; a = 7
-&gt;&gt;&gt; print a</pre>
+<pre data-type="programlisting" data-code-language="python" data-executable="true">a = 5
+print a
+a = 7
+print a</pre>
 <p>When you saved the seven into the variable <code>a</code>, the value five was replaced by the seven. Python dumped it out, because you told Python that you no longer needed that value anymore.</p>
 <section id="_rules_about_naming_variables" data-type="sect2"><h2>Rules about naming variables</h2>
 
@@ -237,19 +237,19 @@ apple
 
 <p>Numbers are great, but you’ll probably want to store some text at some point. In Python, we call text "strings." A string might be empty, have just one character, or it might contain all the text from your favorite book!</p>
 <p>To create a string, you need to enclose the text with either a set of single or double quotes, like this:</p>
-<pre data-type="programlisting" data-code-language="python">&gt;&gt;&gt; animal = "dog"
-&gt;&gt;&gt; name = 'Gizmo'</pre>
+<pre data-executable="true" data-type="programlisting" data-code-language="python">animal = "dog"
+name = 'Gizmo'</pre>
 <p>Make sure that your quotes match! If you start with a single quote, you have to end with a single quote. The same goes for double quotes.</p>
 <section id="_printing_text" data-type="sect2"><h2>Printing text</h2>
 
 <p>We’ve already been using the print statement, but we haven’t really talked about what it does. <code>print</code> tells Python to show something on the screen. If you ask Python to print a string, Python will leave out the quotes.</p>
 <p>Try running the following commands. Look at the differences.</p>
-<pre data-type="programlisting" data-code-language="python">&gt;&gt;&gt; greeting = "Hello"
-&gt;&gt;&gt; greeting
-&gt;&gt;&gt; print greeting</pre>
+<pre data-type="programlisting" data-executable="true" data-code-language="python">greeting = "Hello"
+greeting
+print greeting</pre>
 <p>Notice how when we just typed in <code>greeting</code>, Python printed out <em>Hello</em> in quotes? But when we said <code>print greeting</code>, Python didn’t add the quotes.</p>
 <p>Also note that Python printed out each item on its own line. If you don’t want Python to move to the next line, then add a comma to the end of your print statement. Try running the following code.</p>
-<pre data-type="programlisting" data-code-language="python">print "Hello",
+<pre data-type="programlisting" data-executable="true" data-code-language="python">print "Hello",
 print "world"</pre>
 <p>Both of the items were printed on the same line, weren’t they?</p>
 </section>
@@ -257,11 +257,11 @@ print "world"</pre>
 
 <p>You can do math with strings! It’s much more limited than doing math with numbers, but there are a few tricks you can do.</p>
 <p>You can use the additon operator (+) to join two strings together. Run the following code.</p>
-<pre data-type="programlisting" data-code-language="python">name = "Coe"
+<pre data-type="programlisting" data-code-language="python" data-executable="true">name = "Coe"
 greeting = "Hi"
 print greeting + name</pre>
 <p>You can also store joined strings into a variable, like this:</p>
-<pre data-type="programlisting" data-code-language="python">fruit = "apple"
+<pre data-type="programlisting" data-code-language="python" data-executable="true">fruit = "apple"
 color = "red"
 my_fruit = color + fruit
 print my_fruit</pre>
@@ -271,14 +271,14 @@ color = "red"
 my_fruit = color + " " + fruit
 print my_fruit</pre>
 <p>You can also multiple a string! Try running this code:</p>
-<pre data-type="programlisting" data-code-language="python">print "=" * 50</pre>
+<pre data-type="programlisting" data-executable="true" data-code-language="python">print "=" * 50</pre>
 <p>A bunch of equals signs were printed out! When you multiply a string by an integer, Python will print that string out that many times.</p>
 </section>
 </section>
 <section id="_try_this_2" data-type="sect1"><h1>Try this!</h1>
 
 <p>In IDLE, open up a new file and enter the following:</p>
-<pre data-type="programlisting" data-code-language="python">first_name = "Kylie"
+<pre data-type="programlisting" data-executable="true" data-code-language="python">first_name = "Kylie"
 last_name = "Johnston"
 time = "morning"
 
