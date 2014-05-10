@@ -84,11 +84,11 @@
 <p>If a number has a decimal point, it’s a float. It might have a bunch of numbers after the decimal point (1.3243432532), or it might have a zero (5.0). In either case, however, it’s a float.</p>
 <p>If a number has no decimal point, it’s considered a integer. Even if it’s super long (1000000000), it’s still considered an integer.</p>
 <p>Why do we have two kinds of numbers? Because one is more precise than another. Let’s look at a case when this matters. Let’s divide one by two. What would you normally expect? Run this in the shell:</p>
-<pre data-executable="true" data-type="programlisting" data-code-language="python">1 / 2</pre>
+<textarea data-executable="true" data-type="programlisting" data-code-language="python">1 / 2</textarea>
 <p>When you ran the code, you got zero, didn’t you? That’s not right! You should have gotten 0.5! What’s going on here?</p>
 <p>Because you used two integers, Python assumed you wanted an integer back, so it lopped off everything after the decimal point. Computers are very careful to be only as precise as you ask them to be, because precision takes power. If Python always assumed you wanted to be super precise, your programs would run much more slowly.</p>
 <p>So, what do we do if we want precision? Make sure at least one of the numbers in your statement is a decimal. If you do that, Python will know you want a decimal back! Try changing one of the numbers here to a decimal point so you get 0.5 back instead of 0.</p>
-<pre data-type="programlisting" data-code-language="python" data-executable="true">1 / 2</pre>
+<textarea data-type="programlisting" data-code-language="python" data-executable="true">1 / 2</textarea>
 </section>
 <section id="_quiz_float_or_integer" data-type="sect2"><h2>Quiz: Float or Integer?</h2>
 
@@ -237,54 +237,54 @@ apple
 
 <p>Numbers are great, but you’ll probably want to store some text at some point. In Python, we call text "strings." A string might be empty, have just one character, or it might contain all the text from your favorite book!</p>
 <p>To create a string, you need to enclose the text with either a set of single or double quotes, like this:</p>
-<pre data-executable="true" data-type="programlisting" data-code-language="python">animal = "dog"
-name = 'Gizmo'</pre>
+<textarea data-executable="true" data-type="programlisting" data-code-language="python">animal = "dog"
+name = 'Gizmo'</textarea>
 <p>Make sure that your quotes match! If you start with a single quote, you have to end with a single quote. The same goes for double quotes.</p>
 <section id="_printing_text" data-type="sect2"><h2>Printing text</h2>
 
 <p>We’ve already been using the print statement, but we haven’t really talked about what it does. <code>print</code> tells Python to show something on the screen. If you ask Python to print a string, Python will leave out the quotes.</p>
 <p>Try running the following commands. Look at the differences.</p>
-<pre data-type="programlisting" data-executable="true" data-code-language="python">greeting = "Hello"
+<textarea data-type="programlisting" data-executable="true" data-code-language="python">greeting = "Hello"
 greeting
-print greeting</pre>
+print greeting</textarea>
 <p>Notice how when we just typed in <code>greeting</code>, Python printed out <em>Hello</em> in quotes? But when we said <code>print greeting</code>, Python didn’t add the quotes.</p>
 <p>Also note that Python printed out each item on its own line. If you don’t want Python to move to the next line, then add a comma to the end of your print statement. Try running the following code.</p>
-<pre data-type="programlisting" data-executable="true" data-code-language="python">print "Hello",
-print "world"</pre>
+<textarea data-type="programlisting" data-executable="true" data-code-language="python">print "Hello",
+print "world"</textarea>
 <p>Both of the items were printed on the same line, weren’t they?</p>
 </section>
 <section id="_doing_math" data-type="sect2"><h2>Doing math?</h2>
 
 <p>You can do math with strings! It’s much more limited than doing math with numbers, but there are a few tricks you can do.</p>
 <p>You can use the additon operator (+) to join two strings together. Run the following code.</p>
-<pre data-type="programlisting" data-code-language="python" data-executable="true">name = "Coe"
+<textarea data-type="programlisting" data-code-language="python" data-executable="true">name = "Coe"
 greeting = "Hi"
-print greeting + name</pre>
+print greeting + name</textarea>
 <p>You can also store joined strings into a variable, like this:</p>
-<pre data-type="programlisting" data-code-language="python" data-executable="true">fruit = "apple"
+<textarea data-type="programlisting" data-code-language="python" data-executable="true">fruit = "apple"
 color = "red"
 my_fruit = color + fruit
-print my_fruit</pre>
+print my_fruit</textarea>
 <p>Notice that Python didn’t put any spaces between the two strings. That’s because we didn’t ask it to! In general, programming languages will only do <em>exactly</em> what you ask them to. So, if you want a space, you need to put it in there yourself.</p>
-<pre data-type="programlisting" data-code-language="python">fruit = "apple"
+<textarea data-type="programlisting" data-code-language="python">fruit = "apple"
 color = "red"
 my_fruit = color + " " + fruit
-print my_fruit</pre>
+print my_fruit</textarea>
 <p>You can also multiple a string! Try running this code:</p>
-<pre data-type="programlisting" data-executable="true" data-code-language="python">print "=" * 50</pre>
+<textarea data-type="programlisting" data-executable="true" data-code-language="python">print "=" * 50</textarea>
 <p>A bunch of equals signs were printed out! When you multiply a string by an integer, Python will print that string out that many times.</p>
 </section>
 </section>
 <section id="_try_this_2" data-type="sect1"><h1>Try this!</h1>
 
 <p>In IDLE, open up a new file and enter the following:</p>
-<pre data-type="programlisting" data-executable="true" data-code-language="python">first_name = "Kylie"
+<textarea data-type="programlisting" data-executable="true" data-code-language="python">first_name = "Kylie"
 last_name = "Johnston"
 time = "morning"
 
 greeting = "Good" + " " + time + " " + first_name + " " + last_name
 
-print greeting</pre>
+print greeting</textarea>
 <p>Can you change the code so Python says good afternoon to you?</p>
 </section>
 </section>
