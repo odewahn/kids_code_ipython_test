@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>kids code ipython test</title>
+    <link rel="stylesheet" type="text/css" href="theme/html/html.css"/>
+    <script src="theme/html/javascripts/jquery.js"> </script>
+    <script src="theme/html/javascripts/codemirror.js"> </script>
+    <script src="theme/html/javascripts/coderunner.js"> </script>
+    <script src="theme/html/javascripts/jsrepl/jsrepl.js" id="jsrepl-script"> </script>
+
+    <link href="theme/html/stylesheets/codemirror.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="theme/html/stylesheets/book.css" media="all" rel="stylesheet" type="text/css"/>
+
+  </head>
+  <body data-type="book">
+    <section data-type="chapter" data-pdf-bookmark="Chapter 1. First, some basics" id="_first_some_basics"><h1>First, some basics</h1>
+
+<p>Now that we have Python installed and IDLE up and running, let’s get Python to do some things! In this chapter, we’re going to learn how to work with numbers and text, do some basic math, and store values so we can use them later.</p>
+<section data-type="sect1" data-pdf-bookmark="Notes for the mentor" id="_notes_for_the_mentor_2"><h1>Notes for the mentor</h1>
+
+<p>In this chapter, we’re going to go over numbers, strings, and math in Python. This is usually a pretty easy chapter for students, but some do get caught up on precision. Every now and then, I get a student who can’t understand why Python doesn’t just give me 0.5 when I put <code>1 / 2</code> in the shell.</p>
+<p>You might also run into rounding errors if the student is playing around. To see an example of this, try entering <code>0.9 + .2 + 5.1</code> into the shell. Most of the time, you’ll get <code>6.199999999999999</code>. Most students aren’t all that interested in talking about the peculiarities of floating point arithmatic, so I just say that Python is doing the math in a way that’s faster.</p>
+</section>
+<section data-type="sect1" data-pdf-bookmark="What you need for this chapter" id="_what_you_need_for_this_chapter"><h1>What you need for this chapter</h1>
+
+<p>For this chapter, you’ll need IDLE up and running. That’s it! In future chapters, I might use this space to warn you that we’re going to use a concept that we went over earlier. If you’re feeling uncertain about anything I mention, do yourself a favor and go do a quick review of that topic before trying out that lesson or project.</p>
+</section>
+<section data-type="sect1" data-pdf-bookmark="Let’s do some math" id="_let_8217_s_do_some_math"><h1>Let’s do some math</h1>
+
+<p>Some of the first “computers” created were made to do math. As long as the human race has been adding one and one, we’ve been on the hunt for a way to do math so it’s easier and more reliable. We came up with new ways of lining up numbers, different annotations, and eventually, we created machines to do the math for us.</p>
+<p>Let’s get Python to do some math for us! Open up your IDLE shell and type in the following:</p>
+<pre data-type="programlisting" data-code-language="python"><code class="o">&gt;&gt;&gt;</code> <code class="mi">5</code> <code class="o">+</code> <code class="mi">5</code>
+<code class="o">&gt;&gt;&gt;</code> <code class="mi">6</code> <code class="o">-</code> <code class="mi">7</code>
+<code class="o">&gt;&gt;&gt;</code> <code class="mf">1.2</code> <code class="o">+</code> <code class="mf">5.9</code> <code class="o">-</code> <code class="mf">2.3</code></pre>
+<p>Every time you hit enter, Python should spit the answer back out at you. This is what your intepreter screen should look like.</p>
+<pre data-type="programlisting" data-code-language="python"><code class="o">&gt;&gt;&gt;</code> <code class="mi">5</code> <code class="o">+</code> <code class="mi">5</code>
+<code class="mi">10</code>
+<code class="o">&gt;&gt;&gt;</code> <code class="mi">6</code> <code class="o">-</code> <code class="mi">7</code>
+<code class="o">-</code><code class="mi">2</code>
+<code class="o">&gt;&gt;&gt;</code> <code class="mf">1.2</code> <code class="o">+</code> <code class="mf">5.2</code>
+<code class="mf">6.4</code></pre>
+<p>So far, the math in Python looks very similar to the math you do every day. There are a few operators that are different, though, so let’s review the ones you’re most likely to use.</p>
+<div data-type="note"><p>An operator is a symbol like the plus sign (+) or minus sign (-) that let’s us tell others what we want to do to two values.</p></div>
+<section data-type="sect2" data-pdf-bookmark="The rest of the operators" id="_the_rest_of_the_operators"><h2>The rest of the operators</h2>
+
+<p>For the most part, Python uses operators that are pretty familiar to us. Sometimes, though, they’ve had to use something different. <a data-type="xref" href="#operators">Table 1-1</a> shows a list of the operators, what it looks like when you write them out, and what symbol you should use in Python.</p>
+<table id="operators"><caption>Opeators in Python</caption>
+
+
+
+
+
+
+<tbody>
+<tr>
+<td><p>Math operation</p></td>
+<td><p>Operator when written</p></td>
+<td><p>Operator in Python</p></td>
+<td><p>Example</p></td>
+</tr>
+<tr>
+<td><p>Addition</p></td>
+<td><p>\+</p></td>
+<td><p>\+</p></td>
+<td><p>3 + 3</p></td>
+</tr>
+<tr>
+<td><p>Subtraction</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>3 - 3</p></td>
+</tr>
+<tr>
+<td><p>Multiplication</p></td>
+<td><p>x or a dot (・)</p></td>
+<td><p>*</p></td>
+<td><p>3 * 3</p></td>
+</tr>
+<tr>
+<td><p>Division</p></td>
+<td><p>÷</p></td>
+<td><p>/</p></td>
+<td><p>3 / 3</p></td>
+</tr>
+<tr>
+<td><p>Powers</p></td>
+<td><p>Superscript (1<sup>1</sup>)</p></td>
+<td><p>**</p></td>
+<td><p>3 ** 3</p></td>
+</tr>
+</tbody>
+
+</table>
+<p>There are more operators than these, but just knowing these will still allow you do to quite a bit. If you want to check out other operators, check out Table X.X in the Extra Materials section for a complete listing.</p>
+</section>
+<section data-type="sect2" data-pdf-bookmark="Types of numbers" id="_types_of_numbers"><h2>Types of numbers</h2>
+
+<p>There’s more than one kind of number in Python. In school, you probably learned about decimal numbers and whole numbers. In Python, a decimal number is called a <strong>float</strong>, while a whole number is called an <strong>integer</strong>.</p>
+<p>If a number has a decimal point, it’s a float. It might have a bunch of numbers after the decimal point (1.3243432532), or it might have a zero (5.0). In either case, however, it’s a float.</p>
+<p>If a number has no decimal point, it’s considered a integer. Even if it’s super long (1000000000), it’s still considered an integer.</p>
+<p>Why do we have two kinds of numbers? Because one is more precise than another. Let’s look at a case when this matters. Let’s divide one by two. What would you normally expect? Run this in the shell:</p>
+<textarea data-executable="true" data-type="programlisting" data-code-language="python">1 / 2</textarea>
+<p>When you ran the code, you got zero, didn’t you? That’s not right! You should have gotten 0.5! What’s going on here?</p>
+<p>Because you used two integers, Python assumed you wanted an integer back, so it lopped off everything after the decimal point. Computers are very careful to be only as precise as you ask them to be, because precision takes power. If Python always assumed you wanted to be super precise, your programs would run much more slowly.</p>
+<p>So, what do we do if we want precision? Make sure at least one of the numbers in your statement is a decimal. If you do that, Python will know you want a decimal back! Try changing one of the numbers here to a decimal point so you get 0.5 back instead of 0.</p>
+<textarea data-type="programlisting" data-code-language="python" data-executable="true">1 / 2</textarea>
+</section>
+<section data-type="sect2" data-pdf-bookmark="Quiz: Float or Integer?" id="_quiz_float_or_integer"><h2>Quiz: Float or Integer?</h2>
+
+<table><caption>Is it a float or an integer?</caption>
+
+<?dbhtml table-width="50%"?>
+<?dbfo table-width="50%"?>
+<?dblatex table-width="50%"?>
+
+
+
+
+<thead>
+<tr>
+<th/>
+<th/>
+<th/>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><p>5</p></td>
+<td><p/></td>
+<td><p/></td>
+</tr>
+<tr>
+<td><p>2.7</p></td>
+<td><p/></td>
+<td><p/></td>
+</tr>
+<tr>
+<td><p>0</p></td>
+<td><p/></td>
+<td><p/></td>
+</tr>
+<tr>
+<td><p>0.1</p></td>
+<td><p/></td>
+<td><p/></td>
+</tr>
+<tr>
+<td><p>10.0</p></td>
+<td><p/></td>
+<td><p/></td>
+</tr>
+<tr>
+<td><p>2000</p></td>
+<td><p/></td>
+<td><p/></td>
+</tr>
+</tbody>
+
+</table>
+</section>
+</section>
+<section data-type="sect1" data-pdf-bookmark="Storing information" id="_storing_information"><h1>Storing information</h1>
+
+<p>Doing math is all well and good, but if we’re going to make a useful program, we’re going to have to store information so we can use it over and over, or so we can change a value as time goes on. To do that, we’re going to need to create a <strong>variable</strong>.</p>
+<p>To create a variable, all we need to do is give it a name and a value to hold.</p>
+<pre data-type="programlisting" data-executable="true" data-code-language="python"><code class="n">a</code> <code class="o">=</code> <code class="mi">5</code></pre>
+<p>If you type the above code into your intepreter, Python doesn’t print anything out. That’s because <strong>this</strong> time, you told Python what to do with the value! It stored it into the variable <code>a</code>. If you type <code>a</code> into the shell, Python should print out <code>5</code>.</p>
+<p>You can think of variables like cups. Cups can hold lots of things. A cup might be empty, or you might fill it with water. You might even change your mind, empty the cup, and fill it with soda. Try the following:</p>
+<pre data-type="programlisting" data-code-language="python" ><code class="n">a</code> <code class="o">=</code> <code class="mi">5</code>
+<code class="k">print</code> <code class="n">a</code>
+<code class="n">a</code> <code class="o">=</code> <code class="mi">7</code>
+<code class="k">print</code> <code class="n">a</code></pre>
+<p>When you saved the seven into the variable <code>a</code>, the value five was replaced by the seven. Python dumped it out, because you told Python that you no longer needed that value anymore.</p>
+<section data-type="sect2" data-pdf-bookmark="Rules about naming variables" id="_rules_about_naming_variables"><h2>Rules about naming variables</h2>
+
+<p>There are some hard and fast rules about what you should name variables, and there’s some guidelines you should keep in mind.</p>
+<p>If you do the following things, your program <em>will not run</em>:</p>
+<ul><li>
+<p>
+Variable names can never start with a number.
+</p>
+</li><li>
+<p>
+They can only be made of letters, numbers, and underscores (_)
+</p>
+</li><li>
+<p>
+They can’t be too long (how long they can be depends on your computer, but seriously, keep it to under 20 characters)
+</p>
+</li></ul>
+<p>Here are the guidelines you should follow. Python will still run, but following these will make your code easier for you (and others!) to work with:</p>
+<ul><li>
+<p>
+Have descriptive variables! Don’t use random words. Use words that describe what you’ll be using that variable for.
+</p>
+</li><li>
+<p>
+Use all lower case letters (there are exceptions, but we’ll get into that later)
+</p>
+</li><li>
+<p>
+If you use more than one word in your variable name, separate the words using underscores (ie. number_of_sandwiches)
+</p>
+</li><li>
+<p>
+Try not to use a lower case L or upper case O. In some fonts, they look like a one or zero.
+</p>
+</li></ul>
+</section>
+<section data-type="sect2" data-pdf-bookmark="Quiz time!" id="_quiz_time"><h2>Quiz time!</h2>
+
+<p>It’s really important that you understand how to create variables, so take a minute to answer these two questions.</p>
+<p>Which variable name will work in Python?</p>
+<ul><li>
+<p>
+$mystuff
+</p>
+</li><li>
+<p>
+all_items
+</p>
+</li><li>
+<p>
+1republic
+</p>
+</li><li>
+<p>
+sale items
+</p>
+</li></ul>
+<p>I’m going to store an item’s price in a variable. What’s the <em>best</em> variable name I could use, from the choices below?</p>
+<ul><li>
+<p>
+$price
+</p>
+</li><li>
+<p>
+item_price
+</p>
+</li><li>
+<p>
+myprice
+</p>
+</li><li>
+<p>
+apple
+</p>
+</li></ul>
+</section>
+</section>
+<section data-type="sect1" data-pdf-bookmark="Storing text" id="_storing_text"><h1>Storing text</h1>
+
+<p>Numbers are great, but you’ll probably want to store some text at some point. In Python, we call text “strings.” A string might be empty, have just one character, or it might contain all the text from your favorite book!</p>
+<p>To create a string, you need to enclose the text with either a set of single or double quotes, like this:</p>
+<textarea data-executable="true" data-type="programlisting" data-code-language="python">animal = "dog"
+name = 'Gizmo'</textarea>
+<p>Make sure that your quotes match! If you start with a single quote, you have to end with a single quote. The same goes for double quotes.</p>
+<section data-type="sect2" data-pdf-bookmark="Printing text" id="_printing_text"><h2>Printing text</h2>
+
+<p>We’ve already been using the print statement, but we haven’t really talked about what it does. <code>print</code> tells Python to show something on the screen. If you ask Python to print a string, Python will leave out the quotes.</p>
+<p>Try running the following commands. Look at the differences.</p>
+<textarea data-type="programlisting" data-executable="true" data-code-language="python">greeting = "Hello"
+greeting
+print greeting</textarea>
+<p>Notice how when we just typed in <code>greeting</code>, Python printed out <em>Hello</em> in quotes? But when we said <code>print greeting</code>, Python didn’t add the quotes.</p>
+<p>Also note that Python printed out each item on its own line. If you don’t want Python to move to the next line, then add a comma to the end of your print statement. Try running the following code.</p>
+<textarea data-type="programlisting" data-executable="true" data-code-language="python">print "Hello",
+print "world"</textarea>
+<p>Both of the items were printed on the same line, weren’t they?</p>
+</section>
+<section data-type="sect2" data-pdf-bookmark="Doing math?" id="_doing_math"><h2>Doing math?</h2>
+
+<p>You can do math with strings! It’s much more limited than doing math with numbers, but there are a few tricks you can do.</p>
+<p>You can use the additon operator (+) to join two strings together. Run the following code.</p>
+<textarea data-type="programlisting" data-code-language="python" data-executable="true">name = "Coe"
+greeting = "Hi"
+print greeting + name</textarea>
+<p>You can also store joined strings into a variable, like this:</p>
+<textarea data-type="programlisting" data-code-language="python" data-executable="true">fruit = "apple"
+color = "red"
+my_fruit = color + fruit
+print my_fruit</textarea>
+<p>Notice that Python didn’t put any spaces between the two strings. That’s because we didn’t ask it to! In general, programming languages will only do <em>exactly</em> what you ask them to. So, if you want a space, you need to put it in there yourself.</p>
+<pre data-type="programlisting" data-code-language="python">fruit = “apple”
+color = "red"
+my_fruit = color + " " + fruit
+print my_fruit</pre>
+<p>You can also multiple a string! Try running this code:</p>
+<textarea data-type="programlisting" data-executable="true" data-code-language="python">print "=" * 50</textarea>
+<p>A bunch of equals signs were printed out! When you multiply a string by an integer, Python will print that string out that many times.</p>
+</section>
+</section>
+<section data-type="sect1" data-pdf-bookmark="Try this!" id="_try_this_2"><h1>Try this!</h1>
+
+<p>In IDLE, open up a new file and enter the following:</p>
+<textarea data-type="programlisting" data-executable="true" data-code-language="python">first_name = "Kylie"
+last_name = "Johnston"
+time = "morning"
+
+greeting = "Good" + " " + time + " " + first_name + " " + last_name
+
+print greeting</textarea>
+<p>Can you change the code so Python says good afternoon to you?</p>
+</section>
+</section>
+  </body>
+</html>
