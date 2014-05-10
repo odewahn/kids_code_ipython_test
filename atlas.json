@@ -20,7 +20,18 @@
     },
     "html": {
       "index": false,
-      "toc": false
+      "toc": false,
+      "html": {
+         "javascripts" : [
+            "theme/html/javascripts/jquery.js",
+            "theme/html/javascripts/codemirror.js",
+            "theme/html/javascripts/coderunner.js"
+          ],
+          "stylesheets" : [
+              "theme/html/stylesheets/codemirror.css",
+              "theme/html/stylesheets/book.css"
+          ]
+      }
     }
   },
   "theme": "https://github.com/oreillymedia/atlas_tech1c_theme.git",
