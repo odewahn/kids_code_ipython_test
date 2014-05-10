@@ -23,6 +23,6 @@
       "toc": false
     }
   },
-  "theme": "oreillymedia/animal_theme",
+  "theme": "oreillymedia/atlas-jsrepl-skeleton",
   "title": "kids code ipython test"
 }
