@@ -253,52 +253,52 @@ apple
 
 <p>Numbers are great, but you’ll probably want to store some text at some point. In Python, we call text “strings.” A string might be empty, have just one character, or it might contain all the text from your favorite book!</p>
 <p>To create a string, you need to enclose the text with either a set of single or double quotes, like this:</p>
-<textarea data-executable="true" data-type="programlisting" data-code-language="python">animal = “dog”
-name = ‘Gizmo’</textarea>
+<textarea data-executable="true" data-type="programlisting" data-code-language="python">animal = "dog"
+name = 'Gizmo'</textarea>
 <p>Make sure that your quotes match! If you start with a single quote, you have to end with a single quote. The same goes for double quotes.</p>
 <section data-type="sect2" data-pdf-bookmark="Printing text" id="_printing_text"><h2>Printing text</h2>
 
 <p>We’ve already been using the print statement, but we haven’t really talked about what it does. <code>print</code> tells Python to show something on the screen. If you ask Python to print a string, Python will leave out the quotes.</p>
 <p>Try running the following commands. Look at the differences.</p>
-<textarea data-type="programlisting" data-executable="true" data-code-language="python">greeting = “Hello”
+<textarea data-type="programlisting" data-executable="true" data-code-language="python">greeting = "Hello"
 greeting
 print greeting</textarea>
 <p>Notice how when we just typed in <code>greeting</code>, Python printed out <em>Hello</em> in quotes? But when we said <code>print greeting</code>, Python didn’t add the quotes.</p>
 <p>Also note that Python printed out each item on its own line. If you don’t want Python to move to the next line, then add a comma to the end of your print statement. Try running the following code.</p>
-<textarea data-type="programlisting" data-executable="true" data-code-language="python">print “Hello”,
-print “world”</textarea>
+<textarea data-type="programlisting" data-executable="true" data-code-language="python">print "Hello",
+print "world"</textarea>
 <p>Both of the items were printed on the same line, weren’t they?</p>
 </section>
 <section data-type="sect2" data-pdf-bookmark="Doing math?" id="_doing_math"><h2>Doing math?</h2>
 
 <p>You can do math with strings! It’s much more limited than doing math with numbers, but there are a few tricks you can do.</p>
 <p>You can use the additon operator (+) to join two strings together. Run the following code.</p>
-<textarea data-type="programlisting" data-code-language="python" data-executable="true">name = “Coe”
-greeting = “Hi”
+<textarea data-type="programlisting" data-code-language="python" data-executable="true">name = "Coe"
+greeting = "Hi"
 print greeting + name</textarea>
 <p>You can also store joined strings into a variable, like this:</p>
-<textarea data-type="programlisting" data-code-language="python" data-executable="true">fruit = “apple”
-color = “red”
+<textarea data-type="programlisting" data-code-language="python" data-executable="true">fruit = "apple"
+color = "red"
 my_fruit = color + fruit
 print my_fruit</textarea>
 <p>Notice that Python didn’t put any spaces between the two strings. That’s because we didn’t ask it to! In general, programming languages will only do <em>exactly</em> what you ask them to. So, if you want a space, you need to put it in there yourself.</p>
-<textarea data-type="programlisting" data-code-language="python">fruit = “apple”
-color = “red”
+<textarea data-type="programlisting" data-code-language="python">fruit = "apple"
+color = "red"
 my_fruit = color + " " + fruit
 print my_fruit</textarea>
 <p>You can also multiple a string! Try running this code:</p>
-<textarea data-type="programlisting" data-executable="true" data-code-language="python">print “=” * 50</textarea>
+<textarea data-type="programlisting" data-executable="true" data-code-language="python">print "=" * 50</textarea>
 <p>A bunch of equals signs were printed out! When you multiply a string by an integer, Python will print that string out that many times.</p>
 </section>
 </section>
 <section data-type="sect1" data-pdf-bookmark="Try this!" id="_try_this_2"><h1>Try this!</h1>
 
 <p>In IDLE, open up a new file and enter the following:</p>
-<textarea data-type="programlisting" data-executable="true" data-code-language="python">first_name = “Kylie”
-last_name = “Johnston”
-time = “morning”
+<textarea data-type="programlisting" data-executable="true" data-code-language="python">first_name = "Kylie"
+last_name = "Johnston"
+time = "morning"
 
-greeting = “Good” + " " + time + " " + first_name + " " + last_name
+greeting = "Good" + " " + time + " " + first_name + " " + last_name
 
 print greeting</textarea>
 <p>Can you change the code so Python says good afternoon to you?</p>
