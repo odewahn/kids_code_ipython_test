@@ -1,17 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<!DOCTYPE html><html lang="en">
   <head>
     <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
     <title>kids code ipython test</title>
-    <link rel="stylesheet" type="text/css" href="theme/html/html.css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Bootstrap core CSS -->
+   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"/>
+   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css"/>
+
+   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"/>
+
+   <!-- Custom styles for this template -->
+   <link href="theme/html/stylesheets/base.css" rel="stylesheet"/>
+   <link href="theme/html/stylesheets/book.css" media="all" rel="stylesheet" type="text/css"/>
+   <link href="theme/html/stylesheets/codemirror.css" media="all" rel="stylesheet" type="text/css"/>
+
+   <script src="theme/html/javascripts/jquery.js"/>
+   <script src="theme/html/javascripts/disqus.js"/>
+
+   <script src="theme/html/javascripts/codemirror.js"/>
+   <script src="theme/html/javascripts/coderunner.js"/>
+   <script src="theme/html/javascripts/jsrepl/jsrepl.js" id="jsrepl-script"/>
+
   </head>
-  <body data-type="book">
-    <div class="navbar">
-      <h1>kids code ipython test</h1>
-      <p/>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+	  <img class="logo" src="theme/html/assets/logo-white.svg"/>
+          <a class="title" href="#">kids code ipython test</a>
+        </div>
+
+        <div class="container">
+           <div class="col-sm-3 col-md-3 pull-right">
+	      <form class="navbar-form" role="search">
+	         <div class="input-group">
+	            <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term"/>
+	            <div class="input-group-btn">
+	               <button class="btn btn-default search-button" type="submit"><i class="glyphicon glyphicon-search"> </i></button>
+	            </div>
+	         </div>
+	      </form>
+           </div>
+        </div>
+      </div>
     </div>
-    <section data-type="chapter" data-pdf-bookmark="Chapter 1. First, some basics" id="_first_some_basics"><h1>First, some basics</h1>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <section xmlns="http://www.w3.org/1999/xhtml" data-type="chapter" data-pdf-bookmark="Chapter 1. First, some basics" id="_first_some_basics"><h1>First, some basics</h1>
 
 <p>Now that we have Python installed and IDLE up and running, let’s get Python to do some things! In this chapter, we’re going to learn how to work with numbers and text, do some basic math, and store values so we can use them later.</p>
 <section data-type="sect1" data-pdf-bookmark="Notes for the mentor" id="_notes_for_the_mentor_2"><h1>Notes for the mentor</h1>
@@ -301,11 +344,35 @@ print greeting</textarea>
 <p>Can you change the code so Python says good afternoon to you?</p>
 </section>
 </section>
-    <div class="navigation">
-      <ul>
-        <li/>
-        <li/>
-      </ul>
+        </div>
+      </div>
     </div>
+  
+    <div class="container">
+	<div class="row">
+	  <div class="pagination">
+	      <ul>
+	        <li class="prev"/>
+	        <li class="next"/>
+	      </ul>
+	  </div>       
+	</div>
+    </div>
+
+    <div class="container">
+       <div class="row">
+          <div class="col-md-12 disqus">
+	     <div id="disqus_thread"/>
+	   </div>
+       </div>
+    </div>
+ 
+    <div class="footer">
+      <footer>
+        <p>© O'Reilly Media, 2014</p>
+      </footer>
+    </div>
+
   </body>
+
 </html>
