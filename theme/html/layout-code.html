@@ -1,0 +1,21 @@
+{{ doctype }}
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ title }}</title>
+    {{ header }}
+
+    <link href="theme/html/stylesheets/codemirror.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="theme/html/stylesheets/book.css" media="all" rel="stylesheet" type="text/css" />
+
+    <script src="theme/html/javascripts/jquery.js"></script>
+    <script src="theme/html/javascripts/codemirror.js" ></script>
+    <script src="theme/html/javascripts/coderunner.js" ></script>
+    <script src="theme/html/javascripts/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+
+
+  </head>
+  <body data-type="book">
+    {{ content }}
+  </body>
+</html>
