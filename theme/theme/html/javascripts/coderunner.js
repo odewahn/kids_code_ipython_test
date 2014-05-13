@@ -4,7 +4,8 @@ var editors = {};
 function makeCodeMirror(el, runNum)
 {
   editors[runNum] = CodeMirror.fromTextArea(el, {
-    //height: "350px",
+	lineNumbers: true
+    //height: "350px"
     //parserfile: "parsexml.js",
     //stylesheet: "css/xmlcolors.css",
     //path: "js/",
@@ -19,7 +20,7 @@ $(function() {
   // create textareas from pre, add run buttons
   $("*[data-executable").each(function(i) {
     var txtarea = $("<textarea data-run-number='"+i+"' id='code-run-"+i+"'>" + $(this).text() + "</textarea>");
-    var btn = $("<a class='btn run-btn' data-run-number='"+i+"' href='#'>Run Code</a>")
+    var btn = $("<a class='btn run-code-btn run-btn' data-run-number='"+i+"' href='#'>Run Code</a>")
     $(this).after(btn);
     btn.hide();
     $(this).replaceWith(txtarea);
