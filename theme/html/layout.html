@@ -1,20 +1,20 @@
 {{ doctype }}
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
     <title>{{ title }}</title>
 
     <!-- Bootstrap core CSS -->
-   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"/>
+   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css"/>
 
    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"/>
 
    <!-- Custom styles for this template -->
-   <link href="theme/html/stylesheets/base.css" rel="stylesheet">
+   <link href="theme/html/stylesheets/base.css" rel="stylesheet"/>
    <link href="theme/html/stylesheets/book.css" media="all" rel="stylesheet" type="text/css" />
    <link href="theme/html/stylesheets/codemirror.css" media="all" rel="stylesheet" type="text/css" />
 
@@ -25,8 +25,6 @@
    <script src="theme/html/javascripts/coderunner.js" ></script>
    <script src="theme/html/javascripts/jsrepl/jsrepl.js" id="jsrepl-script"></script>
 
-
- 
   </head>
 
   <body data-type="book">
@@ -40,17 +38,17 @@
 
         <div class="container">
            <div class="col-sm-3 col-md-3 pull-right">
-	        <form class="navbar-form" role="search">
-	           <div class="input-group">
-	              <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
-	              <div class="input-group-btn">
-	                 <button class="btn btn-default search-button" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-	              </div>
-	           </div>
-	        </form>
+	      <form class="navbar-form" role="search">
+	         <div class="input-group">
+	            <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term"/>
+	            <div class="input-group-btn">
+	               <button class="btn btn-default search-button" type="submit"><i class="glyphicon glyphicon-search"> </i></button>
+	            </div>
+	         </div>
+	      </form>
            </div>
         </div>
-       </div>
+      </div>
     </div>
 
     <div class="container">
@@ -59,17 +57,17 @@
           {{ content }}
         </div>
       </div>
-      </div>
     </div>
-
   
     <div class="container">
 	<div class="row">
-          <div class="col-md-12 pagination">
-	     <a href="{{ prev_link }}" class="btn"><span class="glyphicon glyphicon-chevron-left"></span> Prev</a>
-	     <a href="{{ next_link }}" class="btn">Next <span class="glyphicon glyphicon-chevron-right"></span></a>
-          </div>
-       </div>
+	  <div class="pagination">
+	      <ul>
+	        <li class="prev">{{ prev_link }}</li>
+	        <li class="next">{{ next_link }}</li>
+	      </ul>
+	  </div>       
+	</div>
     </div>
 
     <div class="container">
@@ -87,4 +85,5 @@
     </div>
 
   </body>
+
 </html>
